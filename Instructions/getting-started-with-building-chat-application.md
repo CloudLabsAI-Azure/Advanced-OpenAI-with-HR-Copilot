@@ -12,25 +12,25 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    
 1. From the **Cognitive Services | Azure OpenAI** pane, click on **Create**.
 
-   ![](../media/select-openai.png "Azure OpenAI")
+   ![](../media/img2.png "Azure OpenAI")
    
-1. In the Create Azure OpenAI pane under Basics tab, select the default subscription and select the existing **sql-chat-gpt-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **SQL-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing tier. Click on **Next**
+1. In the Create Azure OpenAI pane under Basics tab, select the default subscription and select the existing **sql-chat-gpt-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copiolt-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing tier. Click on **Next**
 
-   ![](../media/create-openai-basics.png "Azure OpenAI")
+   ![](../media/img6.png "Azure OpenAI")
    
 1. Leave default settings for Network and Tags tabs, click on **Next**.
 
 1. In the Review + submit pane, verify that validation passed and then click on **Create**.
 
-   ![](../media/create-openai-validate.png "Azure OpenAI")
+   ![](../media/img3.png "Azure OpenAI")
    
 1. Deployment will take 5 minutes to complete. Once the deployments is succeeded, click on **Go to resource**.
 
-   ![](../media/gotoresource.png "Azure OpenAI")
+   ![](../media/img4.png "Azure OpenAI")
    
 1. In the Azure OpenAI resource pane, select **Model deployments** **(1)** under Resource Management and then click on **Create** **(2)**.
 
-   ![](../media/openai-model-deployment.png "Azure OpenAI")
+   ![](../media/img5.png "Azure OpenAI")
    
 1. You will see create model deployment pane appears in the right-side, enter the Model deployement name as **sql-chatgpt-model** **(1)** and select **gpt-35-turbo** **(2)** Model deployment with the version **0301** **(3)** then click on **Save** **(4)**. Copy OpenAI Model name into the text file for later use.
 
