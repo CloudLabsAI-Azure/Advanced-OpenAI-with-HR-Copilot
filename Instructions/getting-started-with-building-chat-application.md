@@ -32,7 +32,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img5.png "Azure OpenAI")
    
-1.In the Azure OpenAI Studio click **Deployment (1)** and click **+ Create new deployment (2)**.
+1. In the Azure OpenAI Studio click **Deployment (1)** and click **+ Create new deployment (2)**.
 
    ![](../media/img7.png "Azure OpenAI")
    
