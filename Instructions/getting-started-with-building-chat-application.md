@@ -4,7 +4,7 @@
 
 In this exercise, you will be setting up the Open AI resource and installtion of application locally.
 
-### Task 1: Create Open AI resource (Read-Only)
+### Task 1: Create Open AI resource and model (Read-Only)
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box then select **Azure OpenAI** **(2)** under services.
 
@@ -45,7 +45,11 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img8.png "Azure OpenAI")
    
-### Task 2: Install the application locally
+### Task 2: Building ChatGPT like application on Streamlit with streaming  
+
+1. Navigate to OpenAI resource on **Azure portal**, select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, store it in a text file for later use.
+
+   ![](../media/img9.png "Azure OpenAI")
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
    
