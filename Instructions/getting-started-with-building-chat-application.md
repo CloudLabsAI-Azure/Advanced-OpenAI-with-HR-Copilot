@@ -28,17 +28,22 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img4.png "Azure OpenAI")
    
-1. In the Azure OpenAI resource pane, select **Model deployments** **(1)** under Resource Management and then click on **Create** **(2)**.
+1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
    ![](../media/img5.png "Azure OpenAI")
    
-1. You will see create model deployment pane appears in the right-side, enter the Model deployement name as **sql-chatgpt-model** **(1)** and select **gpt-35-turbo** **(2)** Model deployment with the version **0301** **(3)** then click on **Save** **(4)**. Copy OpenAI Model name into the text file for later use.
+1.In the Azure OpenAI Studio click **Deployment (1)** and click **+ Create new deployment (2)**.
 
-   ![](../media/openai-create-model.png "Azure OpenAI")
+   ![](../media/img7.png "Azure OpenAI")
    
-1. Now select **Keys and Endpoints** **(1)** under Resource Management and click on **Show Keys** **(2)**. Copy the **KEY 1** **(3)** and **Endpoint** **(4)**, store it in a text file for later use.
+1. On the **Deploy Model** tab enter the following details and click on **Create (5)**.
 
-   ![](../media/openai-keys-ep.png "Azure OpenAI")
+   - Select a model: **gpt-35-turbo (1)**
+   - Model version: **Auto-update to default (2)**
+   - Deployment name: **Copilot-model (3)**
+   - Tokens per Minute Rate Limit (thousands): **15K (4)**
+
+   ![](../media/img8.png "Azure OpenAI")
    
 ### Task 2: Install the application locally
 
