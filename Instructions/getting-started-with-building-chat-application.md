@@ -8,37 +8,37 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box then select **Azure OpenAI** **(2)** under services.
 
-   ![](images/search-openai.png "Azure OpenAI")
+   ![](../media/img1.png "Azure OpenAI")
    
 1. From the **Cognitive Services | Azure OpenAI** pane, click on **Create**.
 
-   ![](images/select-openai.png "Azure OpenAI")
+   ![](../media/select-openai.png "Azure OpenAI")
    
 1. In the Create Azure OpenAI pane under Basics tab, select the default subscription and select the existing **sql-chat-gpt-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **SQL-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing tier. Click on **Next**
 
-   ![](images/create-openai-basics.png "Azure OpenAI")
+   ![](../media/create-openai-basics.png "Azure OpenAI")
    
 1. Leave default settings for Network and Tags tabs, click on **Next**.
 
 1. In the Review + submit pane, verify that validation passed and then click on **Create**.
 
-   ![](images/create-openai-validate.png "Azure OpenAI")
+   ![](../media/create-openai-validate.png "Azure OpenAI")
    
 1. Deployment will take 5 minutes to complete. Once the deployments is succeeded, click on **Go to resource**.
 
-   ![](images/gotoresource.png "Azure OpenAI")
+   ![](../media/gotoresource.png "Azure OpenAI")
    
 1. In the Azure OpenAI resource pane, select **Model deployments** **(1)** under Resource Management and then click on **Create** **(2)**.
 
-   ![](images/openai-model-deployment.png "Azure OpenAI")
+   ![](../media/openai-model-deployment.png "Azure OpenAI")
    
 1. You will see create model deployment pane appears in the right-side, enter the Model deployement name as **sql-chatgpt-model** **(1)** and select **gpt-35-turbo** **(2)** Model deployment with the version **0301** **(3)** then click on **Save** **(4)**. Copy OpenAI Model name into the text file for later use.
 
-   ![](images/openai-create-model.png "Azure OpenAI")
+   ![](../media/openai-create-model.png "Azure OpenAI")
    
 1. Now select **Keys and Endpoints** **(1)** under Resource Management and click on **Show Keys** **(2)**. Copy the **KEY 1** **(3)** and **Endpoint** **(4)**, store it in a text file for later use.
 
-   ![](images/openai-keys-ep.png "Azure OpenAI")
+   ![](../media/openai-keys-ep.png "Azure OpenAI")
    
 ### Task 2: Install the application locally
 
@@ -68,7 +68,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    
 1. After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
 
-   ![](images/vscode-secrets.png "Azure OpenAI")
+   ![](../media/vscode-secrets.png "Azure OpenAI")
    
 1. To run the application from the command line navigate back to Command Prompt and run the below command:
 
@@ -80,6 +80,6 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    
 1. Once the execution of `streamlit run app.py` is completed. A locally hosted demo appliation will be opened in the web browser. 
 
-   ![](images/streamlit-run-latest.png "Azure OpenAI")
+   ![](../media/streamlit-run-latest.png "Azure OpenAI")
    
-   ![](images/demo-app.png "Azure OpenAI")
+   ![](../media/demo-app.png "Azure OpenAI")
