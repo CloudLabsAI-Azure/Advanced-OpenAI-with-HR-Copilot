@@ -77,7 +77,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    
 1. After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
 
-   ![](../media/vscode-secrets.png "Azure OpenAI")
+   ![](../media/img10.png "Azure OpenAI")
    
 1. To run the application from the command line navigate back to Command Prompt and run the below command:
 
@@ -89,6 +89,6 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    
 1. Once the execution of `streamlit run app.py` is completed. A locally hosted demo appliation will be opened in the web browser. 
 
-   ![](../media/streamlit-run-latest.png "Azure OpenAI")
+   ![](../media/img11.png "Azure OpenAI")
    
-   ![](../media/demo-app.png "Azure OpenAI")
+   ![](../media/img12.png "Azure OpenAI")
