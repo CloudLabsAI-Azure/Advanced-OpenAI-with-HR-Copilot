@@ -5,3 +5,7 @@ Over the last couple of years, language models like GPT-3 and GPT-4 have demonst
 To know more about Azure Function calling please refer [Function calling is now available in Azure OpenAI Service](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
 
 ## Exercise 1: Deploy and Run HR/Payroll Copilot Application 
+
+### Task 1: Build your own HR/Payroll copilot locally
+
+1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
