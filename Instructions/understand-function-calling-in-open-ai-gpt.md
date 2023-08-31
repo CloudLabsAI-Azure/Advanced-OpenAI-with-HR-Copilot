@@ -6,8 +6,6 @@ To know more about Azure Function calling please refer [Function calling is now 
 
 ## Exercise 1: Deploy and Run HR/Payroll Copilot Application 
 
-### Task 1: Build your own HR/Payroll copilot locally
-
    ![](../media/img13.png "Technical design")
 
 **Application Platform:**
@@ -21,6 +19,8 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
   - **Memory:** The agent maintain a memomory of the conversation history. The memory is backed by Streamlit's session state.
   - **LLM:** The agent is linked to a 0613 GPT-4 model to power its intelligence.
+
+### Task 1: Build your own HR/Payroll copilot locally
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
