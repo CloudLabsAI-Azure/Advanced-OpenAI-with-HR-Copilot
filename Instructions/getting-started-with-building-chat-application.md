@@ -56,7 +56,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 1. Run the below command to change the directory.
 
    ```
-   C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\automating_analytics
+   cd C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\automating_analytics
    ```
    
 1. Provide settings for Open AI and Database by creating a ```secrets.env``` file in the root of this folder by running the below command.
