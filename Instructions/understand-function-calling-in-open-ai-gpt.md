@@ -24,3 +24,25 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
+2. 1. Run the below command to change the directory.
+
+   ```
+   cd C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\copilot
+   ```
+
+3. Provide settings for Open AI and Database by creating a ```secrets.env``` file in the root of this folder by running the below command.
+
+   ```
+   code secrets.env
+   ```
+4. You will see the Visual Studio code is opened in the desktop. Enter the below code and update the OpenAI Key, Model Name and Endpoint values which you have copied and stored in text file earlier.
+
+   ```
+   AZURE_OPENAI_API_KEY="********************************" #Replace with the OpenAI Key
+   AZURE_OPENAI_GPT4_DEPLOYMENT="NAME_OF_GPT_4_DEPLOYMENT" #Replace with the OpenAI Model Name
+   AZURE_OPENAI_ENDPOINT=https://openairesourcename.openai.azure.com/ #Replace with the OpenAI Endpoint
+   USE_AZCS="False"
+   AZURE_OPENAI_API_VERSION="2023-05-01"
+   USE_SEMANTIC_CACHE="False"
+   SEMANTIC_HIT_THRESHOLD=0.9
+   ```
