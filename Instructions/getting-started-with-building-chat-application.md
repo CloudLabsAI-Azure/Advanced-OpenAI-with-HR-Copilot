@@ -47,7 +47,16 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    
 ### Task 2: Building ChatGPT like application on Streamlit with streaming  
 
-1. Navigate to OpenAI resource on **Azure portal**, select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, store it in a text file for later use.
+1. Navigate to OpenAI resource on **Azure portal**, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
+
+   ![](images/lanch-openai.png "Azure OpenAI")
+      
+1. In the **Azure AI Studio**, select **Deployments (1)** under Management and verify that **gpt-4** model is present with the deployment name as **Copilot-model**, review that the capacity of the model is set to **15K TPM**. Copy the OpenAI Model name into the text file for later use.
+   
+   ![](images/openai-deployment-update.png "Azure OpenAI")
+
+
+2. select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, store it in a text file for later use.
 
    ![](../media/img9.png "Azure OpenAI")
 
