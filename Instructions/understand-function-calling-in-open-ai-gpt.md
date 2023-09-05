@@ -24,7 +24,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
-2. 1. Run the below command to change the directory.
+2. Run the below command to change the directory.
 
    ```
    cd C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\copilot
