@@ -49,7 +49,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
 1. Navigate to OpenAI resource on **Azure portal**, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
 
-  ![](../media/img14.png "Azure OpenAI")
+   ![](../media/img14.png "Azure OpenAI")
       
 1. In the **Azure AI Studio**, select **Deployments (1)** under Management and verify that **gpt-4** model is present with the deployment name as **copilot-model**, review that the capacity of the model is set to **10K TPM**. Copy the OpenAI Model name into the text file for later use.
    
