@@ -8,3 +8,24 @@ When scope for automation spans across multiple functional domains, like human, 
 ## Exercise 1: Deploy and Run Multi-agent Copilot Application
 
 ### Task 1:  Build your own Multi-agent Copilot application locally
+
+1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+
+2. Run the below command to change the directory.
+
+   ```
+   cd C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\copilot\employee_support
+   ```
+
+3. To run the application from the command line navigate back to Command Prompt and run the below command:
+
+   >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+
+   ```
+   streamlit run multi_agent_copilot.py
+   ```
+
+4. Once the execution of `streamlit run multi_agent_copilot.py` is completed. A locally hosted HR Copliot appliation will be opened in the web browser. 
+
+   ![](../media/img21.png)
+   ![](../media/img22.png)
