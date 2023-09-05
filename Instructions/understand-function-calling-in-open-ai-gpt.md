@@ -62,5 +62,13 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 7. Once the execution of `streamlit run app.py` is completed. A locally hosted HR Copliot appliation will be opened in the web browser. 
 
-   ![](../media/img16.png)
+   ![](../media/img17.png)
+   ![](../media/img18.png)
 
+8. Run the following query to validate the identity of the employee.
+
+   ```
+   Jhon 1234
+   ```
+
+   ![](../media/img19.png)
