@@ -46,3 +46,20 @@ The solution is built on top of streamlit application platform. Streamlit allows
    USE_SEMANTIC_CACHE="False"
    SEMANTIC_HIT_THRESHOLD=0.9
    ```
+
+5.  After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
+
+   ![](../media/img16.png)
+
+6. To run the application from the command line navigate back to Command Prompt and run the below command:
+
+   >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+
+   ```
+   streamlit run hr_copilot.py
+   ```
+
+7. Once the execution of `streamlit run app.py` is completed. A locally hosted HR Copliot appliation will be opened in the web browser. 
+
+   ![](../media/img16.png)
+
