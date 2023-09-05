@@ -49,13 +49,14 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 5.  After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
 
-   ![](../media/img16.png)
+    ![](../media/img16.png)
 
 6. To run the application from the command line navigate back to Command Prompt and run the below command:
 
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
    ```
+   cd employee_support
    streamlit run hr_copilot.py
    ```
 
