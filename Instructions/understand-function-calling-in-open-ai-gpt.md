@@ -72,3 +72,11 @@ The solution is built on top of streamlit application platform. Streamlit allows
    ```
 
    ![](../media/img19.png)
+
+9. Enter an example question such as `When will I receive W2 form?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
+
+   ![](../media/img23.png)
+
+10. Copilot also can help update employee information like address update. For other information update requests, the Copilot will log a ticket to the HR team to update the information. Enter 'I moved to 123 Main St, San Jose, CA 95112, please update my address' in the HR Copilot app.
+
+   ![](../media/img24.png)
