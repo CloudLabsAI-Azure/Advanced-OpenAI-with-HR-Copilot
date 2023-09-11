@@ -79,4 +79,4 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 10. Copilot also can help update employee information like address update. For other information update requests, the Copilot will log a ticket to the HR team to update the information. Enter 'I moved to 123 Main St, San Jose, CA 95112, please update my address' in the HR Copilot app.
 
-   ![](../media/img24.png)
+    ![](../media/img24.png)
