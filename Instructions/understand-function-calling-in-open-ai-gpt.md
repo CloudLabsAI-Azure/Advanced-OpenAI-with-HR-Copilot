@@ -20,7 +20,25 @@ The solution is built on top of streamlit application platform. Streamlit allows
   - **Memory:** The agent maintain a memomory of the conversation history. The memory is backed by Streamlit's session state.
   - **LLM:** The agent is linked to a 0613 GPT-4 model to power its intelligence.
 
-### Task 1: Build your own HR/Payroll copilot locally
+### Task 1: Understand Function calling (Read-Only)
+
+1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support` path, open hr_copilot_utils.py, and select Open with  **Visual Studio Code** click on **OK**. Take a look at the code to see function calling works.
+
+    ![](../media/img25.png)
+
+2. The code snippet here provides a persona description for an **HR support specialist** named Lucy. Lucy's role is to assist employees with HR and Payroll-related questions and handle personal information updates. 
+
+    ![](../media/img26.png)
+   
+3. In the code snippet, you can see how the different function specifications are defined, each specification will help find relevant answers to HR and Payroll questions.
+
+    ![](../media/img27.png)
+
+4. Once the application runs you will observe how the function is called and details are fetched.
+
+    ![](../media/img28.png)
+
+### Task 2: Build your own HR/Payroll copilot locally
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
