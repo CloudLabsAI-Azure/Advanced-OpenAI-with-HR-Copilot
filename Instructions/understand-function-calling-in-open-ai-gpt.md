@@ -38,6 +38,21 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img28.png)
 
+ 
+  **Here is the flow of fuction calling:**
+  
+  - Check If Model Wants to Use a Function: This step involves the user (or model) initiating a conversation with the LLM and expressing a desire to perform a specific function or task.
+  
+  - Get Function Names and Parameters from Model: Once the desire to perform a function is expressed, the LLM would need to understand which function is requested and what parameters or information are required to execute that function. The user (or model) provides this information.
+  
+  - Execute Function: With the function name and parameters in hand, the LLM performs the requested function. The complexity of the function can vary widely, from simple calculations to more complex tasks like searching for information, generating content, or interacting with external systems.
+  
+  - Get Function Output & Augment It: After executing the function, the LLM obtains the output or result of that function. Depending on the nature of the function and the user's (or model's) instructions, the LLM might augment or modify the output in some way. This augmentation could involve formatting, summarizing, or enhancing the output.
+  
+  - Send Augmented Output to LLM: The augmented output is then sent as input to the language model (LLM) for further processing or interaction. This step may involve providing additional context or asking follow-up questions based on the output of the function.
+  
+  - Get LLM's Response: The LLM receives the augmented output as input and generates a response based on that input. The response can be in the form of text or other relevant information. The LLM's response can include explanations, clarifications, or further actions based on the function's output.
+
 ### Task 2: Build your own HR/Payroll copilot locally
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
