@@ -83,7 +83,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 1. Run the below command to change the directory.
 
    ```bash
-   cd C:\LabFiles\OpenAIWorkshop-Automation
+   cd C:\LabFiles\OpenAIWorkshop
    ```
 
 1. Run the below command to **Authenticate with Azure**. It will redirect to Azure authorize website, select your account.
@@ -107,4 +107,28 @@ The solution is built on top of streamlit application platform. Streamlit allows
    ```bash
    azd up
    ```
+1. Please select your Azure Subscription to use, enter `1` and click on **Enter** button.
 
+      ![](../media/img29.png "Azure OpenAI")
+
+1. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on **Enter** button. You can change the location using up and down arrow.
+
+      ![](../media/img30.png "Azure OpenAI")
+
+1.  Next, select **openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+
+      ![](../media/img31.png "Azure OpenAI")
+
+1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+
+      ![](images/app-deployment-output.png "Azure OpenAI")
+
+1. Naviagte back to the Azure portal, search and select **App service**. Select the available web app which you have deployed in the previous step.
+
+      ![](images/app-service-select.png "Azure OpenAI")
+
+1. Next, click on **Browse** to open your Web application.
+
+      ![](images/webapp.png "Azure OpenAI")
+      
+      ![](images/webapp1.png "Azure OpenAI")
