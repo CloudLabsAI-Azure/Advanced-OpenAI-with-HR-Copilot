@@ -99,7 +99,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
    ```
    
    ```bash
-   azd env new sql-chat-gpt-{DeploymentId}
+   azd env new copilot-{DeploymentId}
    ```
 
 1. Run the below command to Provision Azure resources, and deploy your project with a single command.
