@@ -4,21 +4,6 @@ Over the last couple of years, language models like GPT-3 and GPT-4 have demonst
 
 To know more about Azure Function calling please refer [Function calling is now available in Azure OpenAI Service](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
 
-## Exercise 1: Deploy and Run HR/Payroll Copilot Application 
-
-   ![](../media/img13.png "Technical design")
-
-**Application Platform:**
-The solution is built on top of streamlit application platform. Streamlit allows easy creation of interactive Python application with ability to render rich & responsive UI such as Chat UI and Python data visualization.
-
-**Smart Agent:At the heart of the solution is the python object Smart_Agent. The agent has following components:**
-
-  - **Goals/Tasks:** Smart_Agent is given a persona and instructions to follow to achieve certain goals, for example for HR Copilot it is about helping answer HR/Payroll question and update employee's personal information. This is done using instructions specified to the system message.
-
-  - **NLP interacation & tool execution:** For the abilility to use multiple tools and functions to accomplish business tasks, function calling capability of 0613 version is utilized to intelligently select the right function (validate identity/search knowlege base/update address/create ticket) based on the agent's judgement of what need to be done. The agent is also able to engage with users following the instruction/goals defined in the system message.
-
-  - **Memory:** The agent maintain a memomory of the conversation history. The memory is backed by Streamlit's session state.
-  - **LLM:** The agent is linked to a 0613 GPT-4 model to power its intelligence.
 
 ### Task 1: Understand Function calling (Read-Only)
 
