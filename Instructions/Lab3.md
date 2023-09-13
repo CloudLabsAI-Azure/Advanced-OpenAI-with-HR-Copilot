@@ -76,7 +76,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img24.png)
 
-### Deploy HR/Payroll copilot application to Azure
+### Task 2: Deploy HR/Payroll copilot application to Azure
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
