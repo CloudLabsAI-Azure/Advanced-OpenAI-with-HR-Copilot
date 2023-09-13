@@ -75,3 +75,36 @@ The solution is built on top of streamlit application platform. Streamlit allows
 10. Copilot also can help update employee information like address update. For other information update requests, the Copilot will log a ticket to the HR team to update the information. Enter 'I moved to 123 Main St, San Jose, CA 95112, please update my address' in the HR Copilot app.
 
     ![](../media/img24.png)
+
+### Deploy HR/Payroll copilot application to Azure
+
+1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+
+1. Run the below command to change the directory.
+
+   ```bash
+   cd C:\LabFiles\OpenAIWorkshop-Automation
+   ```
+
+1. Run the below command to **Authenticate with Azure**. It will redirect to Azure authorize website, select your account.
+
+   ```bash
+   azd auth login
+   ```
+
+1. Run the below command to setup the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+
+   ```bash
+   azd config set alpha.resourceGroupDeployments on
+   ```
+   
+   ```bash
+   azd env new sql-chat-gpt-{DeploymentId}
+   ```
+
+1. Run the below command to Provision Azure resources, and deploy your project with a single command.
+
+   ```bash
+   azd up
+   ```
+
