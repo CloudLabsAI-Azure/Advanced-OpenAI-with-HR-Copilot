@@ -29,3 +29,61 @@ When scope for automation spans across multiple functional domains, like human, 
 
    ![](../media/img21.png)
    ![](../media/img22.png)
+
+
+### Task 2: Deploy Multi-agent copilot application to Azure
+
+1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+
+1. Run the below command to change the directory.
+
+   ```bash
+   cd C:\LabFiles\OpenAIWorkshop
+   ```
+
+1. Run the below command to **Authenticate with Azure**. It will redirect to Azure authorize website, select your account.
+
+   ```bash
+   azd auth login
+   ```
+
+1. Run the below command to setup the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+
+   ```bash
+   azd config set alpha.resourceGroupDeployments on
+   ```
+   
+   ```bash
+   azd env new copilot-{DeploymentId}
+   ```
+
+1. Run the below command to Provision Azure resources, and deploy your project with a single command.
+
+   ```bash
+   azd up
+   ```
+1. Please select your Azure Subscription to use, enter `1` and click on **Enter** button.
+
+   ![](../media/img29.png)
+
+
+1. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on **Enter** button. You can change the location using up and down arrow.
+
+    ![](../media/img30.png)
+
+
+1.  Next, select **openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+
+    ![](../media/img31.png)
+
+1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+
+
+
+1. Naviagte back to the Azure portal, search and select **App service**. Select the available web app which you have deployed in the previous step.
+
+    ![](../media/img32.png)
+
+1. Next, click on **Browse** to open your Web application.
+
+    ![](../media/img33.png)
