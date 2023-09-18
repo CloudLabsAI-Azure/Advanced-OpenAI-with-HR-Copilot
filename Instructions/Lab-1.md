@@ -14,7 +14,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img2.png "Azure OpenAI")
    
-1. In the Create Azure OpenAI pane under Basics tab, select the default subscription and select the existing **sql-chat-gpt-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copiolt-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing tier. Click on **Next**
+1. In the Create Azure OpenAI pane under Basics tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copiolt-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing tier. Click on **Next**
 
    ![](../media/img6.png "Azure OpenAI")
    
@@ -56,9 +56,17 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    ![](../media/img34.png "Azure OpenAI")
 
 
-2. select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, store it in a text file for later use.
+1. Select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, store it in a text file for later use.
 
    ![](../media/img9.png "Azure OpenAI")
+   
+1. Navigate back to **Azure OpenAI**, select **Cognitive search (1)** from the selft menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+
+   ![](../media/img35.png "Azure OpenAI")
+
+1. From the Overview tab of cognitive search, copy the **URL** and paste in a text editor for later use.
+
+   ![](../media/img36.png "Azure OpenAI")
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
    
