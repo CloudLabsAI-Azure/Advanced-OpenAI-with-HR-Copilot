@@ -53,7 +53,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
       
 1. In the **Azure AI Studio**, select **Deployments (1)** under Management and verify that **gpt-4** and **text-embedding-ada-002** **(2)** model is present with the deployment name as **copilot-gpt4** and **text-embedding-ada-002**, review that the capacity of the model is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
    
-   ![](../media/img15.png "Azure OpenAI")
+   ![](../media/img34.png "Azure OpenAI")
 
 
 2. select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, store it in a text file for later use.
