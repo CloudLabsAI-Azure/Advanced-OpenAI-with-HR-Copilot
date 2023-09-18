@@ -94,7 +94,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    
 1. After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
 
-   ![](../media/img10.png "Azure OpenAI")
+   ![](../media/img37.png "Azure OpenAI")
    
 1. To run the application from the command line navigate back to Command Prompt and run the below command:
 
