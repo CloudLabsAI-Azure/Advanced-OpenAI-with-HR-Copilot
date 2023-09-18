@@ -6,6 +6,8 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
 ### Task 1: Create Open AI resource and model (Read-Only)
 
+ > **Note:** This task is **READ-ONLY**. The openai set up is already configured for your environment.
+
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box then select **Azure OpenAI** **(2)** under services.
 
    ![](../media/img1.png "Azure OpenAI")
@@ -60,7 +62,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img9.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **Cognitive search (1)** from the selft menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to **Azure OpenAI**, select **Cognitive search (1)** from the left menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/img35.png "Azure OpenAI")
 
