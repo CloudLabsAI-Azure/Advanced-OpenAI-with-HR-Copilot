@@ -89,7 +89,7 @@ In this exercise, you will be setting up the Open AI resource and installtion of
    AZURE_OPENAI_API_KEY="********************************" #Replace with the OpenAI Key
    AZURE_OPENAI_GPT4_DEPLOYMENT="NAME_OF_GPT_4_DEPLOYMENT" #Replace with the OpenAI Model Name
    AZURE_OPENAI_CHATGPT_DEPLOYMENT="NAME_OF_CHATGPT_4_DEPLOYMENT" #Replace with the OpenAI Model
-   AZURE_OPENAI_ENDPOINT=https://openairesourcename.openai.azure.com/ #Replace with the OpenAI Endpoint
+   AZURE_OPENAI_ENDPOINT="https://openairesourcename.openai.azure.com/" #Replace with the OpenAI Endpoint
    SQL_ENGINE = "sqlite"
    ```
    
