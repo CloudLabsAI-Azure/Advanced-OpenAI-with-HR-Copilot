@@ -14,7 +14,7 @@ When scope for automation spans across multiple functional domains, like human, 
 2. Run the below command to change the directory.
 
    ```
-   cd C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\copilot\employee_support
+   cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
    ```
 
 3. To run the application from the command line navigate back to Command Prompt and run the below command:
