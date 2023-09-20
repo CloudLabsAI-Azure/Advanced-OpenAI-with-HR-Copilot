@@ -17,29 +17,16 @@ The solution is built on top of streamlit application platform. Streamlit allows
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
-1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right click on `secrets.env` filr and select Open with  **Visual Studio Code**.
 
-2. Run the below command to change the directory.
-
-   ```
-   cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot
-   ```
-
-3. Provide settings for Open AI and Database by creating a ```secrets.env``` file in the root of this folder by running the below command.
+1. You will see the Visual Studio code is opened in the desktop. Edit the below code and update the OpenAI Key, Model Names, Endpoint and cognitive search endpoint values which you have copied and stored in text file earlier.
 
    ```
-   code secrets.env
-   ```
-4. You will see the Visual Studio code is opened in the desktop. Enter the below code and update the OpenAI Key, Model Name and Endpoint values which you have copied and stored in text file earlier.
-
-   ```
-   AZURE_OPENAI_API_KEY="********************************" #Replace with the OpenAI Key
-   AZURE_OPENAI_GPT4_DEPLOYMENT="NAME_OF_GPT_4_DEPLOYMENT" #Replace with the OpenAI Model Name
-   AZURE_OPENAI_ENDPOINT=https://openairesourcename.openai.azure.com/ #Replace with the OpenAI Endpoint
-   USE_AZCS="False"
-   AZURE_OPENAI_API_VERSION="2023-05-01"
-   USE_SEMANTIC_CACHE="False"
-   SEMANTIC_HIT_THRESHOLD=0.9
+    AZURE_OPENAI_API_KEY="********************************" #Replace with the OpenAI Key  
+    AZURE_OPENAI_ENDPOINT="https://openairesourcename.openai.azure.com/" #Replace with the OpenAI Endpoint
+    AZURE_OPENAI_EMB_DEPLOYMENT="gptchat" #Replace with name of your embedding model deployment
+    AZURE_OPENAI_CHAT_DEPLOYMENT="gpt" #Replace with name of your Open AI Chat Deployment
+    AZURE_SEARCH_SERVICE_ENDPOINT="https://YOUR_SEARCH_SERVICE.search.windows.net" #Replace with your Search Service endpoint
    ```
 
 5.  After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
