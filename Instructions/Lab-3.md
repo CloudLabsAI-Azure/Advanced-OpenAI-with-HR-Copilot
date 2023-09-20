@@ -19,6 +19,8 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right click on `secrets.env` filr and select Open with  **Visual Studio Code**.
 
+    ![](../media/img38.png)
+
 1. You will see the Visual Studio code is opened in the desktop. Edit the below code and update the OpenAI Key, Model Names, Endpoint and cognitive search endpoint values which you have copied and stored in text file earlier.
 
    ```
@@ -31,7 +33,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 5.  After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
 
-    ![](../media/img16.png)
+    ![](../media/img39.png)
 
 6. To run the application from the command line navigate back to Command Prompt and run the below command:
 
