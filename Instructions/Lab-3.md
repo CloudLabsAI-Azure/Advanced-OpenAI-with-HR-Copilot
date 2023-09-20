@@ -35,7 +35,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img39.png)
 
-6. To run the application from the command line navigate back to Command Prompt and run the below command:
+6. To run the application from the command line, navigate to Command Prompt and run the below command:
 
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
