@@ -17,11 +17,11 @@ The solution is built on top of streamlit application platform. Streamlit allows
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
-1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right click on `secrets.env` filr and select Open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right click on `secrets.env` filr and select open with  **Visual Studio Code**.
 
     ![](../media/img38.png)
 
-1. You will see the Visual Studio code is opened in the desktop. Edit the below code and update the OpenAI Key, Model Names, Endpoint and cognitive search endpoint values which you have copied and stored in text file earlier.
+1. You will see the Visual Studio code is opened in the desktop. Edit the below code and update the **OpenAI Key**, **Embedding model and Chat gpt4 model**, **OpenAI Endpoint** and **Cognitive search endpoint**, values which you have copied and stored in text file earlier.
 
    ```
     AZURE_OPENAI_API_KEY="********************************" #Replace with the OpenAI Key  
@@ -61,7 +61,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
    ![](../media/img23.png)
 
-10. Copilot also can help update employee information like address update. For other information update requests, the Copilot will log a ticket to the HR team to update the information. Enter 'I moved to 123 Main St, San Jose, CA 95112, please update my address' in the HR Copilot app.
+10. Copilot also can help update employee information like address update. For other information update requests, the Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St, San Jose, CA 95112, please update my address` in the HR Copilot app.
 
     ![](../media/img24.png)
 
