@@ -22,7 +22,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 2. Run the below command to change the directory.
 
    ```
-   cd C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\copilot
+   cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot
    ```
 
 3. Provide settings for Open AI and Database by creating a ```secrets.env``` file in the root of this folder by running the below command.
