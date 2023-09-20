@@ -40,7 +40,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
    ```
-   cd employee_support
+   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
    streamlit run hr_copilot.py
    ```
 
