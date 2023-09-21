@@ -1,14 +1,14 @@
-# Lab 1: Getting started with building Chat Application
+# Lab 1: Getting Started with Building a Chat Application
 
-## Exercise 1: Open AI setup and Installation of Application
+## Exercise 1: Exercise 1: Open AI Setup and Installation of Applications
 
-In this exercise, you will be setting up the Open AI resource and installtion of application locally.
+In this exercise, you will be setting up the Open AI resource and installing the application locally.
 
-### Task 1: Create Open AI resource and model (Read-Only)
+### Task 1: Create an Open AI resource and model (Read-Only)
 
- > **Note:** This task is **READ-ONLY**. The openai set up is already configured for your environment.
+ > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
-1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box then select **Azure OpenAI** **(2)** under services.
+1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
    ![](../media/img1.png "Azure OpenAI")
    
@@ -16,17 +16,17 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img2.png "Azure OpenAI")
    
-1. In the Create Azure OpenAI pane under Basics tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copiolt-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing tier. Click on **Next**
+1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copiolt-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing  Tier. Click on **Next**.
 
    ![](../media/img6.png "Azure OpenAI")
    
-1. Leave default settings for Network and Tags tabs, click on **Next**.
+1. Leave default settings for the Network and Tags tabs and click on **Next**.
 
-1. In the Review + submit pane, verify that validation passed and then click on **Create**.
+1. In the **Review + Submit** pane, verify that validation has passed and then click on **Create**.
 
    ![](../media/img3.png "Azure OpenAI")
    
-1. Deployment will take 5 minutes to complete. Once the deployments is succeeded, click on **Go to resource**.
+1. Deployment will take 5 minutes to complete. Once the deployment is successful, click on **Go to Resource**.
 
    ![](../media/img4.png "Azure OpenAI")
    
@@ -34,11 +34,11 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img5.png "Azure OpenAI")
    
-1. In the Azure OpenAI Studio click **Deployment (1)** and click **+ Create new deployment (2)**.
+1. In the Azure OpenAI Studio, click **Deployment (1)** and click **+ Create new deployment (2)**.
 
    ![](../media/img7.png "Azure OpenAI")
    
-1. On the **Deploy Model** tab enter the following details and click on **Create (5)**.
+1. On the **Deploy Model** tab, enter the following details and click on **Create (5)**.
 
    - Select a model: **gpt-35-turbo (1)**
    - Model version: **Auto-update to default (2)**
@@ -47,13 +47,13 @@ In this exercise, you will be setting up the Open AI resource and installtion of
 
    ![](../media/img8.png "Azure OpenAI")
    
-### Task 2: Building ChatGPT like application on Streamlit with streaming  
+### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
 
-1. Navigate to OpenAI resource on **Azure portal**, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
+1. Navigate to the OpenAI resource on the **Azure portal**, click on **Go to Azure OpenAI Studio**, and it will navigate to **Azure AI Studio**.
 
    ![](../media/img14.png "Azure OpenAI")
       
-1. In the **Azure AI Studio**, select **Deployments** under Management and verify that **gpt-4** and **text-embedding-ada-002** model is present with the deployment name as **copilot-gpt4** and **text-embedding-ada-002**, review that the capacity of the model is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
+1. In the **Azure AI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt4** and **text-embedding-ada-002**. Review that the capacity of the model is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
    
    ![](../media/img40.png "Azure OpenAI")
 
