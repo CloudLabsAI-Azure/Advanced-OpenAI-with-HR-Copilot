@@ -84,18 +84,20 @@ When scope for automation spans across multiple functional domains, like human, 
     ![](../media/img30.png)
 
 
-1.  Next, select **openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+1.  Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
-    ![](../media/img31.png)
+    ![](../media/img43.png)
 
-1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
 
 
 1. Naviagte back to the Azure portal, search and select **App service**. Select the available web app which you have deployed in the previous step.
 
-    ![](../media/img32.png)
+    ![](../media/img44.png)
 
 1. Next, click on **Browse** to open your Web application.
 
-    ![](../media/img33.png)
+    ![](../media/img45.png)
+
+    ![](../media/img46.png)
