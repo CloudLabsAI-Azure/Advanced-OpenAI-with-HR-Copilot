@@ -28,8 +28,20 @@ When scope for automation spans across multiple functional domains, like human, 
 4. Once the execution of `streamlit run multi_agent_copilot.py` is completed. A locally hosted HR Copliot appliation will be opened in the web browser. 
 
    ![](../media/img21.png)
+
    ![](../media/img22.png)
 
+5. Run the following query to validate the identity of the employee.
+
+   ```
+   Sharon 1234
+   ```
+
+   ![](../media/img47.png)
+
+6. Enter an example question such as `how to do I reset my password?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
+
+   ![](../media/img48.png)
 
 ### Task 2: Deploy Multi-agent copilot application to Azure
 
