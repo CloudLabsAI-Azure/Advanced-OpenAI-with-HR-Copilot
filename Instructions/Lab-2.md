@@ -7,11 +7,11 @@ To know more about Azure Function calling please refer [Function calling is now 
 
 ### Task 1: Understand Function calling (Read-Only)
 
-1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support` path, open hr_copilot_utils.py, and select Open with  **Visual Studio Code** click on **OK**. Take a look at the code to see function calling works.
+1. In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support` path, open hr_copilot_utils.py, and select Open with  **Visual Studio Code** click on **OK**. Take a look at the code to see how function calling works.
 
     ![](../media/img25.png)
 
-2. The code snippet here provides a persona description for an **HR support specialist** named Lucy. Lucy's role is to assist employees with HR and Payroll-related questions and handle personal information updates. 
+2. The code snippet here provides a persona description for a **HR support specialist** named Lucy. Lucy's role is to assist employees with HR and Payroll-related questions and handle personal information updates. 
 
     ![](../media/img26.png)
    
@@ -24,7 +24,7 @@ To know more about Azure Function calling please refer [Function calling is now 
     ![](../media/img28.png)
 
  
-  **Here is the flow of fuction calling:**
+  **Here is the flow of function calling:**
   
   - **Check If Model Wants to Use a Function**: This step involves the user (or model) initiating a conversation with the LLM and expressing a desire to perform a specific function or task.
   
