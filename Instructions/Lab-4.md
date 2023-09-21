@@ -45,6 +45,14 @@ When scope for automation spans across multiple functional domains, like human, 
 
 ### Task 2: Deploy Multi-agent copilot application to Azure
 
+1. In the LabVM, open File Explorer naviagte to the `C:\LabFiles\OpenAIWorkshop\infra` path, right click on `main.bicep` file and select open with  **Visual Studio Code**.
+
+    ![](../media/img41.png)
+
+1. In the `main.bicep` file, replace the file name in **Line 49** to `multi_agent_copilot.py` and press **CTRL + S** to save the file.
+
+    ![](../media/img51.png)
+
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
 1. Run the below command to change the directory.
@@ -84,20 +92,21 @@ When scope for automation spans across multiple functional domains, like human, 
     ![](../media/img30.png)
 
 
-1.  Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+1.  Next, select **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
-    ![](../media/img43.png)
+    ![](../media/img50.png)
 
 1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
 
+1. Naviagte back to the Azure portal, select **App service** from **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group .
 
-1. Naviagte back to the Azure portal, search and select **App service**. Select the available web app which you have deployed in the previous step.
-
-    ![](../media/img44.png)
+    ![](../media/img52.png)
 
 1. Next, click on **Browse** to open your Web application.
 
-    ![](../media/img45.png)
+    ![](../media/img53.png)
 
     ![](../media/img46.png)
+
+   > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
