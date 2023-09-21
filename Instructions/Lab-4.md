@@ -66,7 +66,7 @@ When scope for automation spans across multiple functional domains, like human, 
    ```
    
    ```bash
-   azd env new copilot-{DeploymentId}
+   azd env new azure-copilot-{DeploymentId}
    ```
 
 1. Run the below command to Provision Azure resources, and deploy your project with a single command.
