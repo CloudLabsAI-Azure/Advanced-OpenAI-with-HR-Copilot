@@ -17,7 +17,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
-1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right click on `secrets.env` filr and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer naviagte to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right click on `secrets.env` file and select open with  **Visual Studio Code**.
 
     ![](../media/img38.png)
 
@@ -67,6 +67,23 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 ### Task 2: Deploy HR/Payroll copilot application to Azure
 
+1. In the LabVM, open File Explorer naviagte to the `C:\LabFiles\OpenAIWorkshop\infra` path, right click on `main.bicep` file and select open with  **Visual Studio Code**.
+
+    ![](../media/img41.png)
+
+1. In the **appsettings** section of `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
+
+      ```
+      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key
+      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint
+      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with name of your embedding model deployment
+      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT4_MODEL' //#Replace with name of your Open AI Chat Deployment
+      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint
+      ```
+
+    ![](../media/img42.png)
+
+
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
 1. Run the below command to change the directory.
@@ -106,9 +123,9 @@ The solution is built on top of streamlit application platform. Streamlit allows
     ![](../media/img30.png)
 
 
-1.  Next, select **openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+1.  Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
-    ![](../media/img31.png)
+    ![](../media/img43.png)
 
 1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
@@ -116,8 +133,10 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. Naviagte back to the Azure portal, search and select **App service**. Select the available web app which you have deployed in the previous step.
 
-    ![](../media/img32.png)
+    ![](../media/img44.png)
 
 1. Next, click on **Browse** to open your Web application.
 
-    ![](../media/img33.png)
+    ![](../media/img45.png)
+
+    ![](../media/img46.png)
