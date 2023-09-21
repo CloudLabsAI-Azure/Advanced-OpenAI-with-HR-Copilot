@@ -22,7 +22,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
 1. Leave default settings for the Network and Tags tabs and click on **Next**.
 
-1. In the **Review + Submit** pane, verify that validation has passed and then click on **Create**.
+1. Verify that validation has passed in the **Review + Submit** pane and then click on **Create**.
 
    ![](../media/img3.png "Azure OpenAI")
    
@@ -57,7 +57,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
    ![](../media/img40.png "Azure OpenAI")
 
-1. Select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, store it in a text file for later use.
+1. Select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
    ![](../media/img9.png "Azure OpenAI")
    
@@ -83,7 +83,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    code secrets.env
    ```
    
-1. You will see the Visual Studio code is opened in the desktop. Enter the below code and update the OpenAI Key, Model Name and Endpoint values which you have copied and stored in text file earlier.
+1. The Visual Studio code is opened on the desktop. Enter the below code and update the OpenAI Key, Model Name, and Endpoint values that you have copied and stored in the text file earlier.
 
    ```
    AZURE_OPENAI_API_KEY="********************************" #Replace with the OpenAI Key
@@ -105,7 +105,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    streamlit run app.py
    ```
    
-1. Once the execution of `streamlit run app.py` is completed. A locally hosted demo appliation will be opened in the web browser. 
+1. Once the execution of `streamlit run app.py` is completed. A locally hosted demo application will be opened in the web browser. 
 
    ![](../media/img11.png "Azure OpenAI")
    
