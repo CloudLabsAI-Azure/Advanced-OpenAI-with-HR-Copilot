@@ -44,7 +44,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
    streamlit run hr_copilot.py
    ```
 
-7. Once the execution of `streamlit run app.py` is completed. A locally hosted HR Copliot application will be opened in the web browser. 
+7. Once the execution of `streamlit run hr_copilot.py` is completed. A locally hosted HR Copliot application will be opened in the web browser. 
 
    ![](../media/img17.png)
    ![](../media/img18.png)
