@@ -7,7 +7,7 @@ To know more about Azure Function calling please refer to [Function calling is n
 
 ### Task 1: Understand Function calling (Read-Only)
 
-1. In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support` path, open hr_copilot_utils.py, and select Open with  **Visual Studio Code** click on **OK**. Take a look at the code to see how function calling works.
+1. In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support` path, open **hr_copilot_utils.py**, and select Open with  **Visual Studio Code** click on **OK**. Take a look at the code to see how function calling works.
 
     ![](../media/img25.png)
 
