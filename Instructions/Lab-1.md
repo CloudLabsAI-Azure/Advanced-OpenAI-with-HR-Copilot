@@ -65,7 +65,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img35.png "Azure OpenAI")
 
-1. From the Overview tab of cognitive search, copy the **URL** and paste in a text editor for later use.
+1. From the Overview tab of cognitive search, copy the **URL** and paste it into a text editor for later use.
 
    ![](../media/img36.png "Azure OpenAI")
 
