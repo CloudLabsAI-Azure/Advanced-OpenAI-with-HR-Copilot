@@ -139,3 +139,5 @@ The solution is built on top of streamlit application platform. Streamlit allows
     ![](../media/img45.png)
 
     ![](../media/img46.png)
+
+   > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
