@@ -26,16 +26,16 @@ The solution is built on top of streamlit application platform. Streamlit allows
    ```
       AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key
       AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with name of your embedding model deployment
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT4_MODEL' //#Replace with name of your Open AI Chat Deployment
+      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment
+      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT4_MODEL' //#Replace with the name of your Open AI Chat Deployment
       AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint
    ```
 
-5.  After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
+1.  After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
 
     ![](../media/img39.png)
 
-6. To run the application from the command line, navigate to Command Prompt and run the below command:
+1. To run the application from the command line, navigate to Command Prompt and run the below command:
 
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
@@ -44,12 +44,12 @@ The solution is built on top of streamlit application platform. Streamlit allows
    streamlit run hr_copilot.py
    ```
 
-7. Once the execution of `streamlit run hr_copilot.py` is completed. A locally hosted HR Copliot application will be opened in the web browser. 
+1. Once the execution of `streamlit run hr_copilot.py` is completed. A locally hosted HR Copliot application will be opened in the web browser. 
 
    ![](../media/img17.png)
    ![](../media/img18.png)
 
-8. Run the following query to validate the identity of the employee.
+1. Run the following query to validate the identity of the employee.
 
    ```
    John 1234
@@ -57,17 +57,17 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
    ![](../media/img19.png)
 
-9. Enter an example question such as `When will I receive W2 form?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
+1. Enter an example question such as `When will I receive W2 form?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
 
    ![](../media/img23.png)
 
-10. Copilot also can help update employee information like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St, San Jose, CA 95112, please update my address` in the HR Copilot app.
+1. Copilot also can help update employee information like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St, San Jose, CA 95112, please update my address` in the HR Copilot app.
 
     ![](../media/img24.png)
 
 ### Task 2: Deploy HR/Payroll copilot application to Azure
 
-1. In the LabVM, open File Explorer navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
 
     ![](../media/img41.png)
 
@@ -76,8 +76,8 @@ The solution is built on top of streamlit application platform. Streamlit allows
       ```
       AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key
       AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with name of your embedding model deployment
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT4_MODEL' //#Replace with name of your Open AI Chat Deployment
+      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment
+      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT4_MODEL' //#Replace with the name of your Open AI Chat Deployment
       AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint
       ```
 
@@ -123,12 +123,11 @@ The solution is built on top of streamlit application platform. Streamlit allows
     ![](../media/img30.png)
 
 
-1.  Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+1. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
     ![](../media/img43.png)
 
 1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
-
 
 
 1. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
@@ -140,3 +139,5 @@ The solution is built on top of streamlit application platform. Streamlit allows
     ![](../media/img45.png)
 
     ![](../media/img46.png)
+
+   > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.

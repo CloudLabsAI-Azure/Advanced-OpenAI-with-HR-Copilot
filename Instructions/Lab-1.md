@@ -16,7 +16,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img2.png "Azure OpenAI")
    
-1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copiolt-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing  Tier. Click on **Next**.
+1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing  Tier. Click on **Next**.
 
    ![](../media/img6.png "Azure OpenAI")
    
@@ -65,7 +65,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img35.png "Azure OpenAI")
 
-1. From the Overview tab of cognitive search, copy the **URL** and paste in a text editor for later use.
+1. From the Overview tab of cognitive search, copy the **URL** and paste it into a text editor for later use.
 
    ![](../media/img36.png "Azure OpenAI")
 

@@ -1,6 +1,6 @@
 # Lab 4: Understand HR Copilot demo Application 
 
-When the scope for automation spans across multiple functional domains, like humans, an agent may perform better when it can specialize in a single area. So instead of stuffing a single agent with multiple capabilities, we can employ a multiple-agents model, each specializing in a single domain. These agents are managed and coordinated by a manager agent (agent runner). This is called the multi-agent copilot model. The agent runner is responsible for promoting the right agent from the agent pool to be the active agent to interact with the user. It also is responsible for transferring relevant context from agent to agent to ensure continuity. In this model, the agent runner relies on the specialist agent's cue to back off from the conversation to start the transfer. Each specialist agent has to implement a skill to send a notification (back-off method) when it thinks its skillset cannot handle the user's request. On the other hand, the decision on exactly which agent should be selected to take over the conversation is still with the agent runner. When receiving such a request, the agent runner will revaluate the the input by the requesting agent to decide on which agent to select for the job. This skill also relies on a LLM. Agent runner runs each specialist agent's run method. There can be some persistent context that should be available across agent's sessions. This is implemented as the persistent memory at agent runner. Each specialist agent depending on the requirement for skill, can be powered by a gpt-35-turbo or gpt-4. The multi-agent solution has the same application platform (streamlit) as the single HR Copilot.
+When the scope for automation spans across multiple functional domains, like humans, an agent may perform better when it can specialize in a single area. So instead of stuffing a single agent with multiple capabilities, we can employ a multiple-agent model, each specializing in a single domain. These agents are managed and coordinated by a manager agent (agent runner). This is called the multi-agent copilot model. The agent runner is responsible for promoting the right agent from the agent pool to be the active agent to interact with the user. It also is responsible for transferring relevant context from agent to agent to ensure continuity. In this model, the agent runner relies on the specialist agent's cue to back off from the conversation to start the transfer. Each specialist agent has to implement a skill to send a notification (back-off method) when it thinks its skillset cannot handle the user's request. On the other hand, the decision on exactly which agent should be selected to take over the conversation is still with the agent runner. When receiving such a request, the agent runner will reevaluate the input by the requesting agent to decide on which agent to select for the job. This skill also relies on a LLM. Agent runner runs each specialist agent's run method. There can be some persistent context that should be available across agent's sessions. This is implemented as the persistent memory at agent runner. Each specialist agent depending on the requirement for skill, can be powered by a gpt-35-turbo or gpt-4. The multi-agent solution has the same application platform (streamlit) as the single HR Copilot.
 
 ![](../media/img20.png)
 
@@ -39,13 +39,13 @@ When the scope for automation spans across multiple functional domains, like hum
 
    ![](../media/img47.png)
 
-6. Enter an example question such as `how do I reset my password?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
+6. Enter an example question such as `How do I reset my password?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
 
    ![](../media/img48.png)
 
 ### Task 2: Deploy Multi-agent copilot application to Azure
 
-1. In the LabVM, open File Explorer navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
 
     ![](../media/img41.png)
 
@@ -92,7 +92,7 @@ When the scope for automation spans across multiple functional domains, like hum
     ![](../media/img30.png)
 
 
-1.  Next, select **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+1. Next, select **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
     ![](../media/img50.png)
 
