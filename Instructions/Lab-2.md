@@ -9,10 +9,21 @@ To know more about Azure Function calling please refer to [Function calling is n
 
 1. Open **Visual Studio Code** from the desktop, next click on **File** and select **Open Folder**.
 
-    ![](../media/) 
+    ![](../media/img55.png) 
 
-1. Navigate to `c:\labfiles\` and click on **Select folder**. 
+1. Navigate to `C:\LabFiles\openai\Basic_Samples\Functions` and click on **Select folder**. 
 
-    ![](../media/) 
+    ![](../media/img56.png) 
 
-1.  
+1.  On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
+
+    ![](../media/img57.png) 
+
+1. In the **Functions** folder open `config.json` and replace the values following values with the ones you copied earlier.
+
+    **DEPLOYMENT_ID**: `Replace the value with gpt-model name`
+    **OPENAI_API_BASE**: `Replace the value with OpenAI Endpoint`
+    **SEARCH_SERVICE_ENDPOINT**: `Replace the value with Search Service Endpoint`
+
+    ![](../media/img58.png) 
+
