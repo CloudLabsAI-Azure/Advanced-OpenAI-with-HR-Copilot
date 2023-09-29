@@ -65,7 +65,30 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img24.png)
 
-### Task 2: Deploy HR/Payroll copilot application to Azure
+### Task 2: Integrate Azure Cognitive Search with your Application.
+
+1. From the **Azure Portal**, navigate to **Azure OpenAI**, select **Cognitive search (1)** from the left menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+
+   ![](../media/img35.png "Azure OpenAI")
+
+1. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
+
+    ![](../media/img63.png)
+
+1. In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file and select open with  **Visual Studio Code**.
+
+    ![](../media/img38.png)
+
+1. The Visual Studio code is opened on the desktop. replace the following values and press **CTRL + S** to save the file.
+
+   - **USE_AZCS**="**True**" #if false, it will use the Faiss library for search
+   - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME
+   - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #optional, required when USE_SEMANTIC_CACHE="True"
+   - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the Primary admin key
+   - **USE_SEMANTIC_CACHE**="**True**" #set to True if use semantic Cache.
+
+
+### Task 3: Deploy HR/Payroll copilot application to Azure
 
 1. In the LabVM, open File Explorer navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
 
