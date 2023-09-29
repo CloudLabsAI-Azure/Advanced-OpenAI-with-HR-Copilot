@@ -19,7 +19,7 @@ To know more about Azure Function calling please refer to [Function calling is n
 
     ![](../media/img57.png) 
 
-1. In the **Functions** folder open `config.json` and replace the values following values with the ones you copied earlier.
+1. In the **Functions** folder open `config.json` and replace the values following values with the ones you copied earlier. Press **CTRL + S** to save the file.
 
     **DEPLOYMENT_ID**: `Replace the value with gpt-model name`
     **OPENAI_API_BASE**: `Replace the value with OpenAI Endpoint`
@@ -27,3 +27,28 @@ To know more about Azure Function calling please refer to [Function calling is n
 
     ![](../media/img58.png) 
 
+1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
+
+    ![](../media/img59.png) 
+
+1. In the new terminal run the following command to install the required modules.
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+1. Once the requirements are installed close the terminal.
+
+1. Next, open `working_with_functions.ipynb` file from the left menu.
+
+    ![](../media/img60.png) 
+
+1. Click on the **Run (1)** button of the first cell, once the pop-up `Install/Enable suggested extensions Python +Jupyter` appears click on it to install the Python and Jupyter extensions. 
+
+    ![](../media/img61.png) 
+
+1. Next, on the **Choose a Kernel source** pop-up select **Python Environment** this will initiate the installation of extension.
+
+    ![](../media/img62.png) 
+
+1. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
