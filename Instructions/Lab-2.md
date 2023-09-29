@@ -6,3 +6,13 @@ To know more about Azure Function calling please refer to [Function calling is n
 
 
 ### Task 1: Understand Function calling 
+
+1. Open **Visual Studio Code** from the desktop, next click on **File** and select **Open Folder**.
+
+    ![](../media/) 
+
+1. Navigate to `c:\labfiles\` and click on **Select folder**. 
+
+    ![](../media/) 
+
+1.  
