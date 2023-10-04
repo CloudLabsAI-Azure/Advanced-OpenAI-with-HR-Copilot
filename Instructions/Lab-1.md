@@ -53,13 +53,13 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img14.png "Azure OpenAI")
       
-1. In the **Azure AI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the capacity of the model is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
+1. In the **Azure AI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
    
    ![](../media/img54.png "Azure OpenAI")
 
-1. Select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. Navigate back to the OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Language APIs (4)**, and store them in a text file for later use.
 
-   ![](../media/img9.png "Azure OpenAI")
+   ![](../media/img65.png "Azure OpenAI")
    
 1. Navigate back to **Azure OpenAI**, select **Cognitive search (1)** from the left menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
@@ -68,6 +68,10 @@ In this exercise, you will be setting up the Open AI resource and installing the
 1. From the Overview tab of cognitive search, copy the **URL** and paste it into a text editor for later use.
 
    ![](../media/img36.png "Azure OpenAI")
+
+1. From the left menu select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+
+   ![](../media/img66.png "Azure OpenAI")
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
    
@@ -99,7 +103,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
 1. To run the application from the command line navigate back to Command Prompt and run the below command:
 
-   >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+   >**Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
    ```
    streamlit run app.py
