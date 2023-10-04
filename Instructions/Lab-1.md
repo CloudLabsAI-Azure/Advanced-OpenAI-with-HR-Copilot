@@ -84,45 +84,37 @@ In this exercise, you will be setting up the Open AI resource and installing the
     - **AZURE_OPENAI_ENDPOINT**: Replace with your OpenAI **Language APIs Endpoint**
 
     ![](../media/img68.png)
+
+1. Navigate back to File Explorer and open `chatgpt.py` with **Visual Studio Code** to view the code to build a ChatGPT-like app.
+
+    ![](../media/img70.png) 
  
+1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
 
+    ![](../media/img69.png) 
 
-1. Run the below command to change the directory.
-
-   ```
-   cd C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\automating_analytics
-   ```
-   
-1. Provide settings for Open AI and Database by creating a ```secrets.env``` file in the root of this folder by running the below command.
+1. Run the below command in the terminal to change the directory.
 
    ```
-   code secrets.env
+   cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
    ```
-   
-1. The Visual Studio code is opened on the desktop. Enter the below code and update the OpenAI Key, Model Name, and Endpoint values that you have copied and stored in the text file earlier.
-
-   ```
-   AZURE_OPENAI_API_KEY="********************************" #Replace with the OpenAI Key
-   AZURE_OPENAI_GPT4_DEPLOYMENT="NAME_OF_GPT_4_DEPLOYMENT" #Replace with the OpenAI Model Name
-   AZURE_OPENAI_CHATGPT_DEPLOYMENT="NAME_OF_CHATGPT_4_DEPLOYMENT" #Replace with the OpenAI Model
-   AZURE_OPENAI_ENDPOINT="https://openairesourcename.openai.azure.com/" #Replace with the OpenAI Endpoint
-   SQL_ENGINE = "sqlite"
-   ```
-   
-1. After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
-
-   ![](../media/img37.png "Azure OpenAI")
    
 1. To run the application from the command line navigate back to Command Prompt and run the below command:
 
    >**Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
    ```
-   streamlit run app.py
+   streamlit run chatgpt.py
    ```
    
-1. Once the execution of `streamlit run app.py` is completed. A locally hosted demo application will be opened in the web browser. 
+1. Once the execution of `streamlit run chatgpt.py` is completed. A locally hosted demo application will be opened in the web browser. 
 
-   ![](../media/img11.png "Azure OpenAI")
+   ![](../media/img71.png "Azure OpenAI")
    
-   ![](../media/img12.png "Azure OpenAI")
+   ![](../media/img72.png "Azure OpenAI")
+
+1. Explore the app by running a few queries. 
+
+   ![](../media/img73.png "Azure OpenAI")
+
+Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
