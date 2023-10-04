@@ -73,8 +73,20 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img66.png "Azure OpenAI")
 
-1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
-   
+1. In the LabVM, open File Explorer navigate to the `C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT` path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+
+    ![](../media/img67.png)
+
+1. In the `secrets.env` file, replace the values following values with the ones you copied earlier. Press CTRL + S to save the file.
+
+    - **AZURE_OPENAI_API_KEY**: Replace with your OpenAI Key
+    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** OpenAI Model Name
+    - **AZURE_OPENAI_ENDPOINT**: Replace with your OpenAI **Language APIs Endpoint**
+
+    ![](../media/img68.png)
+ 
+
+
 1. Run the below command to change the directory.
 
    ```
