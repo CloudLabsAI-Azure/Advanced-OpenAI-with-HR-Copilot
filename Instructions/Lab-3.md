@@ -24,14 +24,14 @@ The solution is built on top of streamlit application platform. Streamlit allows
 1. The Visual Studio code is opened on the desktop. Edit the below code and update the **OpenAI Key**, **Embedding model and GPT model**, **OpenAI Endpoint**, and **Cognitive search endpoint**, values which you have copied and stored in the text file earlier.
 
    ```
-      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key
+      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key.
       AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with the name of your Open AI Chat Deployment
-      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint
+      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment.
+      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with the name of your Open AI Chat Deployment.
+      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
    ```
 
-1.  After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
+1. After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
 
     ![](../media/img39.png)
 
@@ -97,14 +97,14 @@ The solution is built on top of streamlit application platform. Streamlit allows
 1. In the **appsettings** section of `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
       ```
-      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key
-      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with the name of your Open AI Chat Deployment
-      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint
+      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key.
+      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint.
+      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment.
+      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with the name of your Open AI Chat Deployment.
+      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
       ```
 
-    ![](../media/img42.png)
+     ![](../media/img42.png)
 
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
@@ -136,15 +136,14 @@ The solution is built on top of streamlit application platform. Streamlit allows
    ```bash
    azd up
    ```
+   
 1. Please select your Azure Subscription to use, enter `1`, and click on the **Enter** button.
 
    ![](../media/img29.png)
 
-
 1. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrow.
 
     ![](../media/img30.png)
-
 
 1. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
