@@ -49,6 +49,10 @@ To know more about Azure Function calling please refer to [Function calling is n
 
 1. Next, on the **Choose a Kernel source** pop-up select **Python Environment** this will initiate the installation of extension.
 
-    ![](../media/img62.png) 
+   ![](../media/img62.png) 
 
 1. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
+
+   ![](../media/openai1.1.png)
+
+   >**Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
