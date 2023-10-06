@@ -9,6 +9,14 @@ When the scope for automation spans across multiple functional domains, like hum
 
 ### Task 1:  Build your own Multi-agent Copilot application locally
 
+Before we proceed further, In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file and select open with **Visual Studio Code**.
+
+ ![](../media/img38.png)
+
+- Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
+
+ ![](../media/L4-T1-S0.png)
+
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
 2. Run the below command to change the directory.
@@ -49,25 +57,25 @@ When the scope for automation spans across multiple functional domains, like hum
 
     ![](../media/img41.png)
 
-1. In the `main.bicep` file, replace the file name in **Line 49** with `multi_agent_copilot.py` and press **CTRL + S** to save the file.
+2. In the `main.bicep` file, replace the file name in **Line 49** with `multi_agent_copilot.py` and press **CTRL + S** to save the file.
 
     ![](../media/img51.png)
 
-1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+3. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
-1. Run the below command to change the directory.
+4. Run the below command to change the directory.
 
    ```bash
    cd C:\LabFiles\OpenAIWorkshop
    ```
 
-1. Run the below command to **Authenticate with Azure**. It will redirect to the Azure Authorize website, select your account.
+5. Run the below command to **Authenticate with Azure**. It will redirect to the Azure Authorize website, select your account.
 
    ```bash
    azd auth login
    ```
 
-1. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+6. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
 
    ```bash
    azd config set alpha.resourceGroupDeployments on
@@ -77,33 +85,33 @@ When the scope for automation spans across multiple functional domains, like hum
    azd env new azure-copilot-{DeploymentId}
    ```
 
-1. Run the below command to Provision Azure resources, and deploy your project with a single command.
+7. Run the below command to Provision Azure resources, and deploy your project with a single command.
 
    ```bash
    azd up
    ```
    
-1. Please select your Azure Subscription to use, enter `1`, and click on the **Enter** button.
+8. Please select your Azure Subscription to use, enter `1`, and click on the **Enter** button.
 
    ![](../media/img29.png)
 
-1. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrow.
+9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrow.
 
    ![](../media/img30.png)
 
-1. Next, select **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+10. Next, select **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
     ![](../media/img50.png)
 
-1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 
+11. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 
    5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
 
-1. Naviagte back to the Azure portal, select **App service** from **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group .
+12. Navigate back to the Azure portal, select **App service** from **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group .
 
     ![](../media/img52.png)
 
-1. Next, click on **Browse** to open your Web application.
+13. Next, click on **Browse** to open your Web application.
 
     ![](../media/img53.png)
 
