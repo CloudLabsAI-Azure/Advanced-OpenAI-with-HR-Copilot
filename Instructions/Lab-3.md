@@ -97,14 +97,25 @@ The solution is built on top of streamlit application platform. Streamlit allows
    |---|---|
    |Data source name| **copilotstorage<inject key="Deployment ID" enableCopy="false"/>** **(1)**|
    |Data to extract| **Content and metadata** **(2)**|
-   |Parsing mode| **JSON** **(3)**|
+   |Parsing mode| **JSON array** **(3)**|
    |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (4)**|
    |Container name| **data (5)**|
    |Blob folder| **data/ (5)**|
 
    ![](../media/img79.png)
 
-1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**
+1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
+
+1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**, check the box under **Retrievable (2)** and click on **+ Add field (3)**.
+
+   ![](../media/img80.png)
+
+1. Scroll to the bottom to view the newly added field. Enter the **Field name** as **id**, and set the **Type** to **Edm.string**. Check the boxes under **Filterable**, **Sortable**, and **Facetable**.
+
+   ![](../media/img81.png)
+
+1. 
+
 
 1. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
 
