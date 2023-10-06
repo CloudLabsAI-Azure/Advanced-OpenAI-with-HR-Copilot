@@ -85,7 +85,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
    - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME
    - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #optional, required when USE_SEMANTIC_CACHE="True"
    - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the Primary admin key
-   - **USE_SEMANTIC_CACHE**="**True**" #set to True if use semantic Cache.
+   - **USE_SEMANTIC_CACHE**="**False**" #set to True if use semantic Cache.
 
 
 ### Task 3: Deploy HR/Payroll copilot application to Azure
