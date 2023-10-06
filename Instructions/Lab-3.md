@@ -21,7 +21,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img38.png)
 
-1. The Visual Studio code is opened on the desktop. Edit the below code and update the **OpenAI Key**, **Embedding model and GPT model**, **OpenAI Endpoint**, and **Cognitive search endpoint**, values which you have copied and stored in the text file earlier.
+1. The Visual Studio code is opened on the desktop. Edit the below code and update the **OpenAI Key**, **Embedding Model name and GPT Deployment name**, **OpenAI Endpoint**, and **Cognitive Search Endpoint**, values which you have copied and stored in the text file earlier.
 
    ```
       AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key.
@@ -59,11 +59,11 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. Enter an example question such as `When will I receive W2 form?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
 
-   ![](../media/img23.png)
+   ![](../media/L3-T1-S7.png)
 
 1. Copilot also can help update employee information like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St, San Jose, CA 95112, please update my address` in the HR Copilot app.
 
-    ![](../media/img24.png)
+    ![](../media/L3-T1-S8.png)
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
@@ -106,7 +106,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
 
-1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below image.   
+1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below image. (Make sure you select `Collection(Edm.Single)` as type for contentVector field)
 
    ![](../media/img81.png)
 
@@ -132,7 +132,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
 
-1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image.   
+1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image. (Make sure you select `Collection(Edm.Single)` as type for search_query_vector field)  
 
    ![](../media/img86.png)
 
@@ -148,7 +148,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
    ![](../media/img89.png)
 
-1. Navigate to the **Indexes** tab under the **Search management** section to view the newly created Indexes, copy the Index name, and save it in a text editor for later use.
+1. Navigate to the **Indexes** tab under the **Search management** section to view the newly created Indexes, copy the Index names, and save it in a text editor for later use.
 
    ![](../media/img90.png)
 
@@ -199,34 +199,34 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img41.png)
 
-1. In the **appsettings** section of `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
+2. In the **appsettings** section of `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
       ```
       AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key.
       AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint.
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment.
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with the name of your Open AI Chat Deployment.
+      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with your embedding model name.
+      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with your Open AI Chat Deployment name.
       AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
       ```
 
      ![](../media/img42.png)
 
 
-1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+3. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
 
-1. Run the below command to change the directory.
+4. Run the below command to change the directory.
 
    ```bash
    cd C:\LabFiles\OpenAIWorkshop
    ```
 
-1. Run the below command to **Authenticate with Azure**. It will redirect to the Azure Authorize website, select your account.
+5. Run the below command to **Authenticate with Azure**. It will redirect to the Azure Authorize website, select your account.
 
    ```bash
    azd auth login
    ```
 
-1. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+6. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
 
    ```bash
    azd config set alpha.resourceGroupDeployments on
@@ -236,32 +236,32 @@ The solution is built on top of streamlit application platform. Streamlit allows
    azd env new copilot-{DeploymentId}
    ```
 
-1. Run the below command to Provision Azure resources, and deploy your project with a single command.
+7. Run the below command to Provision Azure resources, and deploy your project with a single command.
 
    ```bash
    azd up
    ```
    
-1. Please select your Azure Subscription to use, enter `1`, and click on the **Enter** button.
+8. Please select your Azure Subscription to use, enter `1`, and click on the **Enter** button.
 
    ![](../media/img29.png)
 
-1. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrow.
+9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrow.
 
     ![](../media/img30.png)
 
-1. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+10. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
     ![](../media/img43.png)
 
-1. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+11. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
 
-1. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
+12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
 
     ![](../media/img44.png)
 
-1. Next, click on **Browse** to open your Web application.
+13. Next, click on **Browse** to open your Web application.
 
     ![](../media/img45.png)
 
