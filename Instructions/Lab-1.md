@@ -18,21 +18,21 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
 1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing  Tier. Click on **Next**.
 
-   ![](../media/img6.png "Azure OpenAI")
+   ![](../media/L1-T1-S3.png "Azure OpenAI")
    
 1. Leave default settings for the Network and Tags tabs and click on **Next**.
 
 1. Verify that validation has passed in the **Review + Submit** pane and then click on **Create**.
 
-   ![](../media/img3.png "Azure OpenAI")
+   ![](../media/L1-T1-S5.png "Azure OpenAI")
    
 1. Deployment will take 5 minutes to complete. Once the deployment is successful, click on **Go to Resource**.
 
-   ![](../media/img4.png "Azure OpenAI")
+   ![](../media/L1-T1-S6.png "Azure OpenAI")
    
 1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
-   ![](../media/img5.png "Azure OpenAI")
+   ![](../media/L1-T1-S7.png "Azure OpenAI")
    
 1. In the Azure OpenAI Studio, click **Deployment (1)** and click **+ Create new deployment (2)**.
 
@@ -49,11 +49,11 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
 
-1. Navigate to the OpenAI resource on the **Azure portal**, click on **Go to Azure OpenAI Studio**, and it will navigate to **Azure AI Studio**.
+1. Navigate to the OpenAI resource on the **Azure portal**, click on **Go to Azure OpenAI Studio**, and it will navigate to **Azure OpenAI Studio**.
 
-   ![](../media/img14.png "Azure OpenAI")
+   ![](../media/L1-T1-S7.png "Azure OpenAI")
       
-1. In the **Azure AI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
    
    ![](../media/img54.png "Azure OpenAI")
 
