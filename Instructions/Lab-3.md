@@ -177,6 +177,19 @@ The solution is built on top of streamlit application platform. Streamlit allows
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
    streamlit run hr_copilot.py
    ```
+1. Run the following query to validate the identity of the employee.
+
+   ```
+   Nancy 1234
+   ```
+  ![](../media/img91.png)
+
+1. Enter an example question such as `When will I receive W2 form?`. The questions are now answered by the Copilot by searching a knowledge base and providing the answer you can review this by navigating back to the command prompt and viewing the output.
+
+   ![](../media/img92.png)
+
+   ![](../media/img93.png)
+
 
 ### Task 3: Deploy HR/Payroll copilot application to Azure
 
