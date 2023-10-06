@@ -106,14 +106,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
 
-1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below table.   
-
-   |Field name|Type|Retrievable|Filterable|Sortable|Facetable|Searchable|
-   |---|---|---|---|---|---|---|
-   | | | check| |
-   |id| Edm.String| check| check|check|check|
-   |content| Edm.String| check| | | | check|
-   |content_vector| Collection(Edm.Single)|check| | | | check|
+1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below image.   
 
    ![](../media/img81.png)
 
@@ -139,15 +132,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
 
-1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and set the values as provided in the below table.   
-
-   |Field name|Type|Retrievable|Filterable|Sortable|Facetable|Searchable|
-   |---|---|---|---|---|---|---|
-   | | | check| |
-   |id| Edm.String| check| check|check|check|
-   |search_query| Edm.String| check| | | | check|
-   |search_query_vector| Collection(Edm.Single)|check| | | | check|
-   |gpt_response| Edm.String| check| | | | check|
+1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image.   
 
    ![](../media/img86.png)
 
@@ -182,6 +167,16 @@ The solution is built on top of streamlit application platform. Streamlit allows
    - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
    - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the Primary admin key
  
+1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+
+1. Run the below command to change the directory and run the HR copilot application using the search service.
+
+   >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+
+    ```bash
+   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+   streamlit run hr_copilot.py
+   ```
 
 ### Task 3: Deploy HR/Payroll copilot application to Azure
 
