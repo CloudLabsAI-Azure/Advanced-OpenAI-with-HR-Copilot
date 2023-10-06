@@ -27,7 +27,7 @@ To know more about Azure Function calling please refer to [Function calling is n
 
     ![](../media/img58.png) 
 
-1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
+1. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
     ![](../media/img59.png) 
 
@@ -51,7 +51,7 @@ To know more about Azure Function calling please refer to [Function calling is n
 
    ![](../media/img62.png) 
 
-1. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
+1. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
    ![](../media/openai1.1.png)
 
