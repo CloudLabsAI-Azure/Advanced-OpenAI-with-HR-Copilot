@@ -53,7 +53,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the OpenAI Model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the OpenAI Deployment names and Model names into the text file for later use.
    
    ![](../media/img54.png "Azure OpenAI")
 
@@ -65,7 +65,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img35.png "Azure OpenAI")
 
-1. From the Overview tab of cognitive search, copy the **URL** and paste it into a text editor for later use.
+1. From the Overview tab of Cognitive search, copy the **URL** and paste it into a text editor for later use.
 
    ![](../media/img36.png "Azure OpenAI")
 
@@ -80,7 +80,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 1. In the `secrets.env` file, replace the values following values with the ones you copied earlier. Press CTRL + S to save the file.
 
     - **AZURE_OPENAI_API_KEY**: Replace with your OpenAI Key
-    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** OpenAI Model Name
+    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** OpenAI Deployment Name
     - **AZURE_OPENAI_ENDPOINT**: Replace with your OpenAI **Language APIs Endpoint**
 
     ![](../media/img68.png)
