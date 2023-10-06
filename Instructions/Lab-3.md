@@ -100,22 +100,72 @@ The solution is built on top of streamlit application platform. Streamlit allows
    |Parsing mode| **JSON array** **(3)**|
    |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (4)**|
    |Container name| **data (5)**|
-   |Blob folder| **data/ (5)**|
-
-   ![](../media/img79.png)
-
-1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
-
-1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**, check the box under **Retrievable (2)** and click on **+ Add field (3)**.
+   |Blob folder| **data/ (6)**|
 
    ![](../media/img80.png)
 
-1. Scroll to the bottom to view the newly added field. Enter the **Field name** as **id**, and set the **Type** to **Edm.string**. Check the boxes under **Filterable**, **Sortable**, and **Facetable**.
+1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
+
+1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below table.   
+
+   |Field name|Type|Retrievable|Filterable|Sortable|Facetable|Searchable|
+   |---|---|---|---|---|---|---|
+   | | | check| |
+   |id| Edm.String| check| check|check|check|
+   |content| Edm.String| check| | | | check|
+   |content_vector| Collection(Edm.Single)|check| | | | check|
 
    ![](../media/img81.png)
 
-1. 
+1. Next, on the **content_vector** field click on the **Eclipse** button in the right corner, and select **Configure vector field**.
 
+   ![](../media/img82.png)
+
+1. On the **Configure vector field** tab set the **Dimension** property to `1536` **(1)** and **Save (2)**. Click on **Next: Create an indexer (3)**.
+
+   ![](../media/img83.png)
+
+1. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
+
+   ![](../media/img84.png)
+
+1. From the **Overview (1)** page, click on **Import data (2)** again.
+
+    ![](../media/img77.png)
+
+1. On the **Connect to your data** tab, select the existing data source and click **Next: Add cognitive skills (Optional)**.
+
+   ![](../media/img85.png)
+
+1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
+
+1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and set the values as provided in the below table.   
+
+   |Field name|Type|Retrievable|Filterable|Sortable|Facetable|Searchable|
+   |---|---|---|---|---|---|---|
+   | | | check| |
+   |id| Edm.String| check| check|check|check|
+   |search_query| Edm.String| check| | | | check|
+   |search_query_vector| Collection(Edm.Single)|check| | | | check|
+   |gpt_response| Edm.String| check| | | | check|
+
+   ![](../media/img86.png)
+
+1. In the **search_query_vector** field, click on the **Eclipse** button in the right corner, and select **Configure vector field**.
+
+   ![](../media/img87.png)
+
+1. On the **Configure vector field** tab set the **Dimension** property to `1536` **(1)** and **Save (2)**. Click on **Next: Create an indexer (3)**.
+
+   ![](../media/img88.png)
+
+1. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
+
+   ![](../media/img89.png)
+
+1. Navigate to the **Indexes** tab under the **Search management** section to view the newly created Indexes, copy the Index name, and save it in a text editor for later use.
+
+   ![](../media/img90.png)
 
 1. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
 
