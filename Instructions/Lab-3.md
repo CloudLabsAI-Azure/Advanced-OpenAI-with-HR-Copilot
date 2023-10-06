@@ -65,11 +65,46 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img24.png)
 
-### Task 2: Integrate Azure Cognitive Search with your Application.
+### Task 2: Integrate Azure Cognitive Search with your Application
 
-1. From the **Azure Portal**, navigate to **Azure OpenAI**, select **Cognitive search (1)** from the left menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. In the **Azure Portal**, search and select **Storage accounts**. 
+
+    ![](../media/img74.png)
+
+1. From the **Storage account** page, select **copilotstorage<inject key="Deployment ID" enableCopy="false"/>**.
+
+    ![](../media/img75.png)
+
+1. From the left menu select **Access keys** under **Security + networking** section. Copy the **Connection string** and store it in a text file for later use.   
+
+    ![](../media/img76.png)
+
+1. Next, navigate to **Azure OpenAI**, select **Cognitive search (1)** from the left menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/img35.png "Azure OpenAI")
+
+1. On the **Overview (1)** page, click on **Import data (2)**.
+
+    ![](../media/img77.png)
+
+1.  Select **Azure Blob storage** as the **Data source**.
+
+    ![](../media/img78.png)
+
+1. On the **Connect to your data** tab, provide the following details and click on **Next Add cognitive skills (Optional) (7)**.
+
+   | Settings| value|
+   |---|---|
+   |Data source name| **copilotstorage<inject key="Deployment ID" enableCopy="false"/>** **(1)**|
+   |Data to extract| **Content and metadata** **(2)**|
+   |Parsing mode| **JSON** **(3)**|
+   |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (4)**|
+   |Container name| **data (5)**|
+   |Blob folder| **data/ (5)**|
+
+   ![](../media/img79.png)
+
+1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**
 
 1. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
 
@@ -81,12 +116,11 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
 1. The Visual Studio code is opened on the desktop. replace the following values and press **CTRL + S** to save the file.
 
-   - **USE_AZCS**="**True**" #if false, it will use the Faiss library for search
-   - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME
-   - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #optional, required when USE_SEMANTIC_CACHE="True"
+   - **USE_AZCS**="**True**" #Set the value to True
+   - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
+   - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
    - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the Primary admin key
-   - **USE_SEMANTIC_CACHE**="**False**" #set to True if use semantic Cache.
-
+ 
 
 ### Task 3: Deploy HR/Payroll copilot application to Azure
 
