@@ -1,15 +1,15 @@
-# Lab 3: Deploy and Run HR/Payroll Copilot Application 
+# Lab 3: Deploy and Run the HR/Payroll Copilot Application
 
    ![](../media/img13.png "Technical design")
 
 **Application Platform:**
-The solution is built on top of streamlit application platform. Streamlit allows the easy creation of interactive Python applications with the ability to render rich & responsive UI such as Chat UI and Python data visualization.
+The solution is built on top of the Streamlit application platform. Streamlit allows the easy creation of interactive Python applications with the ability to render rich and responsive UI, such as chat UI and Python data visualization.
 
 **Smart Agent: At the heart of the solution is the Python object Smart_Agent. The agent has the following components:**
 
-  - **Goals/Tasks:** Smart_Agent is given a persona and instructions to follow to achieve certain goals, for example, HR Copilot is about helping answer HR/Payroll questions and update employee's personal information. This is done using instructions specified in the system message.
+  - **Goals/Tasks:** Smart_Agent is given a persona and instructions to follow to achieve certain goals; for example, HR Copilot is about helping answer HR/Payroll questions and update employees' personal information. This is done using instructions specified in the system message.
 
-  - **NLP interaction & tool execution:** For the ability to use multiple tools and functions to accomplish business tasks, the function calling capability of the 0613 version is utilized to intelligently select the right function (validate identity/search knowledge base/update address/create ticket) based on the agent's judgment of what needs to be done. The agent is also able to engage with users following the instructions/goals defined in the system message.
+  - **NLP interaction and tool execution:** For the ability to use multiple tools and functions to accomplish business tasks, the function calling capability of the 0613 version is utilized to intelligently select the right function (validate identity, search the knowledge base, update address, create ticket) based on the agent's judgment of what needs to be done. The agent is also able to engage with users by following the instructions and goals defined in the system message.
 
   - **Memory:** The agent maintains a memory of the conversation history. The memory is backed by Streamlit's session state.
   - **LLM:** The agent is linked to a 0613 GPT-4 model to power its intelligence.
@@ -17,25 +17,25 @@ The solution is built on top of streamlit application platform. Streamlit allows
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
-1. In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file and select open with  **Visual Studio Code**.
 
     ![](../media/img38.png)
 
-1. The Visual Studio code is opened on the desktop. Edit the below code and update the **OpenAI Key**, **Embedding Model name and GPT Deployment name**, **OpenAI Endpoint**, and **Cognitive Search Endpoint**, values which you have copied and stored in the text file earlier.
+2. The Visual Studio code is opened on the desktop. Edit the below code and update the **OpenAI Key**, **Embedding Model name and GPT Deployment name**, **OpenAI Endpoint**, and **Cognitive Search Endpoint**, values that you have copied and stored in the text file earlier.
 
    ```
-      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key.
+      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
       AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint
       AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with the name of your embedding model deployment.
       AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with the name of your Open AI Chat Deployment.
       AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
    ```
 
-1. After updating values the `secrets.env` file should be as shown in the below screenshot, press **CTRL + S** to save the file.
+3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
     ![](../media/img39.png)
 
-1. To run the application from the command line, navigate to Command Prompt and run the below command:
+4. To run the application from the command line, navigate to Command Prompt and run the below command:
 
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
@@ -44,12 +44,12 @@ The solution is built on top of streamlit application platform. Streamlit allows
    streamlit run hr_copilot.py
    ```
 
-1. Once the execution of `streamlit run hr_copilot.py` is completed. A locally hosted HR Copliot application will be opened in the web browser. 
+5. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
    ![](../media/img17.png)
    ![](../media/img18.png)
 
-1. Run the following query to validate the identity of the employee.
+6. Run the following query to validate the identity of the employee:
 
    ```
    John 1234
@@ -57,11 +57,11 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
    ![](../media/img19.png)
 
-1. Enter an example question such as `When will I receive W2 form?`. The questions are answered by the Copilot by searching a knowledge base and providing the answer.
+7. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
    ![](../media/L3-T1-S7.png)
 
-1. Copilot also can help update employee information like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St, San Jose, CA 95112, please update my address` in the HR Copilot app.
+8. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
 
     ![](../media/L3-T1-S8.png)
 
@@ -71,27 +71,27 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img74.png)
 
-1. From the **Storage account** page, select **copilotstorage<inject key="Deployment ID" enableCopy="false"/>**.
+2. From the **Storage account** page, select **copilotstorage<inject key="Deployment ID" enableCopy="false"/>**.
 
     ![](../media/img75.png)
 
-1. From the left menu select **Access keys** under **Security + networking** section. Copy the **Connection string** and store it in a text file for later use.   
+3. From the left menu, select **Access keys** under **Security + networking** section. Copy the **Connection string** and store it in a text file for later use.
 
     ![](../media/img76.png)
 
-1. Next, navigate to **Azure OpenAI**, select **Cognitive search (1)** from the left menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, navigate to **Azure OpenAI**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/img35.png "Azure OpenAI")
 
-1. On the **Overview (1)** page, click on **Import data (2)**.
+5. On the **Overview (1)** page, click on **Import data (2)**.
 
     ![](../media/img77.png)
 
-1.  Select **Azure Blob storage** as the **Data source**.
+6.  Select **Azure Blob storage** as the **Data source**.
 
     ![](../media/img78.png)
 
-1. On the **Connect to your data** tab, provide the following details and click on **Next Add cognitive skills (Optional) (7)**.
+7. On the **Connect to your data** tab, provide the following details and click on **Next Add cognitive skills (Optional) (7)**.
 
    | Settings| value|
    |---|---|
@@ -104,72 +104,72 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
    ![](../media/img80.png)
 
-1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
+8. On the **Add cognitive skills (optional)** tab, leave the default and click on **Skip to: Customize target index**.
 
-1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below image. (Make sure you select `Collection(Edm.Single)` as type for contentVector field)
+9. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the content vector field).
 
    ![](../media/img81.png)
 
-1. Next, on the **content_vector** field click on the **Eclipse** button in the right corner, and select **Configure vector field**.
+10. Next, on the **content_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
    ![](../media/img82.png)
 
-1. On the **Configure vector field** tab set the **Dimension** property to `1536` **(1)** and **Save (2)**. Click on **Next: Create an indexer (3)**.
+11. On the **Configure vector field** tab, set the **Dimension** property to `1536` **(1)** and **Save (2)**. Click on **Next: Create an indexer (3)**.
 
    ![](../media/img83.png)
 
-1. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
+12. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
 
    ![](../media/img84.png)
 
-1. From the **Overview (1)** page, click on **Import data (2)** again.
+13. From the **Overview (1)** page, click on **Import data (2)** again.
 
     ![](../media/img77.png)
 
-1. On the **Connect to your data** tab, select the existing data source and click **Next: Add cognitive skills (Optional)**.
+14. On the **Connect to your data** tab, select the existing data source and click **Next: Add cognitive skills (optional)**.
 
    ![](../media/img85.png)
 
-1. On the **Add cognitive skills (optional)** tab leave default and click on **Skip to: Customize target index**.
+15. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
 
-1. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image. (Make sure you select `Collection(Edm.Single)` as type for search_query_vector field)  
+16. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
 
    ![](../media/img86.png)
 
-1. In the **search_query_vector** field, click on the **Eclipse** button in the right corner, and select **Configure vector field**.
+17. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
    ![](../media/img87.png)
 
-1. On the **Configure vector field** tab set the **Dimension** property to `1536` **(1)** and **Save (2)**. Click on **Next: Create an indexer (3)**.
+18. On the **Configure vector field** tab, set the **Dimension** property to `1536` **(1)** and **Save (2)**. Click on **Next: Create an indexer (3)**.
 
    ![](../media/img88.png)
 
-1. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
+19. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
 
    ![](../media/img89.png)
 
-1. Navigate to the **Indexes** tab under the **Search management** section to view the newly created Indexes, copy the Index names, and save it in a text editor for later use.
+20. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
 
    ![](../media/img90.png)
 
-1. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
+21. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
 
     ![](../media/img63.png)
 
-1. In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file and select open with  **Visual Studio Code**.
+22. In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
     ![](../media/img38.png)
 
-1. The Visual Studio code is opened on the desktop. replace the following values and press **CTRL + S** to save the file.
+23. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
 
-   - **USE_AZCS**="**True**" #Set the value to True
+   - **USE_AZCS**="**True**" #Set the value to true
    - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
    - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
-   - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the Primary admin key
+   - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
  
-1. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+24. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
-1. Run the below command to change the directory and run the HR copilot application using the search service.
+25. Run the below command to change the directory and run the HR Copilot application using the search service.
 
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
@@ -178,7 +178,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
    streamlit run hr_copilot.py
    ```
 
-1. Run the following query to validate the identity of the employee.
+26. Run the following query to validate the identity of the employee:
 
    ```
    Nancy 1234
@@ -186,24 +186,24 @@ The solution is built on top of streamlit application platform. Streamlit allows
    ![](../media/img91.png)
 
 
-1. Enter an example question such as `When will I receive W2 form?`. The questions are now answered by the Copilot by searching a knowledge base and providing the answer you can review this by navigating back to the command prompt and viewing the output.
+27. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
 
    ![](../media/img92.png)
 
    ![](../media/img93.png)
 
 
-### Task 3: Deploy HR/Payroll copilot application to Azure
+### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
-1. In the LabVM, open File Explorer navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
 
     ![](../media/img41.png)
 
-2. In the **appsettings** section of `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
+2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
       ```
-      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace with the OpenAI Key.
-      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace with the OpenAI Endpoint.
+      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
+      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace it with the OpenAI Endpoint.
       AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with your embedding model name.
       AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with your Open AI Chat Deployment name.
       AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
@@ -212,7 +212,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
      ![](../media/img42.png)
 
 
-3. In the LabVM, navigate to Desktop and search for `cmd` in the search box then click on **Command Prompt**.
+3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
 4. Run the below command to change the directory.
 
@@ -220,7 +220,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
    cd C:\LabFiles\OpenAIWorkshop
    ```
 
-5. Run the below command to **Authenticate with Azure**. It will redirect to the Azure Authorize website, select your account.
+5. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
 
    ```bash
    azd auth login
@@ -236,17 +236,17 @@ The solution is built on top of streamlit application platform. Streamlit allows
    azd env new copilot-{DeploymentId}
    ```
 
-7. Run the below command to Provision Azure resources, and deploy your project with a single command.
+7. Run the below command to provision Azure resources and deploy your project with a single command.
 
    ```bash
    azd up
    ```
    
-8. Please select your Azure Subscription to use, enter `1`, and click on the **Enter** button.
+8. Please select your Azure subscription to use, enter `1`, and click on the **Enter** button.
 
    ![](../media/img29.png)
 
-9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrow.
+9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
 
     ![](../media/img30.png)
 
@@ -254,7 +254,7 @@ The solution is built on top of streamlit application platform. Streamlit allows
 
     ![](../media/img43.png)
 
-11. Once the deployment succeeded, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5 - 10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
 
 12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
