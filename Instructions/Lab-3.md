@@ -174,16 +174,17 @@ The solution is built on top of the Streamlit application platform. Streamlit al
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
     ```bash
-   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-   streamlit run hr_copilot.py
-   ```
+      cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+      streamlit run hr_copilot.py
+    ```
 
 26. Run the following query to validate the identity of the employee:
+   
+      ```
+      Nancy 1234
+      ```
 
-   ```
-   Nancy 1234
-   ```
-   ![](../media/img91.png)
+    ![](../media/img91.png)
 
 
 27. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
