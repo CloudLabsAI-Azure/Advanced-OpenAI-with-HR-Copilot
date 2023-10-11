@@ -25,7 +25,7 @@ To know more about Azure function calling, please refer to [Function calling is 
     - **OPENAI_API_BASE**: `Replace the value with OpenAI Endpoint`
     - **SEARCH_SERVICE_ENDPOINT**: `Replace the value with the Search Service Endpoint`
 
-    ![](../media/img58.png) 
+        ![](../media/img58.png) 
 
 5. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
@@ -49,10 +49,10 @@ To know more about Azure function calling, please refer to [Function calling is 
 
 10. Next, on the **Choose a Kernel source** pop-up, select **Python Environment**. This will initiate the installation of the extension.
 
-   ![](../media/img62.png) 
+       ![](../media/img62.png) 
 
 11. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
-   ![](../media/openai1.1.png)
+       ![](../media/openai1.1.png)
 
-   >**Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
+       > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
