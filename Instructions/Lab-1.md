@@ -45,7 +45,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    - Deployment name: **Copilot-model (3)**
    - Tokens per Minute Rate Limit (thousands): **15K (4)**
 
-   ![](../media/img8.png "Azure OpenAI")
+     ![](../media/img8.png "Azure OpenAI")
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
 
@@ -83,7 +83,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
     - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** OpenAI Deployment Name
     - **AZURE_OPENAI_ENDPOINT**: Replace with your OpenAI **Language APIs Endpoint**
 
-    ![](../media/img68.png)
+      ![](../media/img68.png)
 
 1. Navigate back to File Explorer and open `chatgpt.py` with **Visual Studio Code** to view the code to build a ChatGPT-like app.
 
