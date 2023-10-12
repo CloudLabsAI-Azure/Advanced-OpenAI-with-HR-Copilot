@@ -15,7 +15,7 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the `C:
 
 - Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
 
- ![](../media/L4-T1-S0.png)
+   ![](../media/L4-T1-S0.png)
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
