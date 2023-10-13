@@ -25,6 +25,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 1. Leave default settings for the Network and Tags tabs and click on **Next**.
 
 1. Verify that validation has passed in the **Review + Submit** pane, and then click on **Create**.
+     > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment. Please **DO NOT** click on **Create**. 
 
    ![](../media/L1-T1-S5.png "Azure OpenAI")
    
