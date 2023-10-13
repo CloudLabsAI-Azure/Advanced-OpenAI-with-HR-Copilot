@@ -4,7 +4,7 @@
 
 In this exercise, you will be setting up the Open AI resource and installing the application locally.
 
-### Task 1: Create an OpenAI resource and model 
+### Task 1: Create an OpenAI resource and model **(Read-Only)**
 
 # READ-ONLY
 
