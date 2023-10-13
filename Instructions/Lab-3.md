@@ -21,7 +21,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/img38.png)
 
-2. The Visual Studio code is opened on the desktop. Edit the below code and update the **OpenAI Key**, **Embedding Model name and GPT Deployment name**, **OpenAI Endpoint**, and **Cognitive Search Endpoint**, values that you have copied and stored in the text file earlier.
+2. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, and **Cognitive Search Endpoint**, values that you have copied and stored in the text file earlier.
 
    ```
       AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
@@ -80,7 +80,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/img76.png)
 
-4. Next, navigate to **Azure OpenAI**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, navigate to **Azure AI services**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/img35.png "Azure OpenAI")
 
@@ -111,7 +111,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
    ![](../media/img81.png)
 
-10. Next, on the **content_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
+10. Next, on the **contentVector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
       ![](../media/img82.png)
 
