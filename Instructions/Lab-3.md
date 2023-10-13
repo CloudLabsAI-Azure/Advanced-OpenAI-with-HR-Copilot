@@ -165,10 +165,10 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
 23. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
 
-   - **USE_AZCS**="**True**" #Set the value to true
-   - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
-   - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
-   - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
+     - **USE_AZCS**="**True**" #Set the value to true
+     - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
+     - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
+     - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
  
 24. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
