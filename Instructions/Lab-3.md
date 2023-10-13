@@ -185,8 +185,8 @@ The solution is built on top of the Streamlit application platform. Streamlit al
       > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
     ```bash
-      cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-      streamlit run hr_copilot.py
+    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+    streamlit run hr_copilot.py
     ```
 
 26. Run the following query to validate the identity of the employee:
