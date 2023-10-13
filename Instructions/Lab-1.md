@@ -10,7 +10,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img1.png "Azure OpenAI")
 
-1. From the Azure AI Services | Azure OpenAI pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
    ![](../media/select-openai.png "Azure OpenAI")
 
