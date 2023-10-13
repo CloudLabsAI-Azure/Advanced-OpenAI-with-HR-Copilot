@@ -51,8 +51,7 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the `C:
 
    ![](../media/img48.png)
 
-7. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
-
+7. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
    
 ### Task 2: Deploy a multi-agent Copilot application to Azure
 
