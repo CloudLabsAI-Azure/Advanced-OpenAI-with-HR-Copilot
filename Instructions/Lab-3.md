@@ -210,10 +210,9 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
 1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
 
-
-   ```
-   C:\LabFiles\OpenAIWorkshop\infra
-   ```
+      ```
+      C:\LabFiles\OpenAIWorkshop\infra
+      ```
 
     ![](../media/img41.png)
 
