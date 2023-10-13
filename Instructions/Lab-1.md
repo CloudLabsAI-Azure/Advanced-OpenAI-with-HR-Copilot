@@ -3,8 +3,53 @@
 ## Exercise 1: Open AI Setup and Installation of Applications
 
 In this exercise, you will be setting up the Open AI resource and installing the application locally.
+
+### Task 1: Create an OpenAI resource and model 
+
+# READ-ONLY
+
+ > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
+
+1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+
+   ![](../media/img1.png "Azure OpenAI")
    
-### Task 1: Building a ChatGPT-like application on Streamlit with streaming  
+1. From the **Cognitive Services | Azure OpenAI** pane, click on **Create**.
+
+   ![](../media/img2.png "Azure OpenAI")
+   
+1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing Tier. Click on **Next**.
+
+   ![](../media/L1-T1-S3.png "Azure OpenAI")
+   
+1. Leave default settings for the Network and Tags tabs and click on **Next**.
+
+1. Verify that validation has passed in the **Review + Submit** pane, and then click on **Create**.
+
+   ![](../media/L1-T1-S5.png "Azure OpenAI")
+   
+1. Deployment will take 5 minutes to complete. Once the deployment is successful, click on **Go to Resource**.
+
+   ![](../media/L1-T1-S6.png "Azure OpenAI")
+   
+1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+
+   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   
+1. In the Azure OpenAI Studio, click **Deployment (1)** and click **+ Create new deployment (2)**.
+
+   ![](../media/img7.png "Azure OpenAI")
+   
+1. On the **Deploy Model** tab, enter the following details and click on **Create (5)**.
+
+   - Select a model: **gpt-35-turbo (1)**
+   - Model version: **Auto-update to default (2)**
+   - Deployment name: **Copilot-model (3)**
+   - Tokens per Minute Rate Limit (thousands): **15K (4)**
+
+     ![](../media/img8.png "Azure OpenAI")
+   
+### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
@@ -38,7 +83,11 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img66.png "Azure OpenAI")
 
-1. In the LabVM, open File Explorer, navigate to the `C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT` path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+
+   ```
+   C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
+   ```
 
     ![](../media/img67.png)
 
