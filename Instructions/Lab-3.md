@@ -66,7 +66,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/L3-T1-S8.png)
 
-10. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
+10. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
@@ -196,6 +196,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
       ![](../media/img93.png)
 
+28. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
