@@ -51,6 +51,9 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the `C:
 
    ![](../media/img48.png)
 
+7. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
+
+   
 ### Task 2: Deploy a multi-agent Copilot application to Azure
 
 1. In the LabVM, open File Explorer, navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
