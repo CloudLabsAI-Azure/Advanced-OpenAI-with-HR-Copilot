@@ -22,7 +22,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 4. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
 
     - **DEPLOYMENT_ID**: `Replace the value with the gpt-model name`
-    - **OPENAI_API_BASE**: `Replace the value with OpenAI Endpoint`
+    - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
     - **SEARCH_SERVICE_ENDPOINT**: `Replace the value with the Search Service Endpoint`
 
         ![](../media/img58.png) 
@@ -43,7 +43,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
     ![](../media/img60.png) 
 
-9. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python +Jupyter` appears, click on it to install the Python and Jupyter extensions. 
+9. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python + Jupyter` appears, click on it to install the Python and Jupyter extensions. 
 
     ![](../media/img61.png) 
 
@@ -51,7 +51,11 @@ To know more about Azure function calling, please refer to [Function calling is 
 
        ![](../media/img62.png) 
 
-11. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
+11. Next, on the **Select a Python Environment** pop-up, select **Python 3.11.5**. This will set the Python Environment. 
+
+       ![](../media/select-python.png) 
+
+12. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
        ![](../media/openai1.1.png)
 
