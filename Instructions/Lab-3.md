@@ -66,6 +66,8 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/L3-T1-S8.png)
 
+10. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
+
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
 1. In the **Azure Portal**, search and select **Storage accounts**. 
