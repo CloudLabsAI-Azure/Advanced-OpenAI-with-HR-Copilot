@@ -4,7 +4,9 @@
 
 In this exercise, you will be setting up the Open AI resource and installing the application locally.
 
-### Task 1: Create an OpenAI resource and model (read-only)
+### Task 1: Create an OpenAI resource and model 
+
+# READ-ONLY
 
  > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
@@ -49,15 +51,23 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
 
-1. Navigate to the OpenAI resource on the **Azure portal**, click on **Go to Azure OpenAI Studio**, and it will navigate to **Azure OpenAI Studio**.
+1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+
+   ![](../media/img1.png "Azure OpenAI")
+
+1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+
+   ![](../media/select-openai.png "Azure OpenAI")
+
+1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the OpenAI deployment names and model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-35-turbo** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
    ![](../media/img54.png "Azure OpenAI")
 
-1. Navigate back to the OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Language APIs (4)**, and store them in a text file for later use.
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Language APIs (4)**, and store them in a text file for later use.
 
    ![](../media/img65.png "Azure OpenAI")
    
@@ -73,15 +83,19 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img66.png "Azure OpenAI")
 
-1. In the LabVM, open File Explorer, navigate to the `C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT` path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+
+   ```
+   C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
+   ```
 
     ![](../media/img67.png)
 
-1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press CTRL+S to save the file.
+1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press **CTRL+S** to save the file.
 
-    - **AZURE_OPENAI_API_KEY**: Replace with your OpenAI Key
-    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** OpenAI Deployment Name
-    - **AZURE_OPENAI_ENDPOINT**: Replace with your OpenAI **Language APIs Endpoint**
+    - **AZURE_OPENAI_API_KEY**: Replace with your Azure OpenAI Key
+    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** Azure OpenAI Deployment Name
+    - **AZURE_OPENAI_ENDPOINT**: Replace with your Azure OpenAI **Language APIs Endpoint**
 
       ![](../media/img68.png)
 
@@ -101,7 +115,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
 1. To run the application from the command line, navigate back to Command Prompt and run the below command:
 
-   >**Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
+   > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
    ```
    streamlit run chatgpt.py
@@ -113,8 +127,10 @@ In this exercise, you will be setting up the Open AI resource and installing the
    
    ![](../media/img72.png "Azure OpenAI")
 
-1. Explore the app by running a few queries. 
+1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
 
    ![](../media/img73.png "Azure OpenAI")
+  
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
 
-Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
+1. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.

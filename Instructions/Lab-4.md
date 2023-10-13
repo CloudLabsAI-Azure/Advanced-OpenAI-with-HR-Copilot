@@ -9,7 +9,11 @@ When the scope of automation spans across multiple functional domains, like huma
 
 ### Task 1: Build your own multi-agent Copilot application locally
 
-Before we proceed further, In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file, and select open with **Visual Studio Code**.
+Before we proceed further, In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with **Visual Studio Code**.
+
+```
+C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+```
 
  ![](../media/img38.png)
 
@@ -51,9 +55,15 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the `C:
 
    ![](../media/img48.png)
 
+7. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+   
 ### Task 2: Deploy a multi-agent Copilot application to Azure
 
-1. In the LabVM, open File Explorer, navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned  path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+
+   ```
+   C:\LabFiles\OpenAIWorkshop\infra
+   ```
 
     ![](../media/img41.png)
 
