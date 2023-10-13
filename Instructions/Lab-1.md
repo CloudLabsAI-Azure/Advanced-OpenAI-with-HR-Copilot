@@ -42,7 +42,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
     ![](../media/img67.png)
 
-1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press CTRL+S to save the file.
+1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press **CTRL+S** to save the file.
 
     - **AZURE_OPENAI_API_KEY**: Replace with your Azure OpenAI Key
     - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** Azure OpenAI Deployment Name
