@@ -17,7 +17,11 @@ The solution is built on top of the Streamlit application platform. Streamlit al
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
-1. In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+
+   ```
+   C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+   ```
 
     ![](../media/img38.png)
 
@@ -37,7 +41,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
 4. To run the application from the command line, navigate to Command Prompt and run the below command:
 
-   >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+   > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
    ```
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
@@ -159,8 +163,12 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/img63.png)
 
-22. In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+22. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
+    ```
+    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+    ```
+   
     ![](../media/img38.png)
 
 23. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
@@ -200,11 +208,16 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
-1. In the LabVM, open File Explorer, navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+
+
+   ```
+   C:\LabFiles\OpenAIWorkshop\infra
+   ```
 
     ![](../media/img41.png)
 
-2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
+1. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
       ```
       AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
@@ -217,21 +230,21 @@ The solution is built on top of the Streamlit application platform. Streamlit al
      ![](../media/img42.png)
 
 
-3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
+2. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
-4. Run the below command to change the directory.
+3. Run the below command to change the directory.
 
    ```bash
    cd C:\LabFiles\OpenAIWorkshop
    ```
 
-5. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
+4. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
 
    ```bash
    azd auth login
    ```
 
-6. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+5. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
 
    ```bash
    azd config set alpha.resourceGroupDeployments on
@@ -241,32 +254,32 @@ The solution is built on top of the Streamlit application platform. Streamlit al
    azd env new copilot-{DeploymentId}
    ```
 
-7. Run the below command to provision Azure resources and deploy your project with a single command.
+6. Run the below command to provision Azure resources and deploy your project with a single command.
 
    ```bash
    azd up
    ```
    
-8. Please select your Azure subscription to use, enter `1`, and click on the **Enter** button.
+7. Please select your Azure subscription to use, enter `1`, and click on the **Enter** button.
 
    ![](../media/img29.png)
 
-9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
+8. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
 
     ![](../media/img30.png)
 
-10. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+9. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
     ![](../media/img43.png)
 
-11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+10. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
 
-12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
+11. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
 
     ![](../media/img44.png)
 
-13. Next, click on **Browse** to open your Web application.
+12. Next, click on **Browse** to open your Web application.
 
     ![](../media/img45.png)
 
