@@ -11,47 +11,55 @@ To know more about Azure function calling, please refer to [Function calling is 
 
     ![](../media/img55.png) 
 
-2. Navigate to `C:\LabFiles\openai\Basic_Samples\Functions` and click on **Select folder**. 
+2. Navigate to the below-mentioned path and click on **Select folder**. 
 
-    ![](../media/img56.png) 
+    ```
+    C:\LabFiles\openai\Basic_Samples\Functions
+    ```
 
-3. On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
+   ![](../media/img56.png) 
+
+4. On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
 
     ![](../media/img57.png) 
 
-4. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
+5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
 
     - **DEPLOYMENT_ID**: `Replace the value with the gpt-model name`
-    - **OPENAI_API_BASE**: `Replace the value with OpenAI Endpoint`
+    - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
     - **SEARCH_SERVICE_ENDPOINT**: `Replace the value with the Search Service Endpoint`
 
         ![](../media/img58.png) 
 
-5. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
+6. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
     ![](../media/img59.png) 
 
-6. In the new terminal, run the following command to install the required modules:
+7. In the new terminal, run the following command to install the required modules:
 
     ```
     pip install -r requirements.txt
     ```
 
-7. Once the requirements are installed, close the terminal.
+8. Once the requirements are installed, close the terminal.
 
-8. Open the `working_with_functions.ipynb` file from the left menu.
+9. Open the `working_with_functions.ipynb` file from the left menu.
 
     ![](../media/img60.png) 
 
-9. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python +Jupyter` appears, click on it to install the Python and Jupyter extensions. 
+10. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python + Jupyter` appears, click on it to install the Python and Jupyter extensions. 
 
     ![](../media/img61.png) 
 
-10. Next, on the **Choose a Kernel source** pop-up, select **Python Environment**. This will initiate the installation of the extension.
+11. Next, on the **Choose a Kernel source** pop-up, select **Python Environment**. This will initiate the installation of the extension.
 
        ![](../media/img62.png) 
 
-11. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
+12. Next, on the **Select a Python Environment** pop-up, select **Python 3.11.5**. This will set the Python Environment. 
+
+       ![](../media/select-python.png) 
+
+13. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
        ![](../media/openai1.1.png)
 

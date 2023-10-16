@@ -17,11 +17,15 @@ The solution is built on top of the Streamlit application platform. Streamlit al
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
-1. In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+
+   ```
+   C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+   ```
 
     ![](../media/img38.png)
 
-2. The Visual Studio code is opened on the desktop. Edit the below code and update the **OpenAI Key**, **Embedding Model name and GPT Deployment name**, **OpenAI Endpoint**, and **Cognitive Search Endpoint**, values that you have copied and stored in the text file earlier.
+2. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, and **Cognitive Search Endpoint**, values that you have copied and stored in the text file earlier.
 
    ```
       AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
@@ -37,7 +41,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
 4. To run the application from the command line, navigate to Command Prompt and run the below command:
 
-   >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+   > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
    ```
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
@@ -66,6 +70,8 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/L3-T1-S8.png)
 
+10. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
 1. In the **Azure Portal**, search and select **Storage accounts**. 
@@ -80,7 +86,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/img76.png)
 
-4. Next, navigate to **Azure OpenAI**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, navigate to **Azure AI services**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/img35.png "Azure OpenAI")
 
@@ -111,7 +117,7 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
    ![](../media/img81.png)
 
-10. Next, on the **content_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
+10. Next, on the **contentVector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
       ![](../media/img82.png)
 
@@ -157,16 +163,20 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
     ![](../media/img63.png)
 
-22. In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot` path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+22. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
+    ```
+    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+    ```
+   
     ![](../media/img38.png)
 
 23. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
 
-   - **USE_AZCS**="**True**" #Set the value to true
-   - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
-   - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
-   - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
+     - **USE_AZCS**="**True**" #Set the value to true
+     - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
+     - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
+     - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
  
 24. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
@@ -175,8 +185,8 @@ The solution is built on top of the Streamlit application platform. Streamlit al
       > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
     ```bash
-      cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-      streamlit run hr_copilot.py
+    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+    streamlit run hr_copilot.py
     ```
 
 26. Run the following query to validate the identity of the employee:
@@ -194,10 +204,15 @@ The solution is built on top of the Streamlit application platform. Streamlit al
 
       ![](../media/img93.png)
 
+28. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
-1. In the LabVM, open File Explorer, navigate to the `C:\LabFiles\OpenAIWorkshop\infra` path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+
+      ```
+      C:\LabFiles\OpenAIWorkshop\infra
+      ```
 
     ![](../media/img41.png)
 
