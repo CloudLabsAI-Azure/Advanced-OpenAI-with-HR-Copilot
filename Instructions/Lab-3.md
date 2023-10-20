@@ -1,9 +1,6 @@
 # Lab 3: Deploy and Run the HR/Payroll Copilot Application
 
-   ![](../media/img13.png "Technical design")
-
-**Application Platform:**
-The solution is built on top of the Streamlit application platform. Streamlit allows the easy creation of interactive Python applications with the ability to render rich and responsive UI, such as chat UI and Python data visualization.
+   ![](../media/copilot-overview.png "Technical design")
 
 **Smart Agent: At the heart of the solution is the Python object Smart_Agent. The agent has the following components:**
 
