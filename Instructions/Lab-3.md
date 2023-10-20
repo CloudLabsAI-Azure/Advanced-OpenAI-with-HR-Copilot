@@ -95,7 +95,7 @@
 
     ![](../media/img78.png)
 
-7. On the **Connect to your data** tab, provide the following details and click on **Next Add cognitive skills (Optional) (7)**.
+7. On the **Connect to your data** tab, provide the following details and click on **Next: Add cognitive skills (Optional) (7)**.
 
    | Settings| value|
    |---|---|
@@ -104,7 +104,7 @@
    |Parsing mode| **JSON array** **(3)**|
    |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (4)**|
    |Container name| **data (5)**|
-   |Blob folder| **data/ (6)**|
+   |Blob folder| **data (6)**|
 
    ![](../media/img80.png)
 
@@ -281,4 +281,4 @@
 
     ![](../media/img46.png)
 
-   > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
+    > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
