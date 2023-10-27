@@ -6,12 +6,13 @@
  
 1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
 
-   ![](../cosmos(2).png "Enter Email")
+   ![](../media/cosmos(2).png "Enter Email")
  
    > You will see the SUFFIX value on the **Environment Details** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
- 1. 1. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the top right corner.
+   
+ 1. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the top right corner.
 
-   ![](media/cosmos(3).png)
+    ![](../media/cosmos(3).png "Enter Email")
 
 ## Login to the Azure Portal
 
