@@ -17,7 +17,7 @@ To know more about Azure function calling, please refer to [Function calling is 
     C:\LabFiles\openai\Basic_Samples\Functions
     ```
 
-   ![](../media/img56.png) 
+   ![](../media/l2-t1-s2.png) 
 
 4. On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
 
