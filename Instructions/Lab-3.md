@@ -84,9 +84,9 @@
 
     ![](../media/img76.png)
 
-4. Next, navigate to **Azure AI services**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, navigate to **Azure AI services**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/img35.png "Azure OpenAI")
+   ![](../media/l1-t2-s6.png "Azure OpenAI")
 
 5. On the **Overview (1)** page, click on **Import data (2)**.
 
