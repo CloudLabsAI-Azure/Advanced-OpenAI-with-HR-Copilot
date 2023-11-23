@@ -70,11 +70,11 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
-   ![](../media/T2_S5.png "Azure OpenAI")
+   ![](../media/l1-t2-s5.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/img35.png "Azure OpenAI")
+   ![](../media/l1-t2-s6.png "Azure OpenAI")
 
 1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
 
