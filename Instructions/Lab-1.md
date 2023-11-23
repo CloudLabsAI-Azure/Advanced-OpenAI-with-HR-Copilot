@@ -72,7 +72,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/T2_S5.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **Cognitive search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/img35.png "Azure OpenAI")
 
