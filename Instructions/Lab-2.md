@@ -53,7 +53,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
     ![](../media/img61.png) 
 
-11. Next, on the **Choose a Kernel source** pop-up, select **Python Environment**. This will initiate the installation of the extension.
+11. Next, on the **Choose a Kernel source** pop-up, select **Python Environments**. This will initiate the installation of the extension.
 
        ![](../media/img62.png) 
 
