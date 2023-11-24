@@ -1,1 +1,4 @@
+# 	Build your own Intelligent Copilot with Azure Open AI
 
+##Workshop Overview
+In this workshop, you will learn how to use the Azure OpenAI service to create AI-powered solutions. You will get hands-on experience with the latest AI technologies and will learn how to use Azure OpenAI API. Users can expect a user-friendly and efficient interaction with the Copilot, where queries are answered promptly, and personal information updates are handled seamlessly. The system prioritizes security by verifying user identity before providing sensitive information. The integration of GPT models enhances the system's capabilities, allowing for more intelligent and reliable interactions, especially in scenarios involving external tools and APIs. Overall, the Copilot Solution Model for HR/Payroll aims to streamline and enhance employee self-service and support processes.
