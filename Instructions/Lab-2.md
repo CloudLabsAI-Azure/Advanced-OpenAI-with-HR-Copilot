@@ -23,7 +23,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
     ![](../media/img57.png) 
 
-5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
+5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, Click **File->Save** to save the file.
 
     - **DEPLOYMENT_NAME**: `Replace the value with the gpt-model name`
     - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
