@@ -1,4 +1,4 @@
-# Lab 2: Understand function calling in Open AI GPT
+# Lab 2: Dynamic Dialogue Management with OpenAI's Chat API: Leveraging Function Calls for Interactive Conversations
 
 Over the last couple of years, language models like GPT-3 and GPT-4 have demonstrated their immense power and versatility. These models have been successfully applied in various scenarios, showcasing their capabilities. While these models are already valuable on their own, the Azure OpenAI Service now offers an exciting new feature called function calling. With function calling, the latest versions of GPT-3 and GPT-4 can generate structured JSON outputs based on functions specified in the request. This allows developers to integrate the models with other systems and tools, enabling even more possibilities. However, it's important to note that while the models can generate the function calls, the execution of these calls remains under your control, ensuring that you maintain full control over the process. In this overview, we will explore how function calling works, provide examples of its use cases, and guide you through the steps to leverage this powerful feature in Azure OpenAI Service. 
 
@@ -73,8 +73,44 @@ To know more about Azure function calling, please refer to [Function calling is 
 
        ![](../media/select-python.png) 
 
-13. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
+13. Execute the notebook cell by clicking on the play button for Consolidating **OpenAI GPT Setup** in a Single Step from the Configuration File.
 
-       ![](../media/openai1.1.png)
+       ![](../media/configuration-file.png)
 
-       > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
+14. Execute the next cell by clicking on the play button, this will **create a Function** for OpenAI GPT to Retrieve Function Calls with Customizable Parameters.
+
+       ![](../media/Function-Call.png)
+
+15. Execute the next by clicking on the play button, this cell will **demonstrate function call** Options with OpenAI GPT.
+
+       ![](../media/demonstrating-function-call.png)
+
+16. Execute the next two by clicking on the play button shell in this cell, the first shell will create a **Current Time for a Given Location** function, and the second cell will display the **current time** for the provided location.
+
+       ![](../media/current-time.png)
+
+17. Execute the next two by clicking on the play button shell in this cell, the first shell will create a **Stock Market Data for a Given Index** function, and the second cell will display the Stock Market details for the provided index. 
+
+       ![](../media/stock-Index.png)
+
+18. Execute the next two by clicking on the play button shell in this cell, the first shell will create a **Simple Calculator** function, and the second cell will display the Calculated result for the provided number.
+
+       ![](../media/Calculator.png)
+
+19. Execute the next by clicking on the play button, this cell will Set up **Functions and Descriptions** for an API.
+
+    ![](../media/functions-and-descriptions.png)
+
+20.  Execute the next by three cells which will validate the **function call**.
+
+     ![](../media/functions-and-descriptions1.png)
+
+     ![](../media/functions-and-descriptions2.png)
+
+     ![](../media/functions-and-descriptions3.png)     
+
+22.  Execute the next by two cells which demonstrate **Calling multiple functions together**.
+
+     ![](../media/functions-and-descriptions4.png)
+
+     ![](../media/functions-and-descriptions5.png)   
