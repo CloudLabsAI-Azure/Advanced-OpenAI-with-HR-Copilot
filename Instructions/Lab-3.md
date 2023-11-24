@@ -1,4 +1,4 @@
-# Lab 3: Deploy and Run the HR/Payroll Copilot Application
+# Lab 3: Understand HR Copilot Demo Application
 
    ![](../media/copilot-overview.png "Technical design")
 
