@@ -23,7 +23,19 @@ To know more about Azure function calling, please refer to [Function calling is 
 
     ![](../media/img57.png) 
 
-5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
+1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+
+   ![](../media/l1-t2-s6.png "Azure OpenAI")
+
+1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
+
+   ![](../media/img36.png "Azure OpenAI")
+
+1. From the left menu, select **Keys (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+
+   ![](../media/img66.png "Azure OpenAI")
+
+5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, Click **File->Save** to save the file.
 
     - **DEPLOYMENT_NAME**: `Replace the value with the gpt-model name`
     - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`

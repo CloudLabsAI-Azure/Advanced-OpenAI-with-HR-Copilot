@@ -33,16 +33,18 @@
       AZURE_SEARCH_ADMIN_KEY: "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key
    ```
 
-3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
+3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Next, Click **File->Save** to save the file.
 
     ![](../media/img39.png)
 
-4. To run the application from the command line, navigate to Command Prompt and run the below command:
+4. To run the application from the command line, navigate to Command Prompt and run the below commands:
 
    > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
    ```
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+   ```
+   ```
    streamlit run hr_copilot.py
    ```
 
