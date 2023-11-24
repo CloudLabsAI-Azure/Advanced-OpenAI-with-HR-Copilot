@@ -37,12 +37,14 @@
 
     ![](../media/img39.png)
 
-4. To run the application from the command line, navigate to Command Prompt and run the below command:
+4. To run the application from the command line, navigate to Command Prompt and run the below commands:
 
    > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
    ```
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+   ```
+   ```
    streamlit run hr_copilot.py
    ```
 
