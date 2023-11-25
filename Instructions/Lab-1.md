@@ -55,12 +55,6 @@ In this exercise, you will be setting up the Open AI resource and installing the
    ```
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
    ```
-1. Run the below command in the terminal to download and install the OpenAI Python package.
-
-   ```
-   pip install openai==0.28
-   ```
- 
    
 1. To run the application from the command line, navigate back to Command Prompt and run the below command:
 
