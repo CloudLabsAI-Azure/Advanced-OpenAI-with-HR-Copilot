@@ -73,7 +73,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
        ![](../media/select-python.png) 
 
-13. Execute the notebook cell by clicking on the play button for Consolidating **OpenAI GPT Setup** in a Single Step from the Configuration File.
+13. Execute the notebook cells by clicking on the play button for Consolidating **OpenAI GPT Setup** in a Single Step from the Configuration File.
 
        ![](../media/configuration-file.png)
 
@@ -81,27 +81,27 @@ To know more about Azure function calling, please refer to [Function calling is 
 
        ![](../media/Function-Call.png)
 
-15. Execute the next by clicking on the play button, this cell will **demonstrate function call** Options with OpenAI GPT.
+15. Execute the next cell by clicking on the play button, this cell will **demonstrate function call** Options with OpenAI GPT.
 
        ![](../media/demonstrating-function-call.png)
 
-16. Execute the next two by clicking on the play button shell in this cell, the first shell will create a **Current Time for a Given Location** function, and the second cell will display the **current time** for the provided location.
+16. Execute the next two cells by clicking on the play button shell in this cell, the first shell will create a **Current Time for a Given Location** function, and the second cell will display the **current time** for the provided location.
 
        ![](../media/current-time.png)
 
-17. Execute the next two by clicking on the play button shell in this cell, the first shell will create a **Stock Market Data for a Given Index** function, and the second cell will display the Stock Market details for the provided index. 
+17. Execute the next two cells by clicking on the play button shell in this cell, the first shell will create a **Stock Market Data for a Given Index** function, and the second cell will display the Stock Market details for the provided index. 
 
        ![](../media/stock-Index.png)
 
-18. Execute the next two by clicking on the play button shell in this cell, the first shell will create a **Simple Calculator** function, and the second cell will display the Calculated result for the provided number.
+18. Execute the next two cells by clicking on the play button shell in this cell, the first shell will create a **Simple Calculator** function, and the second cell will display the Calculated result for the provided number.
 
        ![](../media/Calculator.png)
 
-19. Execute the next by clicking on the play button, this cell will Set up **Functions and Descriptions** for an API.
+19. Execute the next cell by clicking on the play button, this cell will Set up **Functions and Descriptions** for an API.
 
     ![](../media/functions-and-descriptions.png)
 
-20.  Execute the next by three cells which will validate the **function call**.
+20.  Execute the next three cells by clicking on the play button, which will validate the **function call**.
 
      ![](../media/functions-and-descriptions1.png)
 
@@ -109,7 +109,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
      ![](../media/functions-and-descriptions3.png)     
 
-22.  Execute the next by two cells which demonstrate **Calling multiple functions together**.
+22.  Execute the next two cells by clicking on the play button, which demonstrate **Calling multiple functions together**.
 
      ![](../media/functions-and-descriptions4.png)
 
