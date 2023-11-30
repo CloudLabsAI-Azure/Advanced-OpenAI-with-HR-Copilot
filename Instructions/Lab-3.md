@@ -318,7 +318,7 @@
 
 9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
 
-    ![](../media/img30.png)
+    ![](../media/img301.png)
 
 10. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
