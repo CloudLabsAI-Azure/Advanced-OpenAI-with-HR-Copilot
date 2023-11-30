@@ -222,8 +222,11 @@
      - **USE_AZCS**="**True**" #Set the value to true
      - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
      - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
+     - **AZURE_SEARCH_SERVICE_ENDPOINT**="YOUR_SEARCH_SERVICE_ENDPOINT" #Replace with your Search Service endpoint.
      - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
- 
+      
+     ![](../media/imgage_14.png)
+     
 36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
 37. Run the below command to change the directory and run the HR Copilot application using the search service.
