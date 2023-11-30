@@ -29,7 +29,7 @@ To know more about Azure function calling, please refer to [Function calling is 
     - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
     - **OPENAI_API_KEY**: `Replace the value with Azure OpenAI Key`
 
-        ![](../media/img58.png) 
+        ![](../media/img581.png) 
 
 6. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
