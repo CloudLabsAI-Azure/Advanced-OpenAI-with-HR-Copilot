@@ -54,7 +54,7 @@
 
    ![](../media/img18.png)
 
-7. Run the following query to validate the identity of the employee:
+6. Run the following query to validate the identity of the employee:
 
    ```
    John 1234
@@ -62,15 +62,18 @@
 
    ![](../media/img19.png)
 
-8. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+>**Note**: Copilot Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely to see in this exercise, but the response may vary.
+
+7. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
    ![](../media/L3-T1-S7.png)
 
-9. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
+
+8. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
 
     ![](../media/L3-T1-S8.png)
 
-10. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+9. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
@@ -228,20 +231,31 @@
      - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key.
      
      ![](../media/image_14.png)     
-
  
 36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
-37. Run the below command to change the directory and run the HR Copilot application using the search service.
+37. Run the below commands to change the directory in CMD.
 
-      > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+    ```
+    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+    ```
+
+38. Run the below commands to upgrade and install the Azure Search service python pacakages.
+
+    ```
+    pip install --upgrade azure-search-documents
+    pip install azure-search-documents==11.4.0b9
+    ```
+
+39. Run the below command to run the HR Copilot application using the search service.
+
+    > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
     ```bash
-    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
     streamlit run hr_copilot.py
     ```
 
-38. Run the following query to validate the identity of the employee:
+40. Run the following query to validate the identity of the employee:
    
       ```
       Nancy 1234
@@ -249,14 +263,15 @@
 
     ![](../media/img91.png)
 
+41. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
 
-39. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
+>**Note**: Copilot Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely to see in this exercise, but the response may vary.
 
       ![](../media/img92.png)
 
       ![](../media/img93.png)
 
-40. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+42. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
