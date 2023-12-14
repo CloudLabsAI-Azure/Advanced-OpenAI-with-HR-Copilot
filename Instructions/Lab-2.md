@@ -61,6 +61,10 @@ To know more about Azure function calling, please refer to [Function calling is 
 
        ![](../media/select-python.png) 
 
+    Note: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
+
+      ![](../media/install.png)
+
 13. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
        ![](../media/openai1.1.png)
