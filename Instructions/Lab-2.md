@@ -61,7 +61,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
        ![](../media/select-python.png) 
 
-    Note: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
+    > **Note**: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
 
       ![](../media/install.png)
 
