@@ -37,3 +37,7 @@
 7. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](../media/select-rg.png "Resource groups")
+
+8. Click "Next" from the bottom right corner to embark on your Lab journey!
+
+     ![](../media/next.png)
