@@ -72,18 +72,6 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
-
-   ![](../media/l1-t2-s6.png "Azure OpenAI")
-
-1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
-
-   ![](../media/img36.png "Azure OpenAI")
-
-1. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
-
-   ![](../media/img66.png "Azure OpenAI")
-
 1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
    ```
