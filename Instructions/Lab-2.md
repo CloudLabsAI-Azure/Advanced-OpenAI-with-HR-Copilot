@@ -5,7 +5,40 @@ Over the last couple of years, language models like GPT-3 and GPT-4 have demonst
 To know more about Azure function calling, please refer to [Function calling is now available in Azure OpenAI Service] (https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
 
 
-### Task 1: Understand Function calling 
+### Task 1: Understand Function calling
+
+1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+
+   ![](../media/img1.png "Azure OpenAI")
+
+1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+
+   ![](../media/select-openai.png "Azure OpenAI")
+
+1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+
+   ![](../media/L1-T1-S7.png "Azure OpenAI")
+      
+1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+   
+   ![](../media/p12.png "Azure OpenAI")
+
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+
+   ![](../media/l1-t2-s5.png "Azure OpenAI")
+   
+1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+
+   ![](../media/l1-t2-s6.png "Azure OpenAI")
+
+1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
+
+   ![](../media/img36.png "Azure OpenAI")
+
+1. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+
+   ![](../media/img66.png "Azure OpenAI")
+
 
 1. Open **Visual Studio Code** from the desktop; next, click on **File** and select **Open Folder**.
 
