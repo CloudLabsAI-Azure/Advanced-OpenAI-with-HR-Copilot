@@ -72,7 +72,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
    ```
    C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
@@ -102,7 +102,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
    ```
    
-1. To run the application from the command line, navigate back to Command Prompt and run the below command:
+1. To execute the application, run the following command.
 
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
@@ -121,3 +121,5 @@ In this exercise, you will be setting up the Open AI resource and installing the
    ![](../media/img73.png "Azure OpenAI")
   
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
+
+1. You have successfully deployed the ChatGPT application using Streamlit. 
