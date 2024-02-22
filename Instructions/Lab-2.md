@@ -89,9 +89,9 @@ To know more about Azure function calling, please refer to [Function calling is 
 
        ![](../media/img62.png) 
 
-12. Next, on the **Select a Python Environment** pop-up, select **Python 3.11.5**. This will set the Python Environment. 
+12. Next, on the **Select a Python Environment** pop-up, select **Python 3.10.0**. This will set the Python Environment. 
 
-       ![](../media/select-python.png) 
+       ![](../media/p24.png) 
 
     > **Note**: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
 
