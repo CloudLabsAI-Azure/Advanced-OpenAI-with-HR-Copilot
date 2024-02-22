@@ -64,9 +64,9 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** model are present with the deployment names as **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p12.png "Azure OpenAI")
+   ![](../media/p23.png "Azure OpenAI")
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
@@ -121,5 +121,3 @@ In this exercise, you will be setting up the Open AI resource and installing the
    ![](../media/img73.png "Azure OpenAI")
   
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
-
-1. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
