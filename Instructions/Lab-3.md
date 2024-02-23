@@ -267,22 +267,27 @@
  
 36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
-37. Run the below command to change the directory and run the HR Copilot application using the search service.
+1. Run the below command in the terminal to change the directory.
 
-      > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
-
-    ```bash
-    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-    streamlit run hr_copilot.py
-    ```
-
-38. Run the following query to validate the identity of the employee:
+   ```bash
+   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+   ```
    
-      ```
-      Nancy 1234
-      ```
+1. To execute the application, run the following command.
 
-    ![](../media/img91.png)
+   > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
+
+   ```
+   streamlit run hr_copilot.py
+   ```
+
+7. Run the following query to validate the identity of the employee:
+
+   ```
+   John 1234
+   ```
+
+   ![](../media/img19.png)
 
 
 39. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
