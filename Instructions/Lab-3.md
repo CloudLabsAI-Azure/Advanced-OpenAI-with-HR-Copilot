@@ -69,12 +69,21 @@
 
     ![](../media/img39.png)
 
-4. To run the application from the command line, navigate to Command Prompt and run the below command:
+1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
 
-   > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+    ![](../media/img69.png) 
+
+1. Run the below command in the terminal to change the directory.
 
    ```
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+   ```
+   
+1. To execute the application, run the following command.
+
+   > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
+
+   ```
    streamlit run hr_copilot.py
    ```
 
