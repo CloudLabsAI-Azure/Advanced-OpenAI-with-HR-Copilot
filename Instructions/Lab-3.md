@@ -310,7 +310,7 @@
       AZURE_SEARCH_ADMIN_KEY:'YOUR_SEARCH_SERVICE_KEY' //#Replace with your Search Service Admin Key.
       ```
 
-     ![](../media/img42.png)
+     ![](../media/hr-8.png)
 
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
