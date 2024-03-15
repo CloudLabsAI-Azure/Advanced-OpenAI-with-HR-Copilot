@@ -22,13 +22,21 @@
 
     ![](../media/img38.png)
 
-1. Navigate back to the **Azure portal** and search for **AI Search (1)** and in the top search box, then select **AI Search (2)** under services.
+1. Navigate back to the **Azure portal** and search for **AI Search (1)** in the top search box, then select **AI Search (2)** under services.
 
+   ![](../media/hr-1.png)
+   
 1. From the **Azure AI Services | AI Search** pane, select **copilot-openAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-1. On the Overview page, copy the **Cognitive Search Endpoint** and store them in a text file for later use.
+   ![](../media/h-2.png)
 
-1. Click on **Keys (1)** from the left menu, copy the **Primary Admin Key (2)** and store them in a text file for later use.
+1. On the Overview page, copy the **Cognitive Search Endpoint** and store it in a text file for later use.
+
+   ![](../media/hr-3.png)
+
+1. Click on **Keys (1)** from the left menu, copy the **Primary Admin Key (2)** and store it in a text file for later use.
+
+   ![](../media/hr-4.png)
    
 1. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
