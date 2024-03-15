@@ -46,7 +46,7 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
     ![](../media/img70.png) 
  
-1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
+1. Next, click on the **Ellipsis Button** on the top, then select **Terminal** and click on **New Terminal**.
 
     ![](../media/img69.png) 
 
