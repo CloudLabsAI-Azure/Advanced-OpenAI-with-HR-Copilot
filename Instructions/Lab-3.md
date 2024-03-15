@@ -277,7 +277,7 @@
       Rebecca 1234
       ```
 
-    ![](../media/img91.png)
+    ![](../media/hr-10.png)
 
 41. Enter an example question such as `Can you explain what are deducted from my paycheck?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
 
