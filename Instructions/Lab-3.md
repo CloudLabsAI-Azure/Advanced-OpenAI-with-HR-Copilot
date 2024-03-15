@@ -283,9 +283,9 @@
 
     >**Note**: Copilot Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely to see in this exercise, but the response may vary.
 
-    ![](../media/img92.png)
+    ![](../media/hr-7.png)
 
-    ![](../media/img93.png)
+    ![](../media/hr-9.png)
 
 42. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
