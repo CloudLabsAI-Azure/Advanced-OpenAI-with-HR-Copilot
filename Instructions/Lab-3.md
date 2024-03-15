@@ -128,7 +128,7 @@
 
    ![](../media/img81.png)
 
-10. Next, on the **contentVector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
+10. Next, on the **contentVector** field, click on the **Ellipsis** button in the right corner and select **Configure vector field**.
 
       ![](../media/img82.png)
 
@@ -178,7 +178,7 @@
 
       ![](../media/img86.png)
 
-23. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
+23. In the **search_query_vector** field, click on the **Ellipsis** button in the right corner and select **Configure vector field**.
 
       ![](../media/img87.png)
 
@@ -218,7 +218,7 @@
 
       ![](../media/img90.png)
 
-33. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
+33. Click on **Keys** from the left menu, copy the **Primary admin key**, and store them in a text file for later use.
 
     ![](../media/img63.png)
 
@@ -266,7 +266,7 @@
 40. Run the following query to validate the identity of the employee:
    
       ```
-      Nancy 1234
+      Rebecca 1234
       ```
 
     ![](../media/img91.png)
