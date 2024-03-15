@@ -5,7 +5,7 @@ Over the last couple of years, language models like GPT-3 and GPT-4 have demonst
 To know more about Azure function calling, please refer to [Function calling is now available in Azure OpenAI Service] (https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
 
 
-### Task 1: Understand Function calling 
+### Task 1: Understand Function calling
 
 1. Open **Visual Studio Code** from the desktop; next, click on **File** and select **Open Folder**.
 
@@ -17,7 +17,7 @@ To know more about Azure function calling, please refer to [Function calling is 
     C:\LabFiles\openai\Basic_Samples\Functions
     ```
 
-   ![](../media/img56.png) 
+   ![](../media/l2-t1-s2.png) 
 
 4. On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
 
@@ -53,13 +53,17 @@ To know more about Azure function calling, please refer to [Function calling is 
 
     ![](../media/img61.png) 
 
-11. Next, on the **Choose a Kernel source** pop-up, select **Python Environment**. This will initiate the installation of the extension.
+11. Next, on the **Choose a Kernel source** pop-up, select **Python Environments**. This will initiate the installation of the extension.
 
        ![](../media/img62.png) 
 
 12. Next, on the **Select a Python Environment** pop-up, select **Python 3.11.5**. This will set the Python Environment. 
 
        ![](../media/select-python.png) 
+
+    > **Note**: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
+
+      ![](../media/install.png)
 
 13. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
