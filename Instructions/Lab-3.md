@@ -80,9 +80,9 @@
 
    >**Note**: Copilot Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely to see in this exercise, but the response may vary.
 
-1. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+1. Enter an example question such as `Can you explain what are deducted from my paycheck?`. The questions are answered by the Copilot by searching a knowledge base.
 
-   ![](../media/L3-T1-S7.png)
+   ![](../media/hr-7.png)
 
 
 1. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
