@@ -31,7 +31,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
         ![](../media/img581.png) 
 
-6. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
+6. Next, click on the **Ellipsis Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
     ![](../media/img59.png) 
 
