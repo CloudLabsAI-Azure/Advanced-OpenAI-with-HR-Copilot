@@ -61,6 +61,10 @@ In this exercise, you will be setting up the Open AI resource and installing the
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
    ```
+   pip install openai==0.28.0
+   ```
+   
+   ```
    streamlit run chatgpt.py
    ```
    
