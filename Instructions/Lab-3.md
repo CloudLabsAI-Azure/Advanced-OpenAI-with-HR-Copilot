@@ -61,6 +61,9 @@
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
    ```
    ```
+   pip install -r requirments.txt
+   ```
+   ```
    streamlit run hr_copilot.py
    ```
 
