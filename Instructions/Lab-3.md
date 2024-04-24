@@ -91,7 +91,7 @@
 
 1. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
-### Task 2: Integrate Azure Cognitive Search with your Application
+### Task 2: Create AI Search Indexers with Documents.
 
 1. In the **Azure Portal**, search and select **Storage accounts**. 
 
@@ -222,150 +222,8 @@
 
       ![](../media/img89.png)
 
-32. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
+32. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, you can review the latest created indexes.
 
       ![](../media/img90.png)
 
-33. Click on **Keys** from the left menu, copy the **Primary admin key**, and store them in a text file for later use.
 
-    ![](../media/img63.png)
-
-34. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
-
-    ```
-    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
-    ```
-   
-    ![](../media/img38.png)
-
-35. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
-
-     - **USE_AZCS**="**True**" #Set the value to true.
-     - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name.
-     - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name.
-     - **AZURE_SEARCH_SERVICE_ENDPOINT**=''YOUR_SEARCH_SERVICE_ENDPOINT'' #Replace with Search Service Endpoint.
-     - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key.
-     
-     ![](../media/image_14.png)     
- 
-36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
-
-37. Run the below commands to change the directory in CMD.
-
-    ```
-    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-    ```
-
-38. Run the below commands to upgrade and install the Azure Search service python pacakages.
-
-    ```
-    pip install --upgrade azure-search-documents
-    pip install azure-search-documents==11.4.0b9
-    ```
-
-39. Run the below command to run the HR Copilot application using the search service.
-
-    > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
-
-    ```bash
-    streamlit run hr_copilot.py
-    ```
-
-40. Run the following query to validate the identity of the employee:
-   
-      ```
-      Rebecca 1234
-      ```
-
-    ![](../media/hr-10.png)
-
-41. Enter an example question such as `Can you explain what are deducted from my paycheck?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
-
-    >**Note**: Copilot Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely to see in this exercise, but the response may vary.
-
-    ![](../media/hr-7.png)
-
-    ![](../media/hr-9.png)
-
-42. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
-
-### Task 3: Deploy the HR/Payroll Copilot application to Azure
-
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
-
-      ```
-      C:\LabFiles\OpenAIWorkshop\infra
-      ```
-
-    ![](../media/img41.png)
-
-2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
-
-      ```
-      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
-      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace it with the OpenAI Endpoint.
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with your embedding model name.
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with your Open AI Chat Deployment name.
-      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
-      AZURE_SEARCH_ADMIN_KEY:'YOUR_SEARCH_SERVICE_KEY' //#Replace with your Search Service Admin Key.
-      ```
-
-     ![](../media/hr-8.png)
-
-
-3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
-
-4. Run the below command to change the directory.
-
-   ```bash
-   cd C:\LabFiles\OpenAIWorkshop
-   ```
-
-5. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
-
-   ```bash
-   azd auth login
-   ```
-
-6. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
-
-   ```bash
-   azd config set alpha.resourceGroupDeployments on
-   ```
-   
-   ```bash
-   azd env new copilot-{DeploymentId}
-   ```
-
-7. Run the below command to provision Azure resources and deploy your project with a single command.
-
-   ```bash
-   azd up
-   ```
-   
-8. Please select your Azure subscription to use, enter `1`, and click on the **Enter** button.
-
-   ![](../media/img29.png)
-
-9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
-
-    ![](../media/img301.png)
-
-10. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
-
-    ![](../media/img43.png)
-
-11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
-
-
-12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
-
-    ![](../media/img44.png)
-
-13. Next, click on **Browse** to open your Web application.
-
-    ![](../media/img45.png)
-
-    ![](../media/img46.png)
-
-    > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
