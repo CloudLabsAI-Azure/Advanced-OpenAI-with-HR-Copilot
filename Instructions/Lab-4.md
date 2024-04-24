@@ -1,4 +1,4 @@
-# Lab 4:  Deploy and Run the HR/Payroll Copilot Application (Optional)
+# Lab 4:  Deploy and Run the HR/Payroll Copilot Application
 
 When the scope of automation spans across multiple functional domains, like humans, an agent may perform better when it can specialize in a single area. So instead of stuffing a single agent with multiple capabilities, we can employ a multiple-agent model, each specializing in a single domain. These agents are managed and coordinated by a manager agent (agent runner). This is called the multi-agent copilot model. The agent runner is responsible for promoting the right agent from the agent pool to be the active agent to interact with the user. It is also responsible for transferring relevant context from agent to agent to ensure continuity. In this model, the agent runner relies on the specialist agent's cue to back off from the conversation to start the transfer. Each specialist agent has to implement a skill to send a notification (back-off method) when it thinks its skillset cannot handle the user's request. On the other hand, the decision on exactly which agent should be selected to take over the conversation is still with the agent runner. When receiving such a request, the agent runner will review the input from the requesting agent to decide which agent to select for the job. This skill also relies on a LLM. The agent runner runs each specialist agent's run method. There can be some persistent context that should be available across agents' sessions. This is implemented as the persistent memory at agent runner. Each specialist agent, depending on the requirement for skill, can be powered by a gpt-35-turbo or gpt-4. The multi-agent solution has the same application platform (streamlit) as the single HR Copilot.
 
@@ -9,24 +9,22 @@ When the scope of automation spans across multiple functional domains, like huma
 
 ### Task 1: Build your own multi-agent Copilot application locally
 
-Before we proceed further, In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with **Visual Studio Code**.
-
-```
-C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
-```
-
- ![](../media/img38.png)
-
-- Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
-
-   ![](../media/L4-T1-S0.png)
-
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
 2. Run the below command to change the directory.
 
    ```
-   cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+   cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\travel_leisure
+   ```
+
+4. On this location create a secrets.env file with the below details.
+
+   ```
+   AZURE_OPENAI_API_KEY="YOUROPENAIKEY"
+   AZURE_OPENAI_ENDPOINT="YOUROPENAIENDPOINT"
+   AZURE_OPENAI_EMB_DEPLOYMENT="YOUROPENAIEMBDEPLOYMENT"
+   AZURE_OPENAI_CHAT_DEPLOYMENT="YOUROPENAIECHATDEPLOYMENT" #name of your Open AI Chat Deployment
+   AZURE_OPENAI_EVALUATOR_DEPLOYMENT="gpt-4" #name of the Open AI Chat Deployment that is used for coordinator agent. Normally a gpt-35-turbo
    ```
 
 3. To run the application from the command line, navigate back to Command Prompt and run the below command:
@@ -34,6 +32,7 @@ C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
    >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and then click on **Enter**.
 
    ```
+   pip install -r requirments.txt
    streamlit run multi_agent_copilot.py
    ```
 
@@ -67,9 +66,9 @@ C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
 
     ![](../media/img41.png)
 
-2. In the `main.bicep` file, replace the file name in **Line 49** with `multi_agent_copilot.py` and press **CTRL + S** to save the file.
+2. In the `main.bicep` file, replace the OpenAI Endpoint and keys including Model Deployment details from **Line 51** with your OpenAI details and press **CTRL + S** to save the file.
 
-    ![](../media/img51.png)
+    ![](../media/multiagentsdeployazure.png)
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
