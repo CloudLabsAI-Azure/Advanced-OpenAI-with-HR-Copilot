@@ -102,3 +102,7 @@ To know more about Azure function calling, please refer to [Function calling is 
        ![](../media/openai1.1.png)
 
        > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
+
+#### Validation
+
+<validation step="2945e6ae-9193-4560-b2b6-9b42f8bc7917" />

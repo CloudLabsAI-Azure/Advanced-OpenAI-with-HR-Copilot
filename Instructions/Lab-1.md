@@ -122,4 +122,8 @@ In this exercise, you will be setting up the Open AI resource and installing the
   
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
 
-1. You have successfully deployed the ChatGPT application using Streamlit. 
+1. You have successfully deployed the ChatGPT application using Streamlit.
+
+#### Validation
+
+<validation step="21770280-2848-4d6f-ad32-f3bda8d83cc9" />
