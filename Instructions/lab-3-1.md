@@ -54,7 +54,7 @@
 
     ![](../media/img38.png)
 
-2. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
+1. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
    ```
       AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key.
@@ -65,7 +65,7 @@
       AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key
    ```
 
-3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
+1. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
     ![](../media/img39.png)
 
@@ -87,13 +87,13 @@
    streamlit run hr_copilot.py
    ```
 
-5. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
+1. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
    ![](../media/img17.png)
 
    ![](../media/img18.png)
 
-7. Run the following query to validate the identity of the employee:
+1. Run the following query to validate the identity of the employee:
 
    ```
    John 1234
@@ -101,15 +101,19 @@
 
    ![](../media/img19.png)
 
-8. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+1. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
    ![](../media/L3-T1-S7.png)
 
-9. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
+1. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
 
     ![](../media/L3-T1-S8.png)
 
-10. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+1. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+
+#### Validation
+
+<validation step="bfc0e96d-c61e-4a91-b1ee-a10df581cdd5" />
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
@@ -246,6 +250,9 @@
 
       ![](../media/img90.png)
 
+#### Validation
+
+<validation step="4d8443a8-0de5-4a6c-ab23-621adb89ca44" />
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
@@ -327,3 +334,7 @@
     ![](../media/img46.png)
 
     > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
+
+#### Validation
+
+<validation step="de89d182-5c32-4a80-b44c-8fd6c706fdbe" />
