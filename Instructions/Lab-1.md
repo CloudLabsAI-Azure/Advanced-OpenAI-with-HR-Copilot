@@ -119,8 +119,6 @@ In this exercise, you will be setting up the Open AI resource and installing the
 1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
 
    ![](../media/img73.png "Azure OpenAI")
-  
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
 
 1. You have successfully deployed the ChatGPT application using Streamlit.
 
