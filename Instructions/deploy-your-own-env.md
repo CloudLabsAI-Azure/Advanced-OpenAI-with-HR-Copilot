@@ -5,9 +5,9 @@ This document will help you deploy the Build your own Intelligent Copilot with A
 
 1. You will need following to get started:
 
+   - **OpenAI Resource**: Enable your subscription for OpenAI resource deployment. [here](https://aka.ms/oai/access).
    - **Azure subscription**: Create a free account [here](https://azure.microsoft.com/free/).
-   - **Azure Permission**: Make sure you have owner Access to the Subscription.
-   -  **Global Administrator**: Make sure you have GA permission on Azure Entra ID.
+   - **Azure Permission**: Make sure you have owner Access to the Subscription. 
 
 ## Prepare your Azure Lab Environment.
 
