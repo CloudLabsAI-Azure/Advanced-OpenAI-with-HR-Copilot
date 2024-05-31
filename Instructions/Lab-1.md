@@ -94,9 +94,11 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
 1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press **CTRL+S** to save the file.
 
-    - **AZURE_OPENAI_API_KEY**: Replace with your Azure OpenAI Key
-    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** model Azure OpenAI Deployment Name
-    - **AZURE_OPENAI_ENDPOINT**: Replace with your Azure OpenAI **Endpoint**
+   | **Variables**                | **Values**                                                    |
+   | ---------------------------- |---------------------------------------------------------------|
+   | **AZURE_OPENAI_API_KEY**     | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace with your **GPT** model Azure OpenAI Deployment Name  | 
+   | **AZURE_OPENAI_ENDPOINT**    | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
 
       ![](../media/img68.png)
 
@@ -131,6 +133,8 @@ In this exercise, you will be setting up the Open AI resource and installing the
 1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
 
    ![](../media/img73.png "Azure OpenAI")
+
+   > **Note**: You may get a different response. please note chatgpt uses LLM and responses may vary everytime.
   
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
 
