@@ -232,4 +232,138 @@
 
       ![](../media/img90.png)
 
+34. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
+    ```
+    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+    ```
+   
+    ![](../media/img38.png)
+
+35. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
+
+     - **USE_AZCS**="**True**" #Set the value to true
+     - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
+     - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
+     - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
+ 
+36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
+
+37. Run the below command to change the directory and run the HR Copilot application using the search service.
+
+      > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+
+    ```bash
+    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+    streamlit run hr_copilot.py
+    ```
+
+38. Run the following query to validate the identity of the employee:
+   
+      ```
+      Nancy 1234
+      ```
+
+    ![](../media/img91.png)
+
+
+39. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
+
+      ![](../media/img92.png)
+
+      ![](../media/img93.png)
+
+      > **Note**: If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 37. 
+
+40. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+
+### Task 3: Deploy the HR/Payroll Copilot application to Azure
+
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+
+      ```
+      C:\LabFiles\OpenAIWorkshop\infra
+      ```
+
+    ![](../media/img41.png)
+
+2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
+
+
+      | **Variables**                | **Values**                                                    |
+      | ---------------------------- |---------------------------------------------------------------|
+      | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_GPT_MODEL** name          |
+      | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
+      | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+      | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+      | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+      | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+
+
+     ![](../media/img42.png)
+
+
+3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
+
+4. Run the below command to change the directory.
+
+   ```bash
+   cd C:\LabFiles\OpenAIWorkshop
+   ```
+
+5. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
+
+   ```bash
+   azd auth login
+   ```
+
+6. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+
+   ```bash
+   azd config set alpha.resourceGroupDeployments on
+   ```
+   
+   ```bash
+   azd env new copilot-{DeploymentId}
+   ```
+
+7. Run the below command to provision Azure resources and deploy your project with a single command.
+
+   ```bash
+   azd up
+   ```
+   
+8. Please select your Azure subscription to use, enter `1`, and click on the **Enter** button.
+
+   ![](../media/img29.png)
+
+9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
+
+    ![](../media/img30.png)
+
+10. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+
+    ![](../media/img43.png)
+
+11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+
+
+12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
+
+    ![](../media/img44.png)
+
+13. Next, click on **Browse** to open your Web application.
+
+    ![](../media/img45.png)
+
+    ![](../media/img46.png)
+
+    > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
+
+   <validation step="e563f609-c163-48c7-816f-e11985cba271" />
+ 
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
