@@ -266,35 +266,32 @@
 
 2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
+   | **Variables**                     | **Values**                                                    |
+   | --------------------------------- |---------------------------------------------------------------|
+   | **AZURE_OPENAI_API_KEY**          | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **AZURE_OPENAI_ENDPOINT**         | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** name          |
+   | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
-      | **Variables**                | **Values**                                                    |
-      | ---------------------------- |---------------------------------------------------------------|
-      | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_GPT_MODEL** name          |
-      | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
-      | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
-      | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-      | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
-      | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+   ![](../media/img42.png)
 
+4. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
-     ![](../media/img42.png)
-
-
-3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
-
-4. Run the below command to change the directory.
+5. Run the below command to change the directory.
 
    ```bash
    cd C:\LabFiles\OpenAIWorkshop
    ```
 
-5. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
+6. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
 
    ```bash
    azd auth login
    ```
 
-6. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+7. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
 
    ```bash
    azd config set alpha.resourceGroupDeployments on
@@ -304,32 +301,32 @@
    azd env new copilot-{DeploymentId}
    ```
 
-7. Run the below command to provision Azure resources and deploy your project with a single command.
+8. Run the below command to provision Azure resources and deploy your project with a single command.
 
    ```bash
    azd up
    ```
    
-8. Please select your Azure subscription to use, enter `1`, and click on the **Enter** button.
+9. Please select your Azure subscription to use, enter `1`, and click on the **Enter** button.
 
    ![](../media/img29.png)
 
-9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
+10. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
 
     ![](../media/img30.png)
 
-10. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
+11. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
     ![](../media/img43.png)
 
-11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+12. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
 
-12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
+13. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
 
     ![](../media/img44.png)
 
-13. Next, click on **Browse** to open your Web application.
+14. Next, click on **Browse** to open your Web application.
 
     ![](../media/img45.png)
 
