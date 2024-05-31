@@ -24,21 +24,20 @@
 
 2. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
+   | **Variables**                | **Values**                                                    |
+   | ---------------------------- |---------------------------------------------------------------|
+   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_GPT_MODEL** name          |      
+   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
+   | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
-      | **Variables**                | **Values**                                                    |
-      | ---------------------------- |---------------------------------------------------------------|
-      | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_GPT_MODEL** name          |
-      | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
-      | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
-      | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-      | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
-      | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
-
-4. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
+3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
     ![](../media/img39.png)
 
-5. To run the application from the command line, navigate to Command Prompt and run the below command:
+4. To run the application from the command line, navigate to Command Prompt and run the below command:
 
    > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
@@ -47,13 +46,13 @@
    streamlit run hr_copilot.py
    ```
 
-6. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
+5. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
    ![](../media/img17.png)
 
    ![](../media/img18.png)
 
-7. Run the following query to validate the identity of the employee:
+6. Run the following query to validate the identity of the employee:
 
    ```
    John 1234
@@ -61,15 +60,15 @@
 
    ![](../media/img19.png)
 
-8. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+7. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
    ![](../media/L3-T1-S7.png)
 
-9. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
+8. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
 
     ![](../media/L3-T1-S8.png)
 
-10. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+9. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
