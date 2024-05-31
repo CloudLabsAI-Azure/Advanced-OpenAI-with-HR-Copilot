@@ -24,20 +24,21 @@
 
 2. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
-   ```
-      AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key.
-      AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint
-      AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment.
-      AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment.
-      AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint.
-      AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key
-   ```
 
-3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
+      | **Variables**                | **Values**                                                    |
+   | ---------------------------- |---------------------------------------------------------------|
+   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_GPT_MODEL** name               |
+   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name               |
+   | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+
+4. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
     ![](../media/img39.png)
 
-4. To run the application from the command line, navigate to Command Prompt and run the below command:
+5. To run the application from the command line, navigate to Command Prompt and run the below command:
 
    > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
 
@@ -46,7 +47,7 @@
    streamlit run hr_copilot.py
    ```
 
-5. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
+6. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
    ![](../media/img17.png)
 
