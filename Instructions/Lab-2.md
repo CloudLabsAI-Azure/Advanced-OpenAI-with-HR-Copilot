@@ -35,7 +35,7 @@ To know more about Azure function calling, please refer to [Function calling is 
    | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
    
 
-        ![](../media/img58.png) 
+   ![](../media/img58.png) 
 
 7. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
