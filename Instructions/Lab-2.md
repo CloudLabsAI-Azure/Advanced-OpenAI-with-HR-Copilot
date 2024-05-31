@@ -25,11 +25,6 @@ To know more about Azure function calling, please refer to [Function calling is 
 
 5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
 
-    - **DEPLOYMENT_NAME**: `Replace the value with the gpt-model name`
-    - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
-    - **OPENAI_API_KEY**: `Replace the value with Azure OpenAI Key`
-    - **SEARCH_SERVICE_ENDPOINT**: `Replace the value with the Search Service Endpoint`
-    - **SEARCH_ADMIN_KEY**: `Replace the value with the Search Service key`
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
