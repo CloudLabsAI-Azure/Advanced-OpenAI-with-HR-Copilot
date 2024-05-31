@@ -251,6 +251,8 @@
 
       ![](../media/img93.png)
 
+   > **Note**: If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 37. 
+
 40. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
