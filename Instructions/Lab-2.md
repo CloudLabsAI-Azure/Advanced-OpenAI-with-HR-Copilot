@@ -25,7 +25,6 @@ To know more about Azure function calling, please refer to [Function calling is 
 
 5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
 
-
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
    | **DEPLOYMENT_NAME**          |  Replace the value with your **gpt-model** name               |
@@ -34,7 +33,6 @@ To know more about Azure function calling, please refer to [Function calling is 
    | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
    | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
    
-
    ![](../media/img58.png) 
 
 7. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
