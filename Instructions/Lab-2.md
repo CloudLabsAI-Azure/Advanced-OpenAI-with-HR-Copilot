@@ -25,39 +25,43 @@ To know more about Azure function calling, please refer to [Function calling is 
 
 5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
 
-    - **DEPLOYMENT_NAME**: `Replace the value with the gpt-model name`
-    - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
-    - **OPENAI_API_KEY**: `Replace the value with Azure OpenAI Key`
-    - **SEARCH_SERVICE_ENDPOINT**: `Replace the value with the Search Service Endpoint`
-    - **SEARCH_ADMIN_KEY**: `Replace the value with the Search Service key`
+
+   | **Variables**                | **Values**                                                    |
+   | ---------------------------- |---------------------------------------------------------------|
+   | **DEPLOYMENT_NAME**          |  Replace the value with your **gpt-model** name               |
+   | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+   
 
         ![](../media/img58.png) 
 
-6. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
+7. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
     ![](../media/img59.png) 
 
-7. In the new terminal, run the following command to install the required modules:
+8. In the new terminal, run the following command to install the required modules:
 
     ```
     pip install -r requirements.txt
     ```
 
-8. Once the requirements are installed, close the terminal.
+9. Once the requirements are installed, close the terminal.
 
-9. Open the `working_with_functions.ipynb` file from the left menu.
+10. Open the `working_with_functions.ipynb` file from the left menu.
 
     ![](../media/img60.png) 
 
-10. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python + Jupyter` appears, click on it to install the Python and Jupyter extensions. 
+11. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python + Jupyter` appears, click on it to install the Python and Jupyter extensions. 
 
     ![](../media/img61.png) 
 
-11. Next, on the **Choose a Kernel source** pop-up, select **Python Environments**. This will initiate the installation of the extension.
+12. Next, on the **Choose a Kernel source** pop-up, select **Python Environments**. This will initiate the installation of the extension.
 
        ![](../media/img62.png) 
 
-12. Next, on the **Select a Python Environment** pop-up, select **Python 3.11.5**. This will set the Python Environment. 
+13. Next, on the **Select a Python Environment** pop-up, select **Python 3.11.5**. This will set the Python Environment. 
 
        ![](../media/select-python.png) 
 
@@ -65,7 +69,7 @@ To know more about Azure function calling, please refer to [Function calling is 
 
       ![](../media/install.png)
 
-13. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
+14. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
        ![](../media/openai1.1.png)
 
