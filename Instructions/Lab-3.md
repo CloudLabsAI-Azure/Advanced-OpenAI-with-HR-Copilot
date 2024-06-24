@@ -135,7 +135,7 @@
 
       ![](../media/l3-t2-s14.png)
 
-15. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **CompetionModel** . Click on **Save**.
+15. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **text-embedding-ada-002** . Click on **Save**.
 
       ![](../media/l3-t2-s15.png)
 
