@@ -190,63 +190,65 @@
 
 17. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
 
-      ![](../media/l3-t2-s17.png)
-    
-18. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
+     ![](../media/l3-t2-s17.png)
+
+     > **Note**: If you are unable to save the **Configure Vector Field**, try deleting the **ContentVector** field. Then, recreate the field with the name **ContentVector** and select **Collection.single** for the **ContentVector** field and reperform from step 10 to step 17.
+ 
+19. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
 
       ![](../media/img84.png)
 
-19. From the **Overview (1)** page, click on **Import data (2)** again.
+20. From the **Overview (1)** page, click on **Import data (2)** again.
 
        ![](../media/img77.png)
 
-20. On the **Connect to your data** tab, select the existing data source and select the storage account then, click **Next: Add cognitive skills (optional)**.
+21. On the **Connect to your data** tab, select the existing data source and select the storage account then, click **Next: Add cognitive skills (optional)**.
 
       ![](../media/img85.png)
 
-21. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
+22. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
 
-22. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
+23. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
 
       ![](../media/img86.png)
 
-23. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
+24. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
       ![](../media/img87.png)
 
-24. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
+25. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
 
       ![](../media/l3-t2-s11.png)
 
-25. On the **Vector profile** tab, Click on **Create** under No algorithm configurations.
+26. On the **Vector profile** tab, Click on **Create** under No algorithm configurations.
 
       ![](../media/l3-t2-s12.png)
 
-26. On the **Vector algorithm** tab, leave the default and click on **Save**.
+27. On the **Vector algorithm** tab, leave the default and click on **Save**.
 
       ![](../media/l3-t2-s13.png)
 
-27. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
+28. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
 
       ![](../media/l3-t2-s14.png)
 
-28. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **text-embedding-ada-002** . Click on **Save**.
+29. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **text-embedding-ada-002** . Click on **Save**.
 
       ![](../media/l3-t2-s15.png)
 
-29. On the **Vector profile** tab, select the Vectorizers created in the previous step and Click on **Save**.
+30. On the **Vector profile** tab, select the Vectorizers created in the previous step and Click on **Save**.
 
       ![](../media/l3-t2-s16.png)
 
-30. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
+31. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
 
       ![](../media/l3-t2-s17.png)
 
-31. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
+32. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
 
       ![](../media/img89.png)
 
-32. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
+33. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
 
       ![](../media/img90.png)
 
