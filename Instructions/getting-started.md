@@ -31,7 +31,8 @@
 4. If you see the pop-up **Stay Signed in?**, select **No**.
 
 5. If **Action Required** pop-up window appears, click on **Ask later**.
- ![](../media/ActionRequired.png)
+
+      ![](../media/ActionRequired.png)
 
 6. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
