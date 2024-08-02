@@ -4,6 +4,12 @@
 
 In this exercise, you will be setting up the Open AI resource and installing the application locally.
 
+## Lab objectives
+In this lab, you will complete the following tasks:
+
+- Task 1: Create an OpenAI resource and model **(Read-Only)**
+- Task 2: Building a ChatGPT-like application on Streamlit with streaming
+  
 ### Task 1: Create an OpenAI resource and model **(Read-Only)**
 
 # READ-ONLY
@@ -139,3 +145,9 @@ In this exercise, you will be setting up the Open AI resource and installing the
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
 
 1. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
+
+## Summary
+
+In this exercise, you have created an OpenAI resource and model and built a ChatGPT-like application on Streamlit with streaming.
+
+### You have successfully completed the lab
