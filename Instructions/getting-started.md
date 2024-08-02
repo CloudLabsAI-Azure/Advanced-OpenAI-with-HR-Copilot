@@ -4,17 +4,22 @@
 
 ## Overview
 
-
+In this hands-on-lab, you will set up the Azure OpenAI resource and install the application locally. Over the past few years, language models like GPT-3 and GPT-4 have proven their versatility across various applications. The latest Azure OpenAI Service now includes a feature called function calling, which allows GPT-3 and GPT-4 to generate structured JSON outputs based on predefined functions. This integration capability enables developers to connect these models with other systems and tools, enhancing their functionality. In this overview, we will explore how function calling operates, examine its use cases, and guide you through leveraging this feature within the Azure OpenAI Service. Additionally, we'll introduce the Smart_Agent Python object, detailing its components like goals/tasks, NLP interaction and tool execution, memory management, and its integration with a multi-agent copilot model. This model utilizes specialist agents managed by an agent runner, ensuring efficient task handling and continuity across different domains.
 
 ## Objective
 
 By the end of this lab, you will be able to:
 
-
-
+- **Getting Started with Building a Chat Application**:
+- **Understand function calling in Open AI GPT**:
+- **Deploy and Run the HR/Payroll Copilot Application**:
+- **Understand HR Copilot Demo Application**:
+  
 ## Pre-requisites
 
-
+1. **Familiarity with GPT Models**: Familiarity with GPT-3 and GPT-4, including their capabilities and use cases.
+2. **Experience with REST APIs**: Familiarity with REST APIs, as function calling involves interacting with APIs.
+3. **Basic Programming Skills**: Proficiency in Python programming to follow along with the Smart_Agent Python object setup and multi-agent copilot model implementation.
 
 ## Architecture
 
