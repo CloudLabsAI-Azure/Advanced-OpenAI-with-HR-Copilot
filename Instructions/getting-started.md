@@ -1,3 +1,31 @@
+# Build your own Intelligent HR Copilot with Azure Open AI
+
+### Overall Estimated Duration: 4 Hours
+
+## Overview
+
+
+
+## Objective
+
+By the end of this lab, you will be able to:
+
+
+
+## Pre-requisites
+
+
+
+## Architecture
+
+
+
+## Architecture Diagram
+
+ ![Access Your VM and Lab Guide](../media/arch20.png)
+
+## Explanation of Components
+
 ## Getting Started with the Lab
 
 1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and the lab manual. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
