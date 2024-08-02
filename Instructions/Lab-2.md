@@ -4,7 +4,12 @@ Over the last couple of years, language models like GPT-3 and GPT-4 have demonst
 
 To know more about Azure function calling, please refer to [Function calling is now available in Azure OpenAI Service] (https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
 
+## Lab objectives
 
+You will be able to complete the following tasks:
+
+- Task 1: Understand Function calling
+  
 ### Task 1: Understand Function calling
 
 1. Open **Visual Studio Code** from the desktop; next, click on **File** and select **Open Folder**.
@@ -72,3 +77,4 @@ To know more about Azure function calling, please refer to [Function calling is 
        ![](../media/openai1.1.png)
 
        > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
+
