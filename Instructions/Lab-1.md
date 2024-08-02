@@ -1,7 +1,5 @@
 # Lab 1: Getting Started with Building a Chat Application
 
-## Exercise 1: Open AI Setup and Installation of Applications
-
 In this exercise, you will be setting up the Open AI resource and installing the application locally.
 
 ## Lab objectives
@@ -9,7 +7,9 @@ In this lab, you will complete the following tasks:
 
 - Task 1: Create an OpenAI resource and model **(Read-Only)**
 - Task 2: Building a ChatGPT-like application on Streamlit with streaming
-  
+
+## Exercise 1: Open AI Setup and Installation of Applications
+
 ### Task 1: Create an OpenAI resource and model **(Read-Only)**
 
 # READ-ONLY
