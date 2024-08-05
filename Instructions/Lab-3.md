@@ -11,6 +11,13 @@
   - **Memory:** The agent maintains a memory of the conversation history. The memory is backed by Streamlit's session state.
   - **LLM:** The agent is linked to a 0613 GPT-4 model to power its intelligence.
 
+## Lab objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Build your own HR/Payroll copilot locally
+- Task 2: Integrate Azure Cognitive Search with your Application
+- Task 3: Deploy the HR/Payroll Copilot application to Azure
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
