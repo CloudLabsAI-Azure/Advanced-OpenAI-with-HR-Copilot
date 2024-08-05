@@ -10,10 +10,10 @@ In this hands-on-lab, you will set up the Azure OpenAI resource and install the 
 
 By the end of this lab, you will be able to:
 
-- **Getting Started with Building a Chat Application**:
-- **Understand function calling in Open AI GPT**:
-- **Deploy and Run the HR/Payroll Copilot Application**:
-- **Understand HR Copilot Demo Application**:
+- **Getting Started with Building a Chat Application**: Understand how to deploy OpenAI models and create responsive AI applications with web development tools by creating an OpenAI resource in Azure, configuring a model, and securing it with API keys.
+- **Understand function calling in Open AI GPT**: You will have gained a thorough understanding of function calling within the context of programming. You will be able to define functions, understand their syntax, and recognize the importance of parameters and return values. 
+- **Deploy and Run the HR/Payroll Copilot Application**: Gain practical skills in creating AI-driven applications, enhancing search capabilities, and managing cloud deployments, resulting in a scalable and efficient solution.
+- **Understand HR Copilot Demo Application**: Learn how to build a multi-agent Copilot application locally and then deploy it to Azure, gaining hands-on experience in both development and cloud deployment.
   
 ## Pre-requisites
 
