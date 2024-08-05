@@ -4,6 +4,12 @@ When the scope of automation spans across multiple functional domains, like huma
 
 ![](../media/img20.png)
 
+## Lab objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Build your own multi-agent Copilot application locally
+- Task 2: Deploy a multi-agent Copilot application to Azure
 
 ## Exercise 1: Deploy and run the multi-agent Copilot application
 
