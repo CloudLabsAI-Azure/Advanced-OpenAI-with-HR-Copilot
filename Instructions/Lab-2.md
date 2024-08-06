@@ -78,3 +78,8 @@ You will be able to complete the following tasks:
 
        > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
 
+## Summary
+
+In this exercise, you have understood Function calling.
+
+### You have successfully completed the lab
