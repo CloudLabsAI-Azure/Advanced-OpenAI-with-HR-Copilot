@@ -31,6 +31,12 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Explanation of Components
 
+1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
+1. **Azure OpenAI Models**: Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
+1. **Azure App Services**: Azure App Services is a fully managed platform for building, deploying, and scaling web apps and APIs. It supports various programming languages and frameworks, offering built-in security, load balancing, and auto-scaling to simplify application management.
+1. **Azure AI Search**: Azure AI Search is a cloud-based service that enhances search experiences with AI-powered capabilities like full-text and cognitive search. It integrates easily with various data sources for rich, insightful search results.
+1. **Azure Blob Storage**: Azure Blob Storage is a scalable solution for storing unstructured data like text and multimedia files.
+
 ## Getting Started with the Lab
 
 1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and the lab manual. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
