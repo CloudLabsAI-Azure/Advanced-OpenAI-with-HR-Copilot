@@ -1,5 +1,7 @@
 # Lab 1: Getting Started with Building a Chat Application
 
+### Estimated Duration: 30 minutes
+
 In this exercise, you will be setting up the Open AI resource and installing the application locally.
 
 ## Lab objectives
