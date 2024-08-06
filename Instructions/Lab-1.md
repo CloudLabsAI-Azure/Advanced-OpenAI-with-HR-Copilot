@@ -45,9 +45,17 @@ In this lab, you will complete the following tasks:
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
    
-1. In the Azure OpenAI Studio, click **Deployments (1)** and click **+ Create new deployment (2)**.
+1. After navigating to Azure AI Studio, click on **Explore the new experience** pop-up on the top.
 
-   ![](../media/img7.png "Azure OpenAI")
+   ![](../media/explore_new-exp.jpg)
+
+1. Click on **Deployments (1)** from the left navigation pane, click on **+ Deploy model** , select **Deploy base Model (2)**.  
+
+   ![](../media/deploy-1.jpg)
+
+1. In the **Select a model** window, select **gpt-4(1)** and click on **Confirm (2)**.
+
+   ![](../media/new11.png)
    
 1. On the **Deploy Model** tab, enter the following details and click on **Create (5)**.
 
@@ -58,7 +66,7 @@ In this lab, you will complete the following tasks:
     - **Enable dynamic quota**: Enabled (5)
     - Click on **Deploy** (6)
 
-     ![](../media/img8.png "Azure OpenAI")
+     ![](../media/new9.png)
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
 
@@ -76,7 +84,7 @@ In this lab, you will complete the following tasks:
       
 1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p12.png "Azure OpenAI")
+   ![](../media/new10.png)
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
