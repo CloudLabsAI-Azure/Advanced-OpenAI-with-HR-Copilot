@@ -27,7 +27,7 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Architecture Diagram
 
- ![Access Your VM and Lab Guide](../media/arch20.png)
+ ![](../media/ARCH-5.PNG)
 
 ## Explanation of Components
 
