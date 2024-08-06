@@ -51,10 +51,12 @@ In this lab, you will complete the following tasks:
    
 1. On the **Deploy Model** tab, enter the following details and click on **Create (5)**.
 
-   - Select a model: **gpt-4 (1)**
-   - Model version: **Auto-update to default (2)**
-   - Deployment name: **Copilot-model (3)**
-   - Tokens per Minute Rate Limit (thousands): **15K (4)**
+    - **Deployment name**: copilot-gpt (1) 
+    - **Model version**: 0613 (Default) (2)
+    - **Deployment type**: Standard (3)
+    - **Tokens per Minute Rate Limit (thousands)**: 15K (4)
+    - **Enable dynamic quota**: Enabled (5)
+    - Click on **Deploy** (6)
 
      ![](../media/img8.png "Azure OpenAI")
    
