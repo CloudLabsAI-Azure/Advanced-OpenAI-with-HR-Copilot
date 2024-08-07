@@ -8,7 +8,7 @@ In this hands-on-lab, you will set up the Azure OpenAI resource and install the 
 
 ## Objective
 
-By the end of this lab, you will be able to:
+Understand how to deploy OpenAI models in Azure, configure them, and secure with API keys. Gain skills in programming functions and deploying multi-agent Copilot applications to Azure. By the end of this lab, you will be able to:
 
 - **Getting Started with Building a Chat Application**: Understand how to deploy OpenAI models and create responsive AI applications with web development tools by creating an OpenAI resource in Azure, configuring a model, and securing it with API keys.
 - **Understand function calling in Open AI GPT**: You will have gained a thorough understanding of function calling within the context of programming. You will be able to define functions, understand their syntax, and recognize the importance of parameters and return values. 
