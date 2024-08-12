@@ -100,11 +100,11 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
 
-1. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Note the Azure OpenAI deployment names and model names.
    
    ![](../media/new10.png)
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
@@ -112,11 +112,11 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
-1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
+1. From the Overview tab of Cognitive Search, Note the **URL**.
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+1. From the left menu, select **Key (1)**, Note the **Primary admin key (2)**.
 
    ![](../media/img66.png "Azure OpenAI")
 
@@ -133,7 +133,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
    | **AZURE_OPENAI_API_KEY**     | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | **copilot-gpt**  | 
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is **copilot-gpt** | 
    | **AZURE_OPENAI_ENDPOINT**    | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
 
       ![](../media/img68.png)

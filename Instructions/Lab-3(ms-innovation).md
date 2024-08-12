@@ -21,6 +21,14 @@ You will be able to complete the following tasks:
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
+**HR/Payroll Copilot**: The HR/Payroll Copilot is a locally hosted application designed to assist with HR and payroll-related tasks. It integrates with Azure OpenAI and Cognitive Search to perform functions such as:
+
+- **Employee Identity Verification**: Confirming employee identity based on provided credentials.
+- **Information Queries**: Answering questions related to HR policies, payroll schedules, or other employee concerns.
+- **Information Updates**: Allowing employees to submit requests for updates to their personal information, such as address changes, and logging these requests for HR review.
+
+By running this application locally, you can test and interact with its features to ensure it functions as intended before deployment in a production environment.
+
 1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
    ```
@@ -33,12 +41,12 @@ You will be able to complete the following tasks:
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
-   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_GPT_MODEL** name          |      
-   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
-   | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
-   | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-   | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
-   | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**          |  Replace the value with your **YOUR_GPT_MODEL** name that is **copilot-gpt**         |      
+   | **AZURE_OPENAI_EMB_DEPLOYMENT**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name that is **CompletionModel**    |
+   | **AZURE_OPENAI_API_ENDPOINT**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **AZURE_OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **AZURE_SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **AZURE_SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
 3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
@@ -79,27 +87,29 @@ You will be able to complete the following tasks:
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
-1. In the **Azure Portal**, search and select **Storage accounts**. 
+In this task, you will configure Azure Storage and AI Search services, update credentials in the `secrets.env` file, and run the HR Copilot application locally using Streamlit. You will test the application by querying employee data and verify its integration with Azure services. Troubleshooting steps will include installing required packages to ensure smooth functionality.
+
+1. In the **Azure Portal**, start by searching for **Storage accounts** in the search bar at the top of the page. Click on the **Storage accounts** option from the search results.
 
     ![](../media/img74.png)
 
-2. From the **Storage account** page, select **copilotstorage<inject key="Deployment ID" enableCopy="false"/>**.
+2. From the **Storage accounts** page, locate and select the storage account named **copilotstorage<inject key="Deployment ID" enableCopy="false"/>**. This action will open the details and management options for the selected storage account.
 
     ![](../media/img75.png)
 
-3. From the left menu, select **Access keys** under **Security + networking** section. Copy the **Connection string** and store it in a text file for later use.
+3. From the left-hand menu of the **copilotstorage** page, choose **Access keys** under the **Security + networking** section. This section will display the connection strings associated with your storage account. Copy the **Connection string** provided and save it in a text file for future reference and use.
 
     ![](../media/img76.png)
 
-4. Next, navigate to **Azure AI services**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, in the **Azure AI services** section, choose **AI search** from the left-hand menu. Then, click on the service named **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** to access its configuration and management options.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
-5. On the **Overview (1)** page, click on **Import data (2)**.
+5. On the **Overview** page, locate and click on the **Import data** button. This action will initiate the process for importing data into your Azure AI service.
 
     ![](../media/img77.png)
 
-6.  Select **Azure Blob storage** as the **Data source**.
+6. Choose **Azure Blob storage** as the **Data source**. This option allows you to import data from your Azure Blob storage into the AI service.
 
     ![](../media/img78.png)
 
@@ -116,17 +126,29 @@ You will be able to complete the following tasks:
 
    ![](../media/img80.png)
 
-8. On the **Add cognitive skills (optional)** tab, leave the default and click on **Skip to: Customize target index**.
+8. On the **Add cognitive skills (optional)** tab, accept the default settings and click on **Skip to: Customize target index** to move forward.
 
-9. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the content vector field).
+9. On the **Customize target index** tab, enter **payroll-hr (1)** as the **Index name**. 
 
-   ![](../media/img81.png)
+   ![](../media/img81part1.png)
+
+1. Configure the fields as shown in the image:
+
+   - **contentVector**: Set the type to `Collection(Edm.Single)`.
+
+   - **id**: Check the boxes for **Filterable**, **Sortable**, and **Facetable**.
+
+   - **content**: Check the **Searchable** box.
+
+   - Ensure **Retrievable** is selected for all fields.
+
+     ![](../media/img81.png)
 
 10. Next, on the **contentVector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
       ![](../media/img82.png)
 
-11. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
+11. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and click on **Create** under **No vector search profiles**.
 
       ![](../media/l3-t2-s11.png)
 
@@ -170,7 +192,19 @@ You will be able to complete the following tasks:
 
 21. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
 
-22. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
+22. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. 
+
+      ![](../media/img86part1.png)
+
+1. Click on **+ Add field** and create the fields **id**, **search_query**, **search_query_vector**, and **gpt_response** with the following configurations:
+
+   - **id**: Check the boxes for **Filterable**, **Sortable**, and **Facetable**.
+
+   - **search_query** and **gpt_response**: Check the **Searchable** box.
+
+   - **search_query_vector**: Select **Collection(Edm.Single)** as the type.
+
+   - Ensure **Retrievable** is selected for all fields.
 
       ![](../media/img86.png)
 
@@ -228,11 +262,13 @@ You will be able to complete the following tasks:
 
 35. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
 
-     - **USE_AZCS**="**True**" #Set the value to true
-     - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
-     - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
-     - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
- 
+    | Setting | Action |
+    | -- | -- |
+    | USE_AZCS | **True** |
+    | AZURE_SEARCH_INDEX_NAME | **payroll-hr** |
+    | CACHE_INDEX_NAME | **payroll-hr-cache** |
+    | AZURE_SEARCH_ADMIN_KEY | **<inject key="SearchAPIkey" enableCopy="true"/>** |
+
 36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
 37. Run the below command to change the directory and run the HR Copilot application using the search service.
@@ -259,7 +295,7 @@ You will be able to complete the following tasks:
 
       ![](../media/img93.png)
 
-   > **Note**: If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 37. 
+    > **Note**: If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 37. 
 
 40. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
@@ -277,12 +313,12 @@ You will be able to complete the following tasks:
 
    | **Variables**                     | **Values**                                                    |
    | --------------------------------- |---------------------------------------------------------------|
-   | **AZURE_OPENAI_API_KEY**          | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-   | **AZURE_OPENAI_ENDPOINT**         | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
-   | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
-   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** name          |
-   | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
-   | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+   | **AZURE_OPENAI_API_KEY** | **<inject key="OpenAIKey" enableCopy="true"/>** |
+   | **AZURE_OPENAI_ENDPOINT** | **<inject key="OpenAIEndpoint" enableCopy="true"/>** |
+   | **AZURE_OPENAI_EMB_DEPLOYMENT** |  Replace the value with your **YOUR_EMBEDDING_MODEL** name that is **CompletionModel** |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** name that is **copilot-gpt** |
+   | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>** |
+   | **AZURE_SEARCH_ADMIN_KEY** | **<inject key="SearchAPIkey" enableCopy="true"/>** |
 
    ![](../media/img42.png)
 
@@ -296,11 +332,15 @@ You will be able to complete the following tasks:
 
 6. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
 
+- **azd** is the Azure Developer CLI, a command-line tool that simplifies the management and deployment of Azure applications. It helps streamline various tasks related to Azure resources, including authentication, configuration, and deployment of resources.
+
    ```bash
    azd auth login
    ```
 
 7. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+
+- The command `azd config set alpha.resourceGroupDeployments on` enables the alpha feature for resource group deployments within the Azure Developer CLI (azd). This feature allows the Azure Developer CLI to manage and deploy resources within specific resource groups, providing a more organized and efficient way to handle Azure resources. By enabling this feature, you can deploy your application and its associated resources into a designated resource group, making it easier to manage and maintain those resources over time.
 
    ```bash
    azd config set alpha.resourceGroupDeployments on
@@ -347,6 +387,6 @@ You will be able to complete the following tasks:
 
 ## Summary
 
-In this exercise, you have built your own HR/Payroll copilot locally ,integrated Azure Cognitive Search with your Application and deployed the HR/Payroll Copilot application to Azure.
+In this exercise, you have built and tested an HR/Payroll copilot application locally by configuring and running it with Azure OpenAI and Cognitive Search settings. They then integrated Azure Cognitive Search by setting up data sources, indexes, and vector fields. Finally, they deployed the application to Azure, authenticated with Azure, and used deployment commands to provision resources and launch the app. The lab concluded with the successful deployment and verification of the application on Azure.
 
-### You have successfully completed the lab
+### You have successfully completed the lab >> CLick on Next.
