@@ -14,6 +14,15 @@ You will be able to complete the following tasks:
   
 ### Task 1: Understand Function calling
 
+In this task, you will configure and test a project in Visual Studio Code by updating necessary settings, installing dependencies, and executing a Jupyter notebook. This ensures that the project is correctly set up and functioning as expected with the integrated APIs and modules.
+
+**Function calling**: Function calling allows you to connect models like gpt-4o to external tools and systems. This is useful for many things such as empowering AI assistants with capabilities, or building deep integrations between your applications and the models.
+
+ Refer to the link for more information.
+ 
+ - [Function Calling](https://platform.openai.com/docs/guides/function-calling)
+ - [Function Calling with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
+
 1. Open **Visual Studio Code** from the desktop; next, click on **File** and select **Open Folder**.
 
     ![](../media/img55.png) 
@@ -34,7 +43,7 @@ You will be able to complete the following tasks:
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
-   | **DEPLOYMENT_NAME**          |  Replace the value with your **gpt-model** name               |
+   | **DEPLOYMENT_NAME**          |  **copilot-gpt**              |
    | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
    | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
    | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
@@ -42,7 +51,7 @@ You will be able to complete the following tasks:
    
    ![](../media/img58.png) 
 
-7. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
+7. Next, click on the **Eclipse Button (1)** at the top of the screen, then select **Terminal (2)** from the dropdown menu, and click on **New Terminal (3)** to open a new terminal window.
 
     ![](../media/img59.png) 
 
@@ -52,7 +61,7 @@ You will be able to complete the following tasks:
     pip install -r requirements.txt
     ```
 
-9. Once the requirements are installed, close the terminal.
+9. Once the required modules are installed, close the terminal.
 
 10. Open the `working_with_functions.ipynb` file from the left menu.
 
@@ -66,11 +75,11 @@ You will be able to complete the following tasks:
 
        ![](../media/img62.png) 
 
-13. Next, on the **Select a Python Environment** pop-up, select **Python 3.11.5**. This will set the Python Environment. 
+13. Next, on the **Select a Python Environment** pop-up, select **Python 3.12.4**. This will set the Python Environment. 
 
        ![](../media/select-python.png) 
 
-    > **Note**: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
+    > **Note**: If prompt **Runnning cells with 'c:\pytjon312\python.exe' requires the ipykernel package.** then click on **Install**.
 
       ![](../media/install.png)
 
@@ -82,6 +91,6 @@ You will be able to complete the following tasks:
 
 ## Summary
 
-In this exercise, you have understood Function calling.
+In this exercise, you have understood Function calling and learned how to set up a Visual Studio Code environment, configure the necessary files for your project, install required modules, and execute a Jupyter notebook. You’ve also gained experience with handling Python environments, using terminal commands, and verifying code execution in Jupyter notebooks.
 
-### You have successfully completed the lab
+### You have successfully completed the lab >> Click on Next.

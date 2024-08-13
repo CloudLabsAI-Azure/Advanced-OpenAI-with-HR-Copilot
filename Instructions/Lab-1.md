@@ -14,7 +14,13 @@ In this lab, you will complete the following tasks:
 
 ### Task 1: Create an OpenAI resource and model **(Read-Only)**
 
+**Azure OpenAI**: Azure OpenAI Service is a cloud-based platform that provides access to OpenAI’s powerful language models, including GPT-4, GPT-3.5, Codex, and DALL-E12. This service allows developers to integrate these models into their applications for tasks such as content generation, summarization, semantic search, and natural language to code translation3.
+
+   Refer to the link for more information. [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
+
 # READ-ONLY
+
+In this task, you will learn to create an Azure OpenAI resource in the Azure portal, configure its settings, and deploy the GPT-4 model in Azure AI Studio. This involves setting up the resource, navigating to Azure AI Studio, and specifying model deployment details.
 
  > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
@@ -22,53 +28,65 @@ In this lab, you will complete the following tasks:
 
    ![](../media/img1.png "Azure OpenAI")
    
-1. From the **Cognitive Services | Azure OpenAI** pane, click on **Create**.
+1. From the **Cognitive Services | Azure OpenAI** pane in the Azure portal, click on the **Create** button to start the process of setting up a new Azure OpenAI resource.
 
    ![](../media/img2.png "Azure OpenAI")
    
-1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing Tier. Click on **Next**.
+1. In the **Create Azure OpenAI** pane under the **Basics** tab, Configure the details for your new resource, such as selecting the subscription, resource group, region and other required details.
+
+   | Setting  | Value |
+   -----------|---------
+   | Subscription | Default |
+   | Resource group | **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** |
+   | Region | **East US** |
+   | Name   | **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** |
+   | Pricing Tier | **Standard S0** |
 
    ![](../media/L1-T1-S3.png "Azure OpenAI")
    
-1. Leave default settings for the Network and Tags tabs and click on **Next**.
+1. Accept the default settings for the Network and Tags tabs without making any changes. Click on **Next** to continue to the next step in the creation process.
 
-1. Verify that validation has passed in the **Review + Submit** pane, and then click on **Create**.
+1. In the **Review + Submit** pane, ensure that all validation checks have passed. After confirming that there are no errors, click on the **Create** button to finalize and start the deployment of your Azure OpenAI resource.
+
      > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment. Please **DO NOT** click on **Create**. 
 
    ![](../media/L1-T1-S5.png "Azure OpenAI")
    
-1. Deployment will take 5 minutes to complete. Once the deployment is successful, click on **Go to Resource**.
+1. The deployment process will take approximately 5 minutes to complete. Once it’s finished, click on **Go to Resource** to access and manage your newly created Azure OpenAI resource.
 
    ![](../media/L1-T1-S6.png "Azure OpenAI")
    
-1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** to navigate to the Azure AI Studio, where you can further configure and use your OpenAI models.
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
    
-1. After navigating to Azure AI Studio, click on **Explore the new experience** pop-up on the top.
+1. After you arrive in Azure AI Studio, click on the **Explore the new experience** pop-up at the top of the page to start using the latest features and interface updates.
 
    ![](../media/explore_new-exp.jpg)
 
-1. Click on **Deployments (1)** from the left navigation pane, click on **+ Deploy model** , select **Deploy base Model (2)**.  
+1. In the left navigation pane, click on **Deployments (1)**, then click on **+ Deploy model** (2). Select **Deploy base Model** from the options presented.
 
    ![](../media/deploy-1.jpg)
 
-1. In the **Select a model** window, select **gpt-4(1)** and click on **Confirm (2)**.
+1. In the **Select a model** window, choose **gpt-4 (1)** from the available options, and then click on **Confirm (2)** to proceed with the model selection.
 
    ![](../media/new11.png)
    
-1. On the **Deploy Model** tab, enter the following details and click on **Create (5)**.
+1. On the **Deploy Model** tab, input the required details such as Deployment name, Model version, Deployment type, Tokens per Minute Rate Limit, and enable dynamic quota. Once all fields are filled, Click on **Deploy** (6).
 
-    - **Deployment name**: copilot-gpt (1) 
-    - **Model version**: 0613 (Default) (2)
-    - **Deployment type**: Standard (3)
-    - **Tokens per Minute Rate Limit (thousands)**: 15K (4)
-    - **Enable dynamic quota**: Enabled (5)
-    - Click on **Deploy** (6)
+   | Setting  | Value |
+   -----------|---------
+   | Deployment name | **copilot-gpt (1)** |
+   | Model version | **0613 (Default) (2)** |
+   | Deployment type | **Standard (3)** |
+   | Tokens per Minute Rate Limit (thousands) | **15K (4)** |
+   | Enable dynamic quota | **Enabled (5)** |
 
      ![](../media/new9.png)
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
+
+In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4, and integrate the required API keys. After configuring the application with these details, you will run and test a ChatGPT-like app to verify its functionality, demonstrating how to use Azure OpenAI models in a practical application.
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
@@ -78,15 +96,15 @@ In this lab, you will complete the following tasks:
 
    ![](../media/select-openai.png "Azure OpenAI")
 
-1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio**. This action will redirect you to the Azure AI Studio interface, where you can manage and interact with your OpenAI models, explore available features, and perform tasks related to model deployment and configuration.
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
-      
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+
+1. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Note the Azure OpenAI deployment names and model names.
    
    ![](../media/new10.png)
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
@@ -94,11 +112,11 @@ In this lab, you will complete the following tasks:
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
-1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
+1. From the Overview tab of Cognitive Search, Note the **URL**.
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+1. From the left menu, select **Key (1)**, Note the **Primary admin key (2)**.
 
    ![](../media/img66.png "Azure OpenAI")
 
@@ -115,7 +133,7 @@ In this lab, you will complete the following tasks:
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
    | **AZURE_OPENAI_API_KEY**     | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace with your **GPT** model Azure OpenAI Deployment Name  | 
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is **copilot-gpt** | 
    | **AZURE_OPENAI_ENDPOINT**    | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
 
       ![](../media/img68.png)
@@ -124,11 +142,12 @@ In this lab, you will complete the following tasks:
 
     ![](../media/img70.png) 
  
-1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
+1. Next, click on the **Eclipse Button** at the top of the screen, then select **Terminal** from the dropdown menu and click on **New Terminal** to open a new terminal window.
 
     ![](../media/img69.png) 
 
-1. Run the below command in the terminal to change the directory.
+
+1. Run the following command in the terminal to change the directory:
 
    ```
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
@@ -142,13 +161,13 @@ In this lab, you will complete the following tasks:
    streamlit run chatgpt.py
    ```
    
-1. Once the execution of `streamlit run chatgpt.py` is completed, a locally hosted demo application will be opened in the web browser.
+1. Once the command `streamlit run chatgpt.py` has executed, a demo application will be launched and opened in your web browser, hosted locally on your machine.
 
    ![](../media/img71.png "Azure OpenAI")
    
    ![](../media/img72.png "Azure OpenAI")
 
-1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
+1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like application in 50 lines of code.
 
    ![](../media/img73.png "Azure OpenAI")
 
@@ -160,6 +179,6 @@ In this lab, you will complete the following tasks:
 
 ## Summary
 
-In this exercise, you have created an OpenAI resource and model and built a ChatGPT-like application on Streamlit with streaming.
+In this exercise, you set up an Azure OpenAI resource and model, and built a ChatGPT-like application using Streamlit. You navigated the Azure portal to create and configure your OpenAI resource, verified model deployments, and gathered the necessary API keys and endpoints. After configuring your application with these details, you ran and tested it locally, successfully creating a functional ChatGPT-like app. This process demonstrated the integration of Azure OpenAI models into a practical application, showcasing the steps to build and deploy AI-driven chat functionalities.
 
-### You have successfully completed the lab
+### You have successfully completed the lab >> Click on Next

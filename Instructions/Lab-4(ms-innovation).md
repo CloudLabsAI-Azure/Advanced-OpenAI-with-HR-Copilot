@@ -4,6 +4,8 @@
 
 When the scope of automation spans across multiple functional domains, like humans, an agent may perform better when it can specialize in a single area. So instead of stuffing a single agent with multiple capabilities, we can employ a multiple-agent model, each specializing in a single domain. These agents are managed and coordinated by a manager agent (agent runner). This is called the multi-agent copilot model. The agent runner is responsible for promoting the right agent from the agent pool to be the active agent to interact with the user. It is also responsible for transferring relevant context from agent to agent to ensure continuity. In this model, the agent runner relies on the specialist agent's cue to back off from the conversation to start the transfer. Each specialist agent has to implement a skill to send a notification (back-off method) when it thinks its skillset cannot handle the user's request. On the other hand, the decision on exactly which agent should be selected to take over the conversation is still with the agent runner. When receiving such a request, the agent runner will review the input from the requesting agent to decide which agent to select for the job. This skill also relies on a LLM. The agent runner runs each specialist agent's run method. There can be some persistent context that should be available across agents' sessions. This is implemented as the persistent memory at agent runner. Each specialist agent, depending on the requirement for skill, can be powered by a gpt-35-turbo or gpt-4. The multi-agent solution has the same application platform (streamlit) as the single HR Copilot.
 
+**Bicep**: Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Your resources are deployed in a consistent manner.
+
 ## Lab objectives
 
 You will be able to complete the following tasks:
@@ -15,15 +17,17 @@ You will be able to complete the following tasks:
 
 ### Task 1: Build your own multi-agent Copilot application locally
 
-Before we proceed further, In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with **Visual Studio Code**.
+In this task, you will update the `secrets.env` file and run the HR Copilot application locally using `streamlit` to validate its functionality with sample queries. You will then prepare to deploy the multi-agent Copilot application to Azure by accessing the `main.bicep` file.
 
-```
-C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
-```
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with **Visual Studio Code**.
 
- ![](../media/img38.png)
+   ```
+   C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+   ```
 
-- Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
+   ![](../media/img38.png)
+
+1. Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
 
    ![](../media/L4-T1-S0.png)
 
@@ -65,6 +69,8 @@ C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
    
 ### Task 2: Deploy a multi-agent Copilot application to Azure
 
+In this task, you will update the `main.bicep` file to reference `multi_agent_copilot.py`, authenticate with Azure, and deploy your multi-agent Copilot application. After setting up the environment and provisioning resources, you will navigate to the Azure portal to verify the deployment and access your web application.
+
 1. In the LabVM, open File Explorer, navigate to the below-mentioned  path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
 
    ```
@@ -86,6 +92,8 @@ C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
    ```
 
 5. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure Authorize website, where you can select your account.
+
+- **azd** is the Azure Developer CLI, a command-line tool that simplifies the management and deployment of Azure applications. It helps streamline various tasks related to Azure resources, including authentication, configuration, and deployment of resources.
 
    ```bash
    azd auth login
