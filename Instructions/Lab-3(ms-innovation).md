@@ -325,30 +325,30 @@ In this task, you will configure Azure Storage and AI Search services, update cr
 4. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
 5. Run the below command to change the directory.
-
+   
    ```bash
    cd C:\LabFiles\OpenAIWorkshop
    ```
 
 6. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
 
-- **azd** is the Azure Developer CLI, a command-line tool that simplifies the management and deployment of Azure applications. It helps streamline various tasks related to Azure resources, including authentication, configuration, and deployment of resources.
+   - **azd** is the Azure Developer CLI, a command-line tool that simplifies the management and deployment of Azure applications. It helps streamline various tasks related to Azure resources, including authentication, configuration, and deployment of resources.
 
-   ```bash
-   azd auth login
-   ```
+     ```bash
+     azd auth login
+     ```
 
 7. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
 
-- The command `azd config set alpha.resourceGroupDeployments on` enables the alpha feature for resource group deployments within the Azure Developer CLI (azd). This feature allows the Azure Developer CLI to manage and deploy resources within specific resource groups, providing a more organized and efficient way to handle Azure resources. By enabling this feature, you can deploy your application and its associated resources into a designated resource group, making it easier to manage and maintain those resources over time.
+   - The command `azd config set alpha.resourceGroupDeployments on` enables the alpha feature for resource group deployments within the Azure Developer CLI (azd). This feature allows the Azure Developer CLI to manage and deploy resources within specific resource groups, providing a more organized and efficient way to handle Azure resources. By enabling this feature, you can deploy your application and its associated resources into a designated resource group, making it easier to manage and maintain those resources over time.
 
-   ```bash
-   azd config set alpha.resourceGroupDeployments on
-   ```
-   
-   ```bash
-   azd env new copilot-{DeploymentId}
-   ```
+     ```bash
+     azd config set alpha.resourceGroupDeployments on
+     ```
+     
+     ```bash
+     azd env new copilot-{DeploymentId}
+     ```
 
 8. Run the below command to provision Azure resources and deploy your project with a single command.
 
