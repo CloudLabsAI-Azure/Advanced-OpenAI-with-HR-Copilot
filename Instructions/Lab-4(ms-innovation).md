@@ -19,21 +19,17 @@ You will be able to complete the following tasks:
 
 In this task, you will update the `secrets.env` file and run the HR Copilot application locally using `streamlit` to validate its functionality with sample queries. You will then prepare to deploy the multi-agent Copilot application to Azure by accessing the `main.bicep` file.
 
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with **Visual Studio Code**.
-
-   ```
-   C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
-   ```
-
-   ![](../media/img38.png)
+1. Return to the `secrets.env` file that you previously opened in Visual Studio Code. This file contains environment variables essential for configuring your application.
 
 1. Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
 
    ![](../media/L4-T1-S0.png)
 
-1. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
+1. Next, click on the **Eclipse Button** at the top of the screen, then select **Terminal** from the dropdown menu and click on **New Terminal** to open a new terminal window.
 
-2. Run the below command to change the directory.
+    ![](../media/img69.png) 
+
+1. Run the below command to change the directory.
 
    ```
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
@@ -71,19 +67,11 @@ In this task, you will update the `secrets.env` file and run the HR Copilot appl
 
 In this task, you will update the `main.bicep` file to reference `multi_agent_copilot.py`, authenticate with Azure, and deploy your multi-agent Copilot application. After setting up the environment and provisioning resources, you will navigate to the Azure portal to verify the deployment and access your web application.
 
-1. In the LabVM, open File Explorer, navigate to the below-mentioned  path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
-
-   ```
-   C:\LabFiles\OpenAIWorkshop\infra
-   ```
-
-    ![](../media/img41.png)
+1. Return to the `main.bicep` file that you previously opened.
 
 2. In the `main.bicep` file, replace the file name in **Line 49** with `multi_agent_copilot.py` and press **CTRL + S** to save the file.
 
     ![](../media/img51.png)
-
-3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
 4. Run the below command to change the directory.
 

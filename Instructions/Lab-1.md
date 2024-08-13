@@ -36,11 +36,11 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
    | Setting  | Value |
    -----------|---------
-   | Subscription | Default |
-   | Resource group | **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** |
-   | Region | **East US** |
-   | Name   | **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** |
-   | Pricing Tier | **Standard S0** |
+   | Subscription | Default (1)|
+   | Resource group | **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** (2) |
+   | Region | **East US** (3) |
+   | Name   | **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** (4) |
+   | Pricing Tier | **Standard S0** (5) |
 
    ![](../media/L1-T1-S3.png "Azure OpenAI")
    
@@ -108,6 +108,8 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
+   > **Note**: Steps 5 through 8 demonstrate where to obtain the values used in the configuration.
+
 1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
@@ -128,7 +130,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
     ![](../media/img67.png)
 
-1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press **CTRL+S** to save the file.
+1. In the `secrets.env` file, replace the following values. Press **CTRL+S** to save the file.
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|

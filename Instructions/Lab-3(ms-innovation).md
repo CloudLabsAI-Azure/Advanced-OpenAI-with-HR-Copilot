@@ -29,6 +29,7 @@ You will be able to complete the following tasks:
 
 By running this application locally, you can test and interact with its features to ensure it functions as intended before deployment in a production environment.
 
+
 1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
    ```
@@ -252,13 +253,8 @@ In this task, you will configure Azure Storage and AI Search services, update cr
 
     ![](../media/img63.png)
 
-34. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+34. Return to the `secrets.env` file that you previously opened in Visual Studio Code. This file contains environment variables essential for configuring your application. Make sure it is open and ready for editing.
 
-    ```
-    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
-    ```
-   
-    ![](../media/img38.png)
 
 35. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
 
@@ -267,9 +263,10 @@ In this task, you will configure Azure Storage and AI Search services, update cr
     | USE_AZCS | **True** |
     | AZURE_SEARCH_INDEX_NAME | **payroll-hr** |
     | CACHE_INDEX_NAME | **payroll-hr-cache** |
-    | AZURE_SEARCH_ADMIN_KEY | **<inject key="SearchAPIkey" enableCopy="true"/>** |
 
-36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
+36. Next, click on the **Eclipse Button** at the top of the screen, then select **Terminal** from the dropdown menu and click on **New Terminal** to open a new terminal window.
+
+    ![](../media/img69.png) 
 
 37. Run the below command to change the directory and run the HR Copilot application using the search service.
 
