@@ -30,7 +30,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to **Azure OpenAI**, select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
@@ -38,7 +38,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+1. From the left menu, select **Keys (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
 
    ![](../media/img66.png "Azure OpenAI")
 
