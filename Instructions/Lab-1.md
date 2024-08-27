@@ -41,14 +41,14 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img7.png "Azure OpenAI")
    
-1. On the **Deploy Model** tab, enter the following details and click on **Create (5)**.
+1. On the **Deploy Model** tab, enter the following details and click on **Create**.
 
-   - Select a model: **gpt-4 (1)**
-   - Model version: **Auto-update to default (2)**
-   - Deployment name: **Copilot-model (3)**
-   - Tokens per Minute Rate Limit (thousands): **15K (4)**
+   - Deployment name: **copilot-gpt**
+   - Select a model: **gpt-4**
+   - Deployment type: **Standard**
+   - Tokens per Minute Rate Limit (thousands): **15K**
 
-     ![](../media/img8.png "Azure OpenAI")
+     ![](../media/27-08-2024(1).png "Azure OpenAI")
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
 
