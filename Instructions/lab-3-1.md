@@ -14,6 +14,8 @@
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
+In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'll configure the application by updating necessary environment variables and running it using Streamlit. This task ensures you understand how to set up and run the application in a local environment before moving to Azure.
+
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
    ![](../media/img1.png "Azure OpenAI")
@@ -116,6 +118,8 @@
 <validation step="bfc0e96d-c61e-4a91-b1ee-a10df581cdd5" />
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
+
+This task involves integrating Azure Cognitive Search with your HR/Payroll Copilot application. You'll set up data sources, configure the search index, and create vector profiles for enhanced search capabilities.
 
 1. In the **Azure Portal**, search and select **Storage accounts**. 
 
@@ -274,6 +278,8 @@
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
+In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll use a Bicep file to configure the necessary settings and then deploy the application using Azure Dev CLI commands.
+
 1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
 
       ```
@@ -356,3 +362,9 @@
 #### Validation
 
 <validation step="de89d182-5c32-4a80-b44c-8fd6c706fdbe" />
+
+## Summary
+
+- Built and configured the HR/Payroll Copilot application locally.
+- Integrated Azure Cognitive Search to enhance search functionality within the application.
+- Successfully deployed the application to Azure, making it accessible as a web service.
