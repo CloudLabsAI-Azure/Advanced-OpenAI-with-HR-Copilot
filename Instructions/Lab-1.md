@@ -1,8 +1,12 @@
-# Lab 1: Getting Started with Building a Chat Application
+# Lab 01: Getting Started with Building a Chat Application
+
+## Overview
+
+In this lab, you will learn how to build a chat application using Azure OpenAI. The lab involves setting up the necessary OpenAI resources and deploying a ChatGPT-like application using Streamlit. By the end of this lab, you will have a fully functional application that can interact with users through a simple web interface.
 
 ## Exercise 1: Open AI Setup and Installation of Applications
 
-In this exercise, you will be setting up the Open AI resource and installing the application locally.
+In this exercise, you will set up the OpenAI resource and install the necessary applications locally. This exercise is divided into two tasks: setting up the OpenAI resource (read-only) and building a ChatGPT-like application.
 
 ### Task 1: Create an OpenAI resource and model **(Read-Only)**
 
@@ -10,11 +14,13 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
  > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
+In this task, you will review the setup of the OpenAI resource, which has already been configured for your environment. This task is read-only, meaning no changes will be made.
+
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
    ![](../media/img1.png "Azure OpenAI")
    
-1. From the **Cognitive Services | Azure OpenAI** pane, click on **Create**.
+1. From the **Cognitive Services | Azure OpenAI** pane, click on **+ Create**.
 
    ![](../media/img2.png "Azure OpenAI")
    
@@ -50,7 +56,9 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
      ![](../media/27-08-2024(1).png "Azure OpenAI")
    
-### Task 2: Building a ChatGPT-like application on Streamlit with streaming  
+### Task 2: Building a ChatGPT-like application on Streamlit with streaming
+
+In this task, you will configure a locally hosted application that mimics the functionality of ChatGPT. This will involve setting up necessary files, configuring secrets, and running the application. 
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
@@ -120,8 +128,14 @@ In this exercise, you will be setting up the Open AI resource and installing the
 
    ![](../media/img73.png "Azure OpenAI")
 
-1. You have successfully deployed the ChatGPT application using Streamlit.
+1. Congratulations! You have successfully built your own ChatGPT-like application using Streamlit.
 
 #### Validation
 
 <validation step="21770280-2848-4d6f-ad32-f3bda8d83cc9" />
+
+## Summary
+
+- You reviewed the setup of the OpenAI resource, which was pre-configured for your environment.
+- You configured and deployed a ChatGPT-like application using Streamlit.
+- You successfully hosted the application locally and tested its functionality by running queries.
