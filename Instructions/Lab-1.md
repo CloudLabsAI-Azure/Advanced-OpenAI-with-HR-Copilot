@@ -20,7 +20,7 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/img1.png "Azure OpenAI")
    
-1. From the **Cognitive Services | Azure OpenAI** pane, click on **+ Create**.
+1. From the **Azure AI services | Azure OpenAI** pane, click on **+ Create**.
 
    ![](../media/img2.png "Azure OpenAI")
    
@@ -31,6 +31,7 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 1. Leave default settings for the Network and Tags tabs and click on **Next**.
 
 1. Verify that validation has passed in the **Review + Submit** pane, and then click on **Create**.
+
      > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment. Please **DO NOT** click on **Create**. 
 
    ![](../media/L1-T1-S5.png "Azure OpenAI")
@@ -64,7 +65,7 @@ In this task, you will configure a locally hosted application that mimics the fu
 
    ![](../media/img1.png "Azure OpenAI")
 
-1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
    ![](../media/select-openai.png "Azure OpenAI")
 
