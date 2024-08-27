@@ -20,7 +20,7 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
    ![](../media/img1.png "Azure OpenAI")
 
-1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
    ![](../media/select-openai.png "Azure OpenAI")
 
@@ -32,7 +32,7 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
    
    ![](../media/p12.png "Azure OpenAI")
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
@@ -56,7 +56,7 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
     ![](../media/img38.png)
 
-1. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
+1. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**, and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
    ```
       AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key.
@@ -133,7 +133,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
     ![](../media/img76.png)
 
-4. Next, navigate to **Azure AI services**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, navigate to **Azure AI services**, select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
@@ -168,7 +168,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/img82.png)
 
-11. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
+11. On the **Configure vector field** tab, set the **Dimensions** property to `1536` and Click on **Create** under No vector search profiles.
 
       ![](../media/vector1.png)
 
@@ -180,7 +180,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector3.png)
 
-14. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under vectorizers.
+14. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
 
       ![](../media/vector4.png)
 
@@ -240,7 +240,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector3.png)
 
-29. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under vectorizers.
+29. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
 
       ![](../media/vector4.png)
 
@@ -248,7 +248,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector5.png)
 
-31. On the **Vector profile** tab, select the Vectorizers created in the previous step and  Click on **Create** under Compressions.
+31. On the **Vector profile** tab, select the Vectorizers created in the previous step and  Click on **Create** under No compression configurations.
 
       ![](../media/vector6.png)
 
