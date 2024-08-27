@@ -290,17 +290,17 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 
 2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
-      ```
-      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
-      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace it with the OpenAI Endpoint.
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with your embedding model name.
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with your Open AI Chat Deployment name.
-      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
-      AZURE_SEARCH_ADMIN_KEY:'YOUR_SEARCH_SERVICE_KEY' //#Replace with your Search Service Admin Key.
+   | **Variables**                     | **Values**                                                    |
+   | --------------------------------- |---------------------------------------------------------------|
+   | **AZURE_OPENAI_API_KEY**          | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **AZURE_OPENAI_ENDPOINT**         | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** name          |
+   | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
       ```
 
      ![](../media/img42.png)
-
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
@@ -368,3 +368,5 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 - Built and configured the HR/Payroll Copilot application locally.
 - Integrated Azure Cognitive Search to enhance search functionality within the application.
 - Successfully deployed the application to Azure, making it accessible as a web service.
+
+### You have successfully completed the lab
