@@ -2,7 +2,7 @@
 
 ## Overview:
 
-This lab introduces the function calling feature in Azure OpenAI, which enhances the capabilities of GPT-3 and GPT-4 models by allowing them to generate structured JSON outputs. You will learn how to integrate these models with other systems, giving you greater control over the execution of functions. The lab will guide you through setting up the Azure OpenAI environment, configuring necessary components, and observing function calling in action through practical exercises.
+This lab focuses on the function calling feature in Azure OpenAI, an advanced capability that enables GPT-3 and GPT-4 models to produce structured JSON outputs tailored to specific functions. By integrating these models with external systems, you gain enhanced control and flexibility in automation and data processing tasks. Throughout this lab, you’ll explore the setup, configuration, and practical implementation of function calling within the Azure OpenAI environment, empowering you to leverage this powerful feature in real-world scenarios.
 
 To know more about Azure function calling, please refer to [Function calling is now available in Azure OpenAI Service] (https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
 
