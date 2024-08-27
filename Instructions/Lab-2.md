@@ -1,10 +1,14 @@
 # Lab 02: Understand function calling in Open AI GPT
 
-Over the last couple of years, language models like GPT-3 and GPT-4 have demonstrated their immense power and versatility. These models have been successfully applied in various scenarios, showcasing their capabilities. While these models are already valuable on their own, the Azure OpenAI Service now offers an exciting new feature called function calling. With function calling, the latest versions of GPT-3 and GPT-4 can generate structured JSON outputs based on functions specified in the request. This allows developers to integrate the models with other systems and tools, enabling even more possibilities. However, it's important to note that while the models can generate the function calls, the execution of these calls remains under your control, ensuring that you maintain full control over the process. In this overview, we will explore how function calling works, provide examples of its use cases, and guide you through the steps to leverage this powerful feature in Azure OpenAI Service. 
+## Overview:
+
+This lab introduces the function calling feature in Azure OpenAI, which enhances the capabilities of GPT-3 and GPT-4 models by allowing them to generate structured JSON outputs. You will learn how to integrate these models with other systems, giving you greater control over the execution of functions. The lab will guide you through setting up the Azure OpenAI environment, configuring necessary components, and observing function calling in action through practical exercises.
 
 To know more about Azure function calling, please refer to [Function calling is now available in Azure OpenAI Service] (https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
 
-### Task 1: Understand Function calling 
+### Task 1: Understand Function calling
+
+In this task, you will explore how to set up and configure the Azure OpenAI environment to leverage function calling. You will gather necessary information such as deployment names, API keys, and service endpoints and configure them in a sample project. Finally, you will run a Jupyter Notebook to observe how function calling works in action.
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
@@ -73,7 +77,7 @@ To know more about Azure function calling, please refer to [Function calling is 
     ```
     pip install -r requirements.txt
     ```
-
+    
 8. Once the requirements are installed, close the terminal.
 
 9. Open the `working_with_functions.ipynb` file from the left menu.
@@ -105,3 +109,8 @@ To know more about Azure function calling, please refer to [Function calling is 
 #### Validation
 
 <validation step="2945e6ae-9193-4560-b2b6-9b42f8bc7917" />
+
+## Summary
+- You have learned how to configure and set up the Azure OpenAI environment for function calls.
+- You explored gathering and configuring essential details like deployment names, API keys, and service endpoints.
+- You observed the function calling process through the execution of a Jupyter Notebook in Visual Studio Code.
