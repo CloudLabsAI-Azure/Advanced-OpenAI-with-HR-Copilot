@@ -137,6 +137,8 @@ In this task, you will configure a locally hosted application that mimics the fu
 
 ## Summary
 
+In this lab, you have accomplished the following:
+
 - You reviewed the setup of the OpenAI resource, which was pre-configured for your environment.
 - You configured and deployed a ChatGPT-like application using Streamlit.
 - You successfully hosted the application locally and tested its functionality by running queries.
