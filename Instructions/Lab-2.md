@@ -111,6 +111,9 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 <validation step="2945e6ae-9193-4560-b2b6-9b42f8bc7917" />
 
 ## Summary
+
+In this lab, you have accomplished the following:
+
 - You have learned how to configure and set up the Azure OpenAI environment for function calls.
 - You explored gathering and configuring essential details like deployment names, API keys, and service endpoints.
 - You observed the function calling process through the execution of a Jupyter Notebook in Visual Studio Code.
