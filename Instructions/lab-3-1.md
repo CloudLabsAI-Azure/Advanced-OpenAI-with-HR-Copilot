@@ -343,7 +343,7 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 
     ![](../media/img43.png)
 
-11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It produces a web package file, then creates the resource and publishes the package for the app service.
 
 
 12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
@@ -363,6 +363,8 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 <validation step="de89d182-5c32-4a80-b44c-8fd6c706fdbe" />
 
 ## Summary
+
+In this lab, you have accomplished the following:
 
 - Built and configured the HR/Payroll Copilot application locally.
 - Integrated Azure Cognitive Search to enhance search functionality within the application.
