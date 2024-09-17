@@ -2,23 +2,20 @@
 
 ### Estimated Duration: 30 minutes
 
-In this exercise, you will be setting up the Open AI resource and installing the application locally.
+Building a chat application involves designing the user interface for seamless communication, implementing backend services for real-time message handling, and integrating with databases for storing chat histories, while ensuring robust security and scalability to handle user interactions effectively.In this lab, you will be setting up the Open AI resource and installing the application locally.
 
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
-- Task 1: Create an OpenAI resource and model **(Read-Only)**
 - Task 2: Building a ChatGPT-like application on Streamlit with streaming
 
 ## Exercise 1: Open AI Setup and Installation of Applications
 
-### Task 1: Create an OpenAI resource and model **(Read-Only)**
+### Task 1: Create an OpenAI resource and model **(READ-ONLY)**
 
 **Azure OpenAI**: Azure OpenAI Service is a cloud-based platform that provides access to OpenAI’s powerful language models, including GPT-4, GPT-3.5, Codex, and DALL-E12. This service allows developers to integrate these models into their applications for tasks such as content generation, summarization, semantic search, and natural language to code translation3.
 
-   Refer to the link for more information. [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
-
-# READ-ONLY
+Refer to the link for more information. [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
 
 In this task, you will learn to create an Azure OpenAI resource in the Azure portal, configure its settings, and deploy the GPT-4 model in Azure AI Studio. This involves setting up the resource, navigating to Azure AI Studio, and specifying model deployment details.
 
@@ -181,6 +178,6 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
 ## Summary
 
-In this exercise, you set up an Azure OpenAI resource and model, and built a ChatGPT-like application using Streamlit. You navigated the Azure portal to create and configure your OpenAI resource, verified model deployments, and gathered the necessary API keys and endpoints. After configuring your application with these details, you ran and tested it locally, successfully creating a functional ChatGPT-like app. This process demonstrated the integration of Azure OpenAI models into a practical application, showcasing the steps to build and deploy AI-driven chat functionalities.
+In this lab, you set up an Azure OpenAI resource and model, and built a ChatGPT-like application using Streamlit. You navigated the Azure portal to create and configure your OpenAI resource, verified model deployments, and gathered the necessary API keys and endpoints. After configuring your application with these details, you ran and tested it locally, successfully creating a functional ChatGPT-like app. This process demonstrated the integration of Azure OpenAI models into a practical application, showcasing the steps to build and deploy AI-driven chat functionalities.
 
 ### You have successfully completed the lab >> Click on Next
