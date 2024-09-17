@@ -135,6 +135,6 @@ In this task, you will update the `main.bicep` file to reference `multi_agent_co
 
 ## Summary
 
-In this exercise, you have built your own multi-agent Copilot application locally and deployed a multi-agent Copilot application to Azure.
+In this lab, you have built your own multi-agent Copilot application locally and deployed a multi-agent Copilot application to Azure.
 
 ### You have successfully completed the lab
