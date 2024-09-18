@@ -17,9 +17,11 @@ Understand how to deploy OpenAI models in Azure, configure them, and secure with
   
 ## Pre-requisites
 
-1. **Familiarity with GPT Models**: Familiarity with GPT-3 and GPT-4, including their capabilities and use cases.
-2. **Experience with REST APIs**: Familiarity with REST APIs, as function calling involves interacting with APIs.
-3. **Basic Programming Skills**: Proficiency in Python programming to follow along with the Smart_Agent Python object setup and multi-agent copilot model implementation.
+Participants should have:
+
+- **Familiarity with GPT Models**: Familiarity with GPT-3 and GPT-4, including their capabilities and use cases.
+- **Experience with REST APIs**: Familiarity with REST APIs, as function calling involves interacting with APIs.
+- **Basic Programming Skills**: Proficiency in Python programming to follow along with the Smart_Agent Python object setup and multi-agent copilot model implementation.
 
 ## Architecture
 
@@ -27,27 +29,61 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Architecture Diagram
 
- ![](../media/ARCH-5.PNG)
+![](../media/ARCH-5.PNG)
 
 ## Explanation of Components
 
-1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
-1. **Azure OpenAI Models**: Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
-1. **Azure App Services**: Azure App Services is a fully managed platform for building, deploying, and scaling web apps and APIs. It supports various programming languages and frameworks, offering built-in security, load balancing, and auto-scaling to simplify application management.
-1. **Azure AI Search**: Azure AI Search is a cloud-based service that enhances search experiences with AI-powered capabilities like full-text and cognitive search. It integrates easily with various data sources for rich, insightful search results.
-1. **Azure Blob Storage**: Azure Blob Storage is a scalable solution for storing unstructured data like text and multimedia files.
+The architecture for this lab involves the following key components:
+
+- **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
+- **Azure OpenAI Models**: Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
+- **Azure App Services**: Azure App Services is a fully managed platform for building, deploying, and scaling web apps and APIs. It supports various programming languages and frameworks, offering built-in security, load balancing, and auto-scaling to simplify application management.
+- **Azure AI Search**: Azure AI Search is a cloud-based service that enhances search experiences with AI-powered capabilities like full-text and cognitive search. It integrates easily with various data sources for rich, insightful search results.
+- **Azure Blob Storage**: Azure Blob Storage is a scalable solution for storing unstructured data like text and multimedia files.
 
 ## Getting Started with the Lab
-
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and the lab manual. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
-
-   ![](../media/getstartpage-01a.png)
  
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
-
-   ![](../media/getstartpage-02a.png "Enter Email")
+Welcome to your Customer Support Conversation Summarization with Azure OpenAI Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
-   > You will see the SUFFIX value on the **Environment Details** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
+## Accessing Your Lab Environment
+ 
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+
+  ![](../media/labguide.png)
+
+### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+  ![](../media/env01.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+ 
+  ![](../media/split01.png)
+ 
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+  ![](../media/resourses.png)
+
+## Lab Validation
+
+1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+   ![Inline Validation](../media/inline-validation.png)
+
+1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
+
+   ![Lab Validation](../media/lab-validation.png)
+
+1. If you need any assistance, please contact us at labs-support@spektrasystems.com.
  
 ## Login to the Azure Portal
 
@@ -55,31 +91,33 @@ In this hands-on lab, the architecture flow includes several essential component
 
    ![](../media/open-azureportal.png "Enter Email")
    
-2. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email or username, and click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email or username, and click on **Next**. 
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
       ![](../media/signin-uname.png "Enter Email")
      
-3. Now enter the following password and click on **Sign in**.
+1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
       ![](../media/signin-pword.png "Enter Password")
+
+1. If you see the pop-up Action Required, click Ask Later.
+
+   ![](../media/asklater.png)
+
+   >**NOTE:** Do not enable MFA, select **Ask Later**.
      
-4. If you see the pop-up **Stay Signed in?**, select **No**.
+1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-5. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-6. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
    
-7. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+1. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](../media/select-rg.png "Resource groups")
-
-8. Click "Next" from the bottom right corner to embark on your Lab journey!
-
-     ![](../media/next.png)
 
 In this hands-on-lab, you'll set up Azure OpenAI and explore the function calling feature for generating structured JSON outputs, along with the Smart_Agent Python object and multi-agent copilot model for effective task management.
 
@@ -94,4 +132,6 @@ Learner Support Contacts:
 
 Now, click on Next from the lower right corner to move on to the next page.
 
-## Happy Learning!!
+![](../media/next.png)
+
+### Happy Learning!!
