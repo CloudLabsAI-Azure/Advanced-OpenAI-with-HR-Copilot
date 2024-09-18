@@ -43,13 +43,13 @@ The architecture for this lab involves the following key components:
 
 ## Getting Started with the Lab
  
-Welcome to your Customer Support Conversation Summarization with Azure OpenAI Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Build your own Intelligent HR Copilot with Azure Open AI Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-  ![](../media/labguide.png)
+![](../media/lab-guide-01.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -59,29 +59,29 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![](../media/env01.png)
+![](../media/env-01.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![](../media/split01.png)
+![](../media/split-01.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-  ![](../media/resourses.png)
+![](../media/resourses.png)
 
 ## Lab Validation
 
 1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-   ![Inline Validation](../media/inline-validation.png)
+   ![Inline Validation](../media/inline-validation-01.png)
 
 1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
 
-   ![Lab Validation](../media/lab-validation.png)
+   ![Lab Validation](../media/lab-validation-01.png)
 
 1. If you need any assistance, please contact us at labs-support@spektrasystems.com.
  
