@@ -386,4 +386,4 @@ In this task, you will configure Azure Storage and AI Search services, update cr
 
 In this lab, you have built and tested an HR/Payroll copilot application locally by configuring and running it with Azure OpenAI and Cognitive Search settings. They then integrated Azure Cognitive Search by setting up data sources, indexes, and vector fields. Finally, they deployed the application to Azure, authenticated with Azure, and used deployment commands to provision resources and launch the app. The lab concluded with the successful deployment and verification of the application on Azure.
 
-### You have successfully completed the lab >> CLick on Next.
+### You have successfully completed the lab
