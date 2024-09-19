@@ -13,9 +13,7 @@ You will be able to complete the following tasks:
 - Task 1: Build your own multi-agent Copilot application locally
 - Task 2: Deploy a multi-agent Copilot application to Azure
 
-## Exercise 1: Deploy and run the multi-agent Copilot application
-
-### Task 1: Build your own multi-agent Copilot application locally
+## Task 1: Build your own multi-agent Copilot application locally
 
 In this task, you will update the `secrets.env` file and run the HR Copilot application locally using `streamlit` to validate its functionality with sample queries. You will then prepare to deploy the multi-agent Copilot application to Azure by accessing the `main.bicep` file.
 
@@ -63,7 +61,7 @@ In this task, you will update the `secrets.env` file and run the HR Copilot appl
 
 7. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
    
-### Task 2: Deploy a multi-agent Copilot application to Azure
+## Task 2: Deploy a multi-agent Copilot application to Azure
 
 In this task, you will update the `main.bicep` file to reference `multi_agent_copilot.py`, authenticate with Azure, and deploy your multi-agent Copilot application. After setting up the environment and provisioning resources, you will navigate to the Azure portal to verify the deployment and access your web application.
 
