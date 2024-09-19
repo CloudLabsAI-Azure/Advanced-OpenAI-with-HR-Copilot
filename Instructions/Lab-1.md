@@ -7,9 +7,8 @@ Building a chat application involves designing the user interface for seamless c
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
+- Task 1: Create an OpenAI resource and model **(READ-ONLY)**
 - Task 2: Building a ChatGPT-like application on Streamlit with streaming
-
-## Exercise 1: Open AI Setup and Installation of Applications
 
 ### Task 1: Create an OpenAI resource and model **(READ-ONLY)**
 
