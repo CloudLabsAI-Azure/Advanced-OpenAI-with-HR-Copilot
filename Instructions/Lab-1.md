@@ -18,11 +18,11 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/azureopenai.png "Azure OpenAI")
    
 1. From the **Azure AI services | Azure OpenAI** pane, click on **+ Create**.
 
-   ![](../media/img2.png "Azure OpenAI")
+   ![](../media/openaicreate.png "Azure OpenAI")
    
 1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing Tier. Click on **Next**.
 
@@ -44,9 +44,15 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
    
-1. In the Azure OpenAI Studio, click **Deployments (1)** and click **+ Create new deployment (2)**.
+1. In the left navigation pane, click on **Deployments (1)**, then click on **+ Deploy model** (2). Select **Deploy base Model** from the options presented.
 
-   ![](../media/img7.png "Azure OpenAI")
+   ![](../media/deploy-1.jpg)
+
+1. In the **Select a model** window, choose **gpt-4 (1)** from the available options, and then click on **Confirm (2)** to proceed with the model selection.
+
+   ![](../media/new11.png)
+   
+1. On the **Deploy Model** tab, input the required details such as Deployment name, Model version, Deployment type, Tokens per Minute Rate Limit, and enable dynamic quota. Once all fields are filled, Click on **Deploy** (6).
    
 1. On the **Deploy Model** tab, enter the following details and click on **Create**.
 
@@ -63,11 +69,11 @@ In this task, you will configure a locally hosted application that mimics the fu
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/azureopenai.png "Azure OpenAI")
 
 1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/select-openai.png "Azure OpenAI")
+   ![](../media/copilotopenai.png "Azure OpenAI")
 
 1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
@@ -75,7 +81,7 @@ In this task, you will configure a locally hosted application that mimics the fu
       
 1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** model are present with the deployment names as **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p23.png "Azure OpenAI")
+   ![](../media/modeldeployments.png "Azure OpenAI")
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
