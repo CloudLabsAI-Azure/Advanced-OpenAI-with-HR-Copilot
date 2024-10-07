@@ -12,19 +12,19 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/azureopenai.png "Azure OpenAI")
 
 1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/select-openai.png "Azure OpenAI")
+   ![](../media/copilotopenai.png "Azure OpenAI")
 
 1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
-   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   ![](../media/azureopenaistudio.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments (1)** under **Shared resources** and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt (2)** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p12.png "Azure OpenAI")
+   ![](../media/model-deploy.png "Azure OpenAI")
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
@@ -42,7 +42,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/img66.png "Azure OpenAI")
 
-1. Open **Visual Studio Code** from the desktop; next, click on **File** and select **Open Folder**.
+1. From the Lab-VM desktop, open **Visual Studio Code** from the desktop; next, click on **File (1)** and select **Open Folder (2)**.
 
     ![](../media/img55.png) 
 

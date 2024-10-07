@@ -18,19 +18,19 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/azureopenai.png "Azure OpenAI")
 
 1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/select-openai.png "Azure OpenAI")
+   ![](../media/copilotopenai.png "Azure OpenAI")
 
 1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
-   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   ![](../media/azureopenaistudio.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments** under **Shared resources** and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p12.png "Azure OpenAI")
+   ![](../media/modeldeployments.png "Azure OpenAI")
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
@@ -59,12 +59,12 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 1. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**, and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
    ```
-      AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key.
-      AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint
-      AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment.
-      AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment.
-      AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint.
-      AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key
+   AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key.
+   AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint
+   AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment.
+   AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment.
+   AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint.
+   AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key
    ```
 
 1. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
@@ -101,17 +101,17 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
    John 1234
    ```
 
-   ![](../media/img19.png)
+   ![](../media/output1.png)
 
 1. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
-   ![](../media/L3-T1-S7.png)
+   ![](../media/output2.png)
 
 1. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
 
-    ![](../media/L3-T1-S8.png)
+    ![](../media/output3.png)
 
-1. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+1. Navigate back to **Visual Studio code** and stop the terminal by typing **ctrl + C**.
 
 #### Validation
 
@@ -315,14 +315,18 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
    azd auth login
    ```
 
-6. Run the below command to set up the resource group deployment and **Create a new environment**. Make sure to replace `{DeploymentId}` with **<inject key="Deployment ID" enableCopy="true"/>** in the below command.
+6. Run the below command to set up the resource group deployment and **Create a new environment**. 
+
+   ```bash
+   choco upgrade azd
+   ```
 
    ```bash
    azd config set alpha.resourceGroupDeployments on
    ```
    
    ```bash
-   azd env new copilot-{DeploymentId}
+   azd env new copilot-<inject key="Deployment ID" enableCopy="true"/>
    ```
 
 7. Run the below command to provision Azure resources and deploy your project with a single command.
