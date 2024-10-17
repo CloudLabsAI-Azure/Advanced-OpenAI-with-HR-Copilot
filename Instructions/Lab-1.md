@@ -79,7 +79,7 @@ In this task, you will configure a locally hosted application that mimics the fu
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
-   ![](../media/L1-T2-S5.png "Azure OpenAI")
+
    
 1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
