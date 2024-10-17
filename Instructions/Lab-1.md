@@ -42,7 +42,7 @@ In this task, you will review the setup of the OpenAI resource, which has alread
    
 1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
-
+   ![](../media/L1-T1-S7.png "Azure OpenAI")
    
 1. In the Azure OpenAI Studio, click **Deployments (1)** and click **+ Create new deployment (2)**.
 
