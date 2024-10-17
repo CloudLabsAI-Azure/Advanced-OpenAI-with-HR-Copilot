@@ -42,7 +42,7 @@
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+1. From the left menu, select **Key (1)** under settings, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
 
    ![](../media/img66.png "Azure OpenAI")
 
