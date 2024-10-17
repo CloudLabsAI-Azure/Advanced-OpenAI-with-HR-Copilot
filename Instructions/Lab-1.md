@@ -18,11 +18,11 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/L1.T1.S1.png "Azure OpenAI")
    
 1. From the **Azure AI services | Azure OpenAI** pane, click on **+ Create**.
 
-   ![](../media/img2.png "Azure OpenAI")
+   ![](../media/L1.T1.S2.png "Azure OpenAI")
    
 1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing Tier. Click on **Next**.
 
