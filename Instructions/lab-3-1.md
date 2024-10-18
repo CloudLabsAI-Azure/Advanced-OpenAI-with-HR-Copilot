@@ -145,17 +145,17 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
     ![](../media/img78.png)
 
-7. On the **Connect to your data** tab, provide the following details and click on **Next: Add cognitive skills (Optional) (7)**.
+7. On the **Connect to your data** tab, provide the following details and click on **Next: Add cognitive skills (Optional) (8)**.
 
    | Settings| value|
    |---|---|
    |Data source name| **copilotstorage<inject key="Deployment ID" enableCopy="false"/>** **(1)**|
    |Data to extract| **Content and metadata** **(2)**|
    |Parsing mode| **JSON array** **(3)**|
-   |Subscription| Select the default Subscription available|
-   |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (4)**|
-   |Container name| **data (5)**|
-   |Blob folder| **data (6)**|
+   |Subscription| **Select the default Subscription available (4)**|
+   |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (5)**|
+   |Container name| **data (6)**|
+   |Blob folder| **data (7)**|
 
    ![](../media/L2-T2-S7.png)
 
