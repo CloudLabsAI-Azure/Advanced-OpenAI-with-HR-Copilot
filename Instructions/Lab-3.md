@@ -327,6 +327,8 @@
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
+   ![](../media/L2-T3-S3.png)
+
 4. Run the below command to change the directory.
 
    ```bash
@@ -369,6 +371,7 @@
 
 11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
+   ![](../media/L2-T3-S11.png)
 
 12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
 
