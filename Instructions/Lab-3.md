@@ -89,9 +89,9 @@
 
 15. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
-   ![](../media/img17.png)
+    ![](../media/img17.png)
 
-   ![](../media/img18.png)
+    ![](../media/img18.png)
 
 16. Run the following query to validate the identity of the employee:
 
@@ -99,11 +99,11 @@
    John 1234
    ```
 
-   ![](../media/img19.png)
+    ![](../media/img19.png)
 
 17. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
-   ![](../media/L3-T1-S7.png)
+    ![](../media/L3-T1-S7.png)
 
 18. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
 
