@@ -362,7 +362,8 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 
     > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
        ![](../media/L2-T3-S13.png)
-    > Even after 10 minutes of restarting the app service, the webpage still shows the error. Return to the **command prompt(cmd)**, press **Ctrl+C** to stop, and execute the below command. 
+
+    > i. Even after 10 minutes of restarting the app service, the webpage still shows the error. Return to the **command prompt(cmd)**, press **Ctrl+C** to stop, and execute the below command. 
 
       ```
       azd up
@@ -370,7 +371,9 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
       
       ![](../media/L2-T3-S13b.png)
 
-    > Now follow steps 12 and 13 of Task 3, and you should see the webpage where you can interact with the chatbot."
+    > ii. Now follow steps 12 and 13 of Task 3, and you should see the webpage where you can interact with the chatbot."
+
+      ![](../media/img46.png)
     
 15. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
