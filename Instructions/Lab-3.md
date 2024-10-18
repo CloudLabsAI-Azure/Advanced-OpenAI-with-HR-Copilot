@@ -81,11 +81,11 @@
    
 14. To execute the application, run the following command.
 
-   > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
-
     ```
     streamlit run hr_copilot.py
     ```
+
+    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
 15. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
