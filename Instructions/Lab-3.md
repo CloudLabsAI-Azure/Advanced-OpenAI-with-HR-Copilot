@@ -191,69 +191,69 @@
       > **Note**: If you are unable to save the **Configure Vector Field**, try deleting the **ContentVector** field. Then, recreate the field with the name **ContentVector** and select **Collection.single** for the **ContentVector** field and reperform from **step 10** to **step 17**.
 
     
-19. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
+18. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
 
       ![](../media/img84.png)
 
-20. From the **Overview (1)** page, click on **Import data (2)** again.
+19. From the **Overview (1)** page, click on **Import data (2)** again.
 
        ![](../media/img77.png)
 
-21. On the **Connect to your data** tab, select the existing data source and select the storage account then, click **Next: Add cognitive skills (optional)**.
+20. On the **Connect to your data** tab, select the existing data source and select the storage account then, click **Next: Add cognitive skills (optional)**.
 
       ![](../media/img85.png)
 
-22. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
+21. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
 
-23. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
+22. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
 
       ![](../media/img86.png)
 
-24. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
+23. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
       ![](../media/img87.png)
 
-25. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
+24. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
 
       ![](../media/l3-t2-s11.png)
 
-26. On the **Vector profile** tab, Click on **Create** under No algorithm configurations.
+25. On the **Vector profile** tab, Click on **Create** under No algorithm configurations.
 
       ![](../media/l3-t2-s12.png)
 
-27. On the **Vector algorithm** tab, leave the default and click on **Save**.
+26. On the **Vector algorithm** tab, leave the default and click on **Save**.
 
       ![](../media/l3-t2-s13.png)
 
-28. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
+27. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
 
       ![](../media/l3-t2-s14.png)
 
-29. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **text-embedding-ada-002** . Click on **Save**.
+28. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **text-embedding-ada-002** . Click on **Save**.
 
       ![](../media/l3-t2-s15.png)
 
-30. On the **Vector profile** tab, select the Vectorizers created in the previous step and Click on **Save**.
+29. On the **Vector profile** tab, select the Vectorizers created in the previous step and Click on **Save**.
 
       ![](../media/l3-t2-s16.png)
 
-31. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
+30. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
 
       ![](../media/l3-t2-s17.png)
 
-32. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
+31. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
 
       ![](../media/img89.png)
 
-33. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
+32. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
 
       ![](../media/img90.png)
 
-34. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
+33. Click on **Keys** from the left menu, copy the **Primary admin keys**, and store them in a text file for later use.
 
     ![](../media/img63.png)
 
-35. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+34. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
     ```
     C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
@@ -261,47 +261,47 @@
    
     ![](../media/img38.png)
 
-36. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
+35. The Visual Studio code is opened on the desktop. Replace the following values and press **CTRL + S** to save the file.
 
      - **USE_AZCS**="**True**" #Set the value to true
      - **AZURE_SEARCH_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME #Replace the value with the index name
      - **CACHE_INDEX_NAME**="YOUR_SEARCH_INDEX_NAME" #Replace the value with the cache index name
      - **AZURE_SEARCH_ADMIN_KEY**="YOUR_SEARCH_INDEX_NAME_KEY" #Replace the value with the primary admin key
  
-37. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
+36. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
     ![](../media/L2-T3-S3.png)
 
-38. Run the below command in the terminal to change the directory.
+37. Run the below command in the terminal to change the directory.
 
     ```bash
     cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
     ```
    
-39. To execute the application, run the following command.
-
-   > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
+38. To execute the application, run the following command.
 
     ```
     streamlit run hr_copilot.py
     ```
+    
+    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
-40. Run the following query to validate the identity of the employee:
+39. Run the following query to validate the identity of the employee:
 
     ```
     John 1234
     ```
 
-   ![](../media/img19.png)
+    ![](../media/img19.png)
 
 
-41. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
+40. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
 
       ![](../media/img92.png)
 
       ![](../media/img93.png)
 
-42. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+41. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
