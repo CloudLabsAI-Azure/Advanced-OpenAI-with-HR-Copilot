@@ -63,11 +63,11 @@
       AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment you copied in Task 1,Step 4.
       AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
       AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
-   ```
+    ```
 
 11. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
-    ![](../media/img39.png)
+    ![](../media/L2-T1-S11.png)
 
 12. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
 
