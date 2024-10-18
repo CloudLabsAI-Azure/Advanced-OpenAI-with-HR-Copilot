@@ -75,17 +75,17 @@
 
 13. Run the below command in the terminal to change the directory.
 
-   ```
-   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-   ```
+    ```
+    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+    ```
    
 14. To execute the application, run the following command.
 
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
-   ```
-   streamlit run hr_copilot.py
-   ```
+    ```
+    streamlit run hr_copilot.py
+    ```
 
 15. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
@@ -95,9 +95,9 @@
 
 16. Run the following query to validate the identity of the employee:
 
-   ```
-   John 1234
-   ```
+     ```
+     John 1234
+     ```
 
     ![](../media/img19.png)
 
