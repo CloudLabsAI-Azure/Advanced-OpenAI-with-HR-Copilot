@@ -1,5 +1,5 @@
 # Lab 3: Deploy and Run the HR/Payroll Copilot Application
- 
+  
    ![](../media/copilot-overview.png "Technical design")
  
 **Smart Agent: At the heart of the solution is the Python object Smart_Agent. The agent has the following components:**
