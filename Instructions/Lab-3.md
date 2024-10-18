@@ -270,13 +270,15 @@
  
 37. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
-1. Run the below command in the terminal to change the directory.
+    ![](../media/L2-T3-S3.png)
+
+38. Run the below command in the terminal to change the directory.
 
    ```bash
    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
    ```
    
-1. To execute the application, run the following command.
+39. To execute the application, run the following command.
 
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
@@ -284,7 +286,7 @@
    streamlit run hr_copilot.py
    ```
 
-7. Run the following query to validate the identity of the employee:
+40. Run the following query to validate the identity of the employee:
 
    ```
    John 1234
@@ -293,13 +295,13 @@
    ![](../media/img19.png)
 
 
-39. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
+41. Enter an example question such as `When will I receive the W2 form?`. The questions are now answered by the Copilot by searching a knowledge base. You can review this by navigating back to the command prompt and viewing the output.
 
       ![](../media/img92.png)
 
       ![](../media/img93.png)
 
-40. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+42. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
@@ -371,7 +373,7 @@
 
 11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
-   ![](../media/L2-T3-S11.png)
+    ![](../media/L2-T3-S11.png)
 
 12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
 
