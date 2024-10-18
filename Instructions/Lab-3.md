@@ -56,7 +56,7 @@
 
 10. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
-   ```
+    ```
       AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key you copied in Task 1,Step 5.
       AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint you copied in Task 1,Step 5.
       AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment you copied in Task 1,Step 4.
