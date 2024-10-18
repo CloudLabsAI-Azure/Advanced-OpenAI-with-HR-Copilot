@@ -67,7 +67,7 @@
 
 11. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
-    ![](../media/L2-T1-S11.png)
+
 
 12. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
 
