@@ -193,7 +193,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector6.png)
 
-17. On the **Compressions** tab, leave the default and click on **Save**. 
+17. On the **Compressions** tab, select **Scalar Quantization** under **kind** ,click on **Rerank with original vectors** and leave the default and click on **Save**. 
 
       ![](../media/L2-T2-S17.png)
 
@@ -255,7 +255,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector6.png)
 
-33. On the **Compressions** tab, leave the default and click on **Save**.
+33. On the **Compressions** tab, select **Scalar Quantization** under **kind** ,click on **Rerank with original vectors** and leave the default and click on **Save**.
 
       ![](../media/L2-T2-S32.png)
 
