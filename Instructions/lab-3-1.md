@@ -300,7 +300,7 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
       AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
     ```
 
-     ![](../media/img42.png)
+     ![](../media/L2-T3-S2.png)
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
