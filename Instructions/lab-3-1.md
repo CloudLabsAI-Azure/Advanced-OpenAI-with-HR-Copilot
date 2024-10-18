@@ -113,7 +113,7 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
 19. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
-#### Validation
+#### Validation 
 
 <validation step="bfc0e96d-c61e-4a91-b1ee-a10df581cdd5" />
 
