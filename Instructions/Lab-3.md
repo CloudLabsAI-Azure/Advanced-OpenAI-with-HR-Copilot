@@ -274,23 +274,23 @@
 
 38. Run the below command in the terminal to change the directory.
 
-   ```bash
-   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-   ```
+    ```bash
+    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+    ```
    
 39. To execute the application, run the following command.
 
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
-   ```
-   streamlit run hr_copilot.py
-   ```
+    ```
+    streamlit run hr_copilot.py
+    ```
 
 40. Run the following query to validate the identity of the employee:
 
-   ```
-   John 1234
-   ```
+    ```
+    John 1234
+    ```
 
    ![](../media/img19.png)
 
