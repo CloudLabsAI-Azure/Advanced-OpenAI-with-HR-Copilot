@@ -1,4 +1,4 @@
-# Lab 03: Deploy and Run the HR/Payroll Copilot Application
+# Lab 03: Deploy and Run the HR/Payroll Copilot Application  
 
    ![](../media/copilot-overview.png "Technical design")
 
@@ -18,37 +18,37 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/L2-T1-S1.png "Azure OpenAI")
 
-1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+2. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/select-openai.png "Azure OpenAI")
+   ![](../media/L2-T1-S2.png "Azure OpenAI")
 
-1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+3. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
-   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   ![](../media/L2-T1-S3.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+4. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p12.png "Azure OpenAI")
+   ![](../media/L2-T1-S4.png "Azure OpenAI")
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+5. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
-   ![](../media/l1-t2-s5.png "Azure OpenAI")
+   ![](../media/L2-T1-S5.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+6. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
-1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
+7. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+8. From the left menu, select **Key (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
 
    ![](../media/img66.png "Azure OpenAI")
 
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+9. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
    ```
    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
@@ -56,64 +56,64 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
     ![](../media/img38.png)
 
-1. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**, and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
+10. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**, and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
-   ```
-      AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key.
-      AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint
-      AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment.
-      AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment.
-      AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint.
-      AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key
-   ```
+    ```
+      AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key you copied in Task 1,Step 5.
+      AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint you copied in Task 1,Step 5.
+      AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment you copied in Task 1,Step 4.
+      AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment you copied in Task 1,Step 4.
+      AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
+      AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
+    ```
 
-1. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
+11. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
-    ![](../media/img39.png)
+    ![](../media/L2-T1-S11.png)
 
-1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
+12. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
 
     ![](../media/img69.png) 
 
-1. Run the below command in the terminal to change the directory.
+13. Run the below command in the terminal to change the directory.
 
-   ```
-   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-   ```
+    ```
+    cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+    ```
    
-1. To execute the application, run the following command.
+14. To execute the application, run the following command.
 
-   > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
+    ```
+    streamlit run hr_copilot.py
+    ```
 
-   ```
-   streamlit run hr_copilot.py
-   ```
+    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
-1. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
+15. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
-   ![](../media/img17.png)
+    ![](../media/img17.png)
 
-   ![](../media/img18.png)
+    ![](../media/img18.png)
 
-1. Run the following query to validate the identity of the employee:
+16. Run the following query to validate the identity of the employee:
 
-   ```
-   John 1234
-   ```
+    ```
+    John 1234
+    ```
 
-   ![](../media/img19.png)
+    ![](../media/img19.png)
 
-1. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+17. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
 
-   ![](../media/L3-T1-S7.png)
+    ![](../media/L3-T1-S7.png)
 
-1. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
+18. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
 
     ![](../media/L3-T1-S8.png)
 
-1. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
+19. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
-#### Validation
+#### Validation 
 
 <validation step="bfc0e96d-c61e-4a91-b1ee-a10df581cdd5" />
 
@@ -145,18 +145,19 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
     ![](../media/img78.png)
 
-7. On the **Connect to your data** tab, provide the following details and click on **Next: Add cognitive skills (Optional) (7)**.
+7. On the **Connect to your data** tab, provide the following details and click on **Next: Add cognitive skills (Optional) (8)**.
 
    | Settings| value|
    |---|---|
    |Data source name| **copilotstorage<inject key="Deployment ID" enableCopy="false"/>** **(1)**|
    |Data to extract| **Content and metadata** **(2)**|
    |Parsing mode| **JSON array** **(3)**|
-   |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (4)**|
-   |Container name| **data (5)**|
-   |Blob folder| **data (6)**|
+   |Subscription| **Select the default Subscription available (4)**|
+   |Connection string | **YOUR_STORAGE_ACCOUNT_CONNECTIONSTRING (5)**|
+   |Container name| **data (6)**|
+   |Blob folder| **data (7)**|
 
-   ![](../media/img80.png)
+   ![](../media/L2-T2-S7.png)
 
 8. On the **Add cognitive skills (optional)** tab, leave the default and click on **Skip to: Customize target index**.
 
@@ -166,7 +167,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
 10. Next, on the **contentVector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
-      ![](../media/img82.png)
+    ![](../media/img82.png)
 
 11. On the **Configure vector field** tab, set the **Dimensions** property to `1536` and Click on **Create** under No vector search profiles.
 
@@ -184,17 +185,17 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector4.png)
 
-15. On the **Vector algorithm** tab, leave it as the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **text-embedding-ada-002** . Click on **Save**.
+15. On the **Vector algorithm** tab, leave it as the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **ada-002** . Click on **Save**.
 
-      ![](../media/vector5.png)
+      ![](../media/L2-T2-S15.png)
 
 16. On the **Vector profile** tab, select the Vectorizers created in the previous step and Click on **Create** under Compressions.
 
       ![](../media/vector6.png)
 
-17. On the **Compressions** tab, leave the default and click on **Save**. 
+17. On the **Compressions** tab, select **Scalar Quantization** under **kind** ,click on **Rerank with original vectors** and leave the default and click on **Save**. 
 
-      ![](../media/vector7.png)
+      ![](../media/L2-T2-S17.png)
 
 18. In the **Vectore profile** tab, select Algorithm, Vectorizations, and Compressions recently created, and click on **Save**
 
@@ -222,11 +223,13 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
 24. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
 
-      ![](../media/img86.png)
+      ![](../media/L2-T2-S24a.png)
+    
+      ![](../media/L2-T2-S24b.png)
 
 25. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
-      ![](../media/img87.png)
+      ![](../media/L2-T2-S25.png)
 
 26. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
 
@@ -244,17 +247,17 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector4.png)
 
-30. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **text-embedding-ada-002** . Click on **Save**.
+30. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **ada-002** . Click on **Save**.
 
-      ![](../media/vector5.png)
+      ![](../media/L2-T2-S30.png)
 
 31. On the **Vector profile** tab, select the Vectorizers created in the previous step and  Click on **Create** under No compression configurations.
 
       ![](../media/vector6.png)
 
-32. On the **Compressions** tab, leave the default and click on **Save**.
+32. On the **Compressions** tab, select **Scalar Quantization** under **kind** ,click on **Rerank with original vectors** and leave the default and click on **Save**.
 
-      ![](../media/vector7.png)
+      ![](../media/L2-T2-S32.png)
 
 33. In the **Vectore profile** tab, select Algorithm, Vectorizations, and Compressions recently created, and click on **Save**.
 
@@ -290,18 +293,20 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 
 2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
-      ```
-      AZURE_OPENAI_API_KEY:'YOUR_OPENAI_KEY' //#Replace it with the OpenAI key.
-      AZURE_OPENAI_ENDPOINT:'YOUR_OPENAI_ENDPOINT' //#Replace it with the OpenAI Endpoint.
-      AZURE_OPENAI_EMB_DEPLOYMENT:'YOUR_EMBEDDING_MODEL' //#Replace with your embedding model name.
-      AZURE_OPENAI_CHAT_DEPLOYMENT:'YOUR_GPT_MODEL' //#Replace with your Open AI Chat Deployment name.
-      AZURE_SEARCH_SERVICE_ENDPOINT:'YOUR_SEARCH_SERVICE_ENDPOINT' //#Replace with Search Service Endpoint.
-      AZURE_SEARCH_ADMIN_KEY:'YOUR_SEARCH_SERVICE_KEY' //#Replace with your Search Service Admin Key.
-      ```
+    ```
+      AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key you copied in Task 1,Step 5.
+      AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint you copied in Task 1,Step 5.
+      AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment you copied in Task 1,Step 4.
+      AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment you copied in Task 1,Step 4.
+      AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
+      AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
+    ```
 
-     ![](../media/img42.png)
+     ![](../media/L2-T3-S2.png)
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
+
+     ![](../media/L2-T3-S3.png)
 
 4. Run the below command to change the directory.
 
@@ -345,6 +350,7 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 
 11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It produces a web package file, then creates the resource and publishes the package for the app service.
 
+    ![](../media/L2-T3-S11.png)
 
 12. Navigate back to the Azure portal, search, and select **App service**. Select the available web app that you have deployed in the previous step.
 
@@ -357,7 +363,27 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
     ![](../media/img46.png)
 
     > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
+       ![](../media/L2-T3-S13.png)
 
+    > i. Even after 10 minutes of restarting the app service, the webpage still shows the error. Return to the **command prompt(cmd)**, press **Ctrl+C** to stop, and execute the below command. 
+
+      ```
+      azd up
+      ```
+      
+      ![](../media/L2-T3-S13b.png)
+
+    > ii. Now follow steps 12 and 13 of Task 3, and you should see the webpage where you can interact with the chatbot."
+
+      ![](../media/img46.png)
+    
+15. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+
+    ![](../media/L3-T1-S7.png)
+
+16. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
+
+    ![](../media/L3-T1-S8.png)
 #### Validation
 
 <validation step="de89d182-5c32-4a80-b44c-8fd6c706fdbe" />

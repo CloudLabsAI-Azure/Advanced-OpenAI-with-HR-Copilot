@@ -18,13 +18,13 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/L1-T1-S1.png "Azure OpenAI")
    
 1. From the **Azure AI services | Azure OpenAI** pane, click on **+ Create**.
 
-   ![](../media/img2.png "Azure OpenAI")
+   ![](../media/L1-T1-S2.png "Azure OpenAI")
    
-1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the default subscription and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** resource group. Select **East US** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>** and select **Standard S0** for Pricing Tier. Click on **Next**.
+1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the **default subscription (1)** and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)** resource group. Select **East US (3)** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>(4)** and select **Standard S0 (5)** for Pricing Tier. Click on **Next (6)**.
 
    ![](../media/L1-T1-S3.png "Azure OpenAI")
    
@@ -46,7 +46,7 @@ In this task, you will review the setup of the OpenAI resource, which has alread
    
 1. In the Azure OpenAI Studio, click **Deployments (1)** and click **+ Create new deployment (2)**.
 
-   ![](../media/img7.png "Azure OpenAI")
+   ![](../media/L1-T1-S8.png "Azure OpenAI")
    
 1. On the **Deploy Model** tab, enter the following details and click on **Create**.
 
@@ -63,23 +63,23 @@ In this task, you will configure a locally hosted application that mimics the fu
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/L1-T2-S1.png "Azure OpenAI")
 
 1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/select-openai.png "Azure OpenAI")
+   ![](../media/L1-T2-S2.png "Azure OpenAI")
 
 1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
-   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   ![](../media/L1-T2-S3.png "Azure OpenAI")
       
 1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** model are present with the deployment names as **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p23.png "Azure OpenAI")
+   ![](../media/L1-T2-S4.png "Azure OpenAI")
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
-   ![](../media/l1-t2-s5.png "Azure OpenAI")
+   ![](../media/L1-T2-S5.png "Azure OpenAI")
    
 1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
