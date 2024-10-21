@@ -14,7 +14,7 @@
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
-   ![](../media/open-azureportal.png "Enter Email")
+   ![](../media/eyhackday2img1.png)
    
 2. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email or username, and click on **Next**. 
 
