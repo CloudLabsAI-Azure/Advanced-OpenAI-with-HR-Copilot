@@ -42,18 +42,20 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
    
-1. In the Azure OpenAI Studio, click **Deployments (1)** and click **+ Create new deployment (2)**.
+1. In the Azure OpenAI Studio, click **Deployments (1)**, click **+ Deploy model (2)** and select **Deploy base model (3)**.
 
-   ![](../media/L1-T1-S8.png "Azure OpenAI")
+   ![](../media/eyhackday2img6.png)
+
+1. On the **Select a Model** pane, search for `gpt-4` and select **gpt-4 (1)** model from the list and click on **Confirm (2)**.
+
+   ![](../media/eyhackday2img7.png)
    
-1. On the **Deploy Model** tab, enter the following details and click on **Create**.
+1. On the **Deploy Model gpt-4** tab, enter the following details and click on **Deploy (3)**.
 
-   - Deployment name: **copilot-gpt**
-   - Select a model: **gpt-4**
-   - Deployment type: **Standard**
-   - Tokens per Minute Rate Limit (thousands): **15K**
+   - Deployment name: **copilot-gpt (1)**
+   - Tokens per Minute Rate Limit (thousands): **15K (2)**
 
-     ![](../media/27-08-2024(1).png "Azure OpenAI")
+     ![](../media/eyhackday2img8.png)
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming
 
