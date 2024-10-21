@@ -28,9 +28,13 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
    ![](../media/L2-T1-S3.png "Azure OpenAI")
       
-4. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+4. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **mygpt-4** and **ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/L2-T1-S4.png "Azure OpenAI")
+   ![](../media/eyhackday2img4.png)
+
+   ![](../media/eyhackday2img5.png)
+
+   >**Note:** Use bottom horizontal scroll bar to check the capacity value.
 
 5. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
@@ -61,8 +65,8 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
     ```
       AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key you copied in Task 1,Step 5.
       AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint you copied in Task 1,Step 5.
-      AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment you copied in Task 1,Step 4.
-      AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment you copied in Task 1,Step 4.
+      AZURE_OPENAI_EMB_DEPLOYMENT = "ada-002" 
+      AZURE_OPENAI_CHAT_DEPLOYMENT= "mygpt-4" 
       AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
       AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
     ```
@@ -103,19 +107,27 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
     ![](../media/img19.png)
 
-17. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+17. Enter an example question . The questions are answered by the Copilot by searching a knowledge base.
+
+    ```
+    When will I receive the W2 form?
+    ```
 
     ![](../media/L3-T1-S7.png)
 
-18. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
+18. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter:
+
+    ```
+    I moved to 123 Main St., San Jose, CA 95112, please update my address
+    ```
 
     ![](../media/L3-T1-S8.png)
-
-19. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 #### Validation 
 
 <validation step="bfc0e96d-c61e-4a91-b1ee-a10df581cdd5" />
+
+>Once the validation is **succeeded**, navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
@@ -296,8 +308,8 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
     ```
       AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key you copied in Task 1,Step 5.
       AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint you copied in Task 1,Step 5.
-      AZURE_OPENAI_EMB_DEPLOYMENT = "YOUR_EMBEDDING_MODEL" //#Replace with the name of your embedding model deployment you copied in Task 1,Step 4.
-      AZURE_OPENAI_CHAT_DEPLOYMENT= "YOUR_GPT_MODEL" //#Replace with the name of your Open AI Chat Deployment you copied in Task 1,Step 4.
+      AZURE_OPENAI_EMB_DEPLOYMENT = "ada-002"
+      AZURE_OPENAI_CHAT_DEPLOYMENT= "mygpt-4"
       AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
       AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
     ```
@@ -376,14 +388,31 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
     > ii. Now follow steps 12 and 13 of Task 3, and you should see the webpage where you can interact with the chatbot."
 
       ![](../media/img46.png)
+
+14. Run the following query to validate the identity of the employee:
+
+    ```
+    John 1234
+    ```
+
+    ![](../media/img19.png)
     
-15. Enter an example question such as `When will I receive the W2 form?`. The questions are answered by the Copilot by searching a knowledge base.
+15. Enter an example question . The questions are answered by the Copilot by searching a knowledge base.
+
+    ```
+    When will I receive the W2 form?
+    ```
 
     ![](../media/L3-T1-S7.png)
 
-16. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter `I moved to 123 Main St., San Jose, CA 95112, please update my address` in the HR Copilot app.
+16. Copilot can help update employee information, like address updates. For other information update requests, Copilot will log a ticket to the HR team to update the information. Enter:
+
+    ```
+    I moved to 123 Main St., San Jose, CA 95112, please update my address
+    ```
 
     ![](../media/L3-T1-S8.png)
+
 #### Validation
 
 <validation step="de89d182-5c32-4a80-b44c-8fd6c706fdbe" />
