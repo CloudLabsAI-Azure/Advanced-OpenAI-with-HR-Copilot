@@ -10,8 +10,6 @@ In this exercise, you will set up the OpenAI resource and install the necessary 
 
 ### Task 1: Create an OpenAI resource and model **(Read-Only)**
 
-# READ-ONLY
-
  > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
 In this task, you will review the setup of the OpenAI resource, which has already been configured for your environment. This task is read-only, meaning no changes will be made.
@@ -75,7 +73,11 @@ In this task, you will configure a locally hosted application that mimics the fu
       
 1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** model are present with the deployment names as **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/L1-T2-S4.png "Azure OpenAI")
+   ![](../media/eyhackday2img2.png "Azure OpenAI")
+
+   ![](../media/eyhackday2img3.png)
+
+   >**Note:** If you are not able to see the **capacity** value, please use the horizontal scroll bar from bottom of the page.
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
@@ -92,7 +94,7 @@ In this task, you will configure a locally hosted application that mimics the fu
 1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press **CTRL+S** to save the file.
 
     - **AZURE_OPENAI_API_KEY**: Replace with your Azure OpenAI Key
-    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with your **GPT** model Azure OpenAI Deployment Name
+    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with `copilot-gpt`
     - **AZURE_OPENAI_ENDPOINT**: Replace with your Azure OpenAI **Endpoint**
 
       ![](../media/img68.png)
@@ -100,6 +102,8 @@ In this task, you will configure a locally hosted application that mimics the fu
 1. Navigate back to File Explorer and open `chatgpt.py` with **Visual Studio Code** to view the code to build a ChatGPT-like app.
 
     ![](../media/img70.png) 
+
+    >**Tip:** **Streamlit** is an open-source Python framework that enables rapid development of interactive web apps for data science and machine learning projects. It allows developers to create user-friendly dashboards and visualizations with minimal coding.
  
 1. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
 
