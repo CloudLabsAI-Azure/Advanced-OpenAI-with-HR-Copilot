@@ -105,7 +105,7 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
     John 1234
     ```
 
-    ![](../media/img19.png)
+    ![](../media/eyhackimg1.png)
 
 17. Enter an example question . The questions are answered by the Copilot by searching a knowledge base.
 
@@ -395,7 +395,7 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
     John 1234
     ```
 
-    ![](../media/img19.png)
+    ![](../media/eyhackimg1.png)
     
 15. Enter an example question . The questions are answered by the Copilot by searching a knowledge base.
 
