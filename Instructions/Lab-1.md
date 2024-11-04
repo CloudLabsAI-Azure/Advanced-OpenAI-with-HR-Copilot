@@ -20,13 +20,13 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
  > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
-1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+1. In the Azure portal, search for **OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/openai8.png "Azure OpenAI")
    
-1. From the **Cognitive Services | Azure OpenAI** pane in the Azure portal, click on the **Create** button to start the process of setting up a new Azure OpenAI resource.
+1. On the Azure AI Services page, select **Azure OpenAI (1)** from the menu on the left, then click **Create (2)**. button to start the process of setting up a new Azure OpenAI resource.
 
-   ![](../media/img2.png "Azure OpenAI")
+   ![](../media/openai_create1.png "Azure OpenAI")
    
 1. In the **Create Azure OpenAI** pane under the **Basics** tab, Configure the details for your new resource, such as selecting the subscription, resource group, region and other required details.
 
@@ -56,11 +56,11 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
    
-1. After you arrive in Azure AI Studio, click on the **Explore the new experience** pop-up at the top of the page to start using the latest features and interface updates.
+1. In the prompt titled **Discover an even better Azure AI Studio experience**, click **Close**.
 
-   ![](../media/explore_new-exp.jpg)
+   ![](../media/pop-upclose.png)
 
-1. In the left navigation pane, click on **Deployments (1)**, then click on **+ Deploy model** (2). Select **Deploy base Model** from the options presented.
+1. In the left navigation pane, click on **Deployments (1)**, then click on **+ Deploy model** **(2)**. Select **Deploy base Model** from the options presented.
 
    ![](../media/deploy-1.jpg)
 
