@@ -88,37 +88,37 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/openai8.png "Azure OpenAI")
 
-1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+2. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
    ![](../media/select-openai.png "Azure OpenAI")
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio**. This action will redirect you to the Azure AI Studio interface, where you can manage and interact with your OpenAI models, explore available features, and perform tasks related to model deployment and configuration.
+3. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio**. This action will redirect you to the Azure AI Studio interface, where you can manage and interact with your OpenAI models, explore available features, and perform tasks related to model deployment and configuration.
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
 
-1. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Note the **Azure OpenAI deployment names and model names**.
+4. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Note the **Azure OpenAI deployment names and model names**.
    
    ![](../media/new10.png)
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu under **Resource Managemant**, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
+5. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu under **Resource Managemant**, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
    > **Note**: Steps 5 through 8 demonstrate where to obtain the values used in the configuration.
 
-1. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+6. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
-1. From the Overview tab of Cognitive Search, Note the **URL**.
+7. From the Overview tab of Cognitive Search, Note the **URL**.
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)** under **Settings**, Note the **Primary admin key (2)**.
+8. From the left menu, select **Key (1)** under **Settings**, Note the **Primary admin key (2)**.
 
    ![](../media/img66.png "Azure OpenAI")
 
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+9. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
    ```
    C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
@@ -126,7 +126,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
     ![](../media/img67.png)
 
-1. In the `secrets.env` file, replace the following values. Press **CTRL+S** to save the file.
+10. In the `secrets.env` file, replace the following values. Press **CTRL+S** to save the file.
 
    | **Variables**                     | **Values**                                                    |
    | --------------------------------- |---------------------------------------------------------------|
