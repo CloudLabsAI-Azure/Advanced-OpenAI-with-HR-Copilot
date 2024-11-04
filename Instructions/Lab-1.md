@@ -128,18 +128,18 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
 1. In the `secrets.env` file, replace the following values. Press **CTRL+S** to save the file.
 
-   | **Variables**                | **Values**                                                    |
-   | ---------------------------- |---------------------------------------------------------------|
-   | **AZURE_OPENAI_API_KEY** | **<inject key="OpenAIKey" enableCopy="true"/>**                   |
-   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is  **copilot-gpt**                              | 
-   | **AZURE_OPENAI_ENDPOINT**  | **<inject key="OpenAIEndpoint" enableCopy="true"/>**            |
+     | **Variables**                | **Values**                                                    |
+     | ---------------------------- |---------------------------------------------------------------|
+     | **AZURE_OPENAI_API_KEY** | **<inject key="OpenAIKey" enableCopy="true"/>**                   |
+     | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is  **copilot-gpt**                              | 
+     | **AZURE_OPENAI_ENDPOINT**  | **<inject key="OpenAIEndpoint" enableCopy="true"/>**            |
 
 
-    ![](../media/img68.png)
+      ![](../media/img68.png)
 
-      > **Note :** If you're unable to see the full "Values" section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
+        > **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
    
-      ![](../media/zoom.png)
+        ![](../media/zoom.png)
 
 1. Navigate back to File Explorer and open `chatgpt.py` with **Visual Studio Code** to view the code to build a ChatGPT-like app.
 
