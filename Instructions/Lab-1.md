@@ -131,14 +131,10 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
    | **Variables**                     | **Values**                                                    |
    | --------------------------------- |---------------------------------------------------------------|
    | **AZURE_OPENAI_API_KEY**          | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-   | **AZURE_OPENAI_ENDPOINT**         | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
-   | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
-   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** name          |
-   | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
-   | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**        | Replace the value with your **YOUR_GPT_MODEL** name that is  **copilot-gpt**          |
+   | **AZURE_OPENAI_ENDPOINT** | **<inject key="OpenAIEndpoint" enableCopy="true"/>**        |
 
-
-  ![](../media/img68.png)
+   ![](../media/img68.png)
 
   > **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
    
