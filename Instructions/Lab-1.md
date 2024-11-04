@@ -128,11 +128,14 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
 1. In the `secrets.env` file, replace the following values. Press **CTRL+S** to save the file.
 
-     | **Variables**                | **Values**                                                    |
-     | ---------------------------- |---------------------------------------------------------------|
-     | **AZURE_OPENAI_API_KEY** | **<inject key="OpenAIKey" enableCopy="true"/>**                   |
-     | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is  **copilot-gpt**                              | 
-     | **AZURE_OPENAI_ENDPOINT**  | **<inject key="OpenAIEndpoint" enableCopy="true"/>**            |
+     | **Variables**                     | **Values**                                                    |
+   | --------------------------------- |---------------------------------------------------------------|
+   | **AZURE_OPENAI_API_KEY**          | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **AZURE_OPENAI_ENDPOINT**         | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** name          |
+   | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
 
    ![](../media/img68.png)
