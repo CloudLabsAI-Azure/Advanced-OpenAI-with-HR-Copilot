@@ -49,7 +49,7 @@ Welcome to your Build your own Intelligent HR Copilot with Azure Open AI Worksho
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](../media/lab-guide-01.png)
+![](../media/lab-guide-01u.png)
 
 ### Virtual Machine & Lab Guide
  

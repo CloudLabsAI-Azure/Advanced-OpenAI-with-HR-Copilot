@@ -20,13 +20,13 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
  > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
-1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+1. In the Azure portal, search for **OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/openai8.png "Azure OpenAI")
    
-1. From the **Cognitive Services | Azure OpenAI** pane in the Azure portal, click on the **Create** button to start the process of setting up a new Azure OpenAI resource.
+1. On the Azure AI Services page, select **Azure OpenAI (1)** from the menu on the left, then click **Create (2)**. button to start the process of setting up a new Azure OpenAI resource.
 
-   ![](../media/img2.png "Azure OpenAI")
+   ![](../media/openai_create1.png "Azure OpenAI")
    
 1. In the **Create Azure OpenAI** pane under the **Basics** tab, Configure the details for your new resource, such as selecting the subscription, resource group, region and other required details.
 
@@ -56,11 +56,11 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
    
-1. After you arrive in Azure AI Studio, click on the **Explore the new experience** pop-up at the top of the page to start using the latest features and interface updates.
+1. In the prompt titled **Discover an even better Azure AI Studio experience**, click **Close**.
 
-   ![](../media/explore_new-exp.jpg)
+   ![](../media/pop-upclose.png)
 
-1. In the left navigation pane, click on **Deployments (1)**, then click on **+ Deploy model** (2). Select **Deploy base Model** from the options presented.
+1. In the left navigation pane, click on **Deployments (1)**, then click on **+ Deploy model** **(2)**. Select **Deploy base Model** from the options presented.
 
    ![](../media/deploy-1.jpg)
 
@@ -84,9 +84,9 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
 In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4, and integrate the required API keys. After configuring the application with these details, you will run and test a ChatGPT-like app to verify its functionality, demonstrating how to use Azure OpenAI models in a practical application.
 
-1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+1. In the Azure portal, search for **OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/openai8.png "Azure OpenAI")
 
 1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
@@ -96,11 +96,11 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/L1-T1-S7.png "Azure OpenAI")
 
-1. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Note the Azure OpenAI deployment names and model names.
+1. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Note the **Azure OpenAI deployment names and model names**.
    
    ![](../media/new10.png)
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu under **Resource Managemant**, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
@@ -114,7 +114,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)**, Note the **Primary admin key (2)**.
+1. From the left menu, select **Key (1)** under **Settings**, Note the **Primary admin key (2)**.
 
    ![](../media/img66.png "Azure OpenAI")
 
@@ -151,7 +151,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
    ```
    
-1. To run the application from the command line, navigate back to Command Prompt and run the below command:
+1. To run the application from the command line, enter the following command in the terminal:
 
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 

@@ -31,16 +31,18 @@ You will be able to complete the following tasks:
 
     ![](../media/img38.png)
 
+    > **Note** : If prompted with **Do you want to allow untrusted files in this workspace?**, select **Open**.
+
 2. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
-   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_GPT_MODEL** name          |      
-   | **DEPLOYMENT_NAME**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
-   | **OPENAI_API_BASE**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
-   | **OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-   | **SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
-   | **SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**          |  Replace the value with your **YOUR_GPT_MODEL** name that is **copilot-gpt**         |      
+   | **AZURE_OPENAI_EMB_DEPLOYMENT**          |  Replace the value with your **YOUR_EMBEDDING_MODEL** name that is **CompletionModel**   |
+   | **AZURE_OPENAI_ENDPOINT**          | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
+   | **AZURE_OPENAI_API_KEY**           | **<inject key="OpenAIKey" enableCopy="true"/>**               |
+   | **AZURE_SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **AZURE_SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
 3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
@@ -89,11 +91,11 @@ You will be able to complete the following tasks:
 
     ![](../media/img75.png)
 
-3. From the left menu, select **Access keys** under **Security + networking** section. Copy the **Connection string** and store it in a text file for later use.
+3. From the left menu, select **Access keys** under **Security + networking** section. click on **Show** and  Copy the **Connection string** and store it in a text file for later use.
 
     ![](../media/img76.png)
 
-4. Next, navigate to **Azure AI services**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, navigate to **Azure openAI services**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
@@ -120,7 +122,7 @@ You will be able to complete the following tasks:
 
 8. On the **Add cognitive skills (optional)** tab, leave the default and click on **Skip to: Customize target index**.
 
-9. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr (1)**. Set the values as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the content vector field).
+9. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr**. Set the values as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the content vector field).
 
    ![](../media/img81.png)
 
@@ -249,7 +251,7 @@ You will be able to complete the following tasks:
 38. Run the following query to validate the identity of the employee:
    
       ```
-      Nancy 1234
+      john 1234
       ```
 
     ![](../media/img91.png)
@@ -344,6 +346,12 @@ You will be able to complete the following tasks:
     ![](../media/img46.png)
 
     > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="e563f609-c163-48c7-816f-e11985cba271" />
 
