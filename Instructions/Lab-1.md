@@ -138,28 +138,28 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
    | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
 
-   ![](../media/img68.png)
+![](../media/img68.png)
 
-   > **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
+> **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
    
-   ![](../media/zoom.png)
+![](../media/zoom.png)
 
-1. Navigate back to File Explorer and open `chatgpt.py` with **Visual Studio Code** to view the code to build a ChatGPT-like app.
+11. Navigate back to File Explorer and open `chatgpt.py` with **Visual Studio Code** to view the code to build a ChatGPT-like app.
 
     ![](../media/img70.png) 
  
-1. Next, click on the **Eclipse Button** at the top of the screen, then select **Terminal** from the dropdown menu and click on **New Terminal** to open a new terminal window.
+12. Next, click on the **Eclipse Button** at the top of the screen, then select **Terminal** from the dropdown menu and click on **New Terminal** to open a new terminal window.
 
     ![](../media/img69.png) 
 
 
-1. Run the following command in the terminal to change the directory:
+13. Run the following command in the terminal to change the directory:
 
    ```
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
    ```
    
-1. To run the application from the command line, enter the following command in the terminal:
+14. To run the application from the command line, enter the following command in the terminal:
 
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
@@ -167,21 +167,21 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
    streamlit run chatgpt.py
    ```
    
-1. Once the command `streamlit run chatgpt.py` has executed, a demo application will be launched and opened in your web browser, hosted locally on your machine.
+15. Once the command `streamlit run chatgpt.py` has executed, a demo application will be launched and opened in your web browser, hosted locally on your machine.
 
    ![](../media/img71.png "Azure OpenAI")
    
    ![](../media/img72.png "Azure OpenAI")
 
-1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like application in 50 lines of code.
+16. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like application in 50 lines of code.
 
    ![](../media/img73.png "Azure OpenAI")
 
    > **Note**: You may get a different response. please note chatgpt uses LLM and responses may vary everytime.
   
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
+17. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
 
-1. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
+18. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
 
 ## Summary
 
