@@ -84,9 +84,9 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
 In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4, and integrate the required API keys. After configuring the application with these details, you will run and test a ChatGPT-like app to verify its functionality, demonstrating how to use Azure OpenAI models in a practical application.
 
-1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+1. In the Azure portal, search for **OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/openai8.png "Azure OpenAI")
 
 1. From the **Azure AI Services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
@@ -100,7 +100,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
    
    ![](../media/new10.png)
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Key & Endpoint (1)** from the left menu under **Resource Managemant**, and click on **Show Keys (2)**. Note the **KEY 1 (3)** and **Endpoint (4)**.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
@@ -114,7 +114,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Key (1)**, Note the **Primary admin key (2)**.
+1. From the left menu, select **Key (1)** under **Settings**, Note the **Primary admin key (2)**.
 
    ![](../media/img66.png "Azure OpenAI")
 
@@ -151,7 +151,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
    ```
    
-1. To run the application from the command line, navigate back to Command Prompt and run the below command:
+1. To run the application from the command line, enter the following command in the terminal:
 
    > **Note**: You can enter your email address below to get notifications. If not, please leave this field blank and click on **Enter**.
 
