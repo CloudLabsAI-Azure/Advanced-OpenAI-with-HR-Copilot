@@ -44,7 +44,7 @@ You will be able to complete the following tasks:
    | **AZURE_SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
    | **AZURE_SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
-> **Note :** If you're unable to see the full "Values" section in the table, click on the three dots (ellipsis) in 
+> **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in 
     the top right corner of your browser and try reducing the zoom level for better visibility.
    
    ![](../media/zoom.png)
@@ -295,7 +295,7 @@ You will be able to complete the following tasks:
 
    ![](../media/img42.png)
 
-   > **Note :** If you're unable to see the full "Values" section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
+   > **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
    
    ![](../media/zoom.png)
 
