@@ -130,8 +130,9 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
-   | **AZURE_OPENAI_API_KEY** | **<inject key="OpenAIKey" enableCopy="true"/>**               |
-   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is **copilot-gpt** | 
+   | **AZURE_OPENAI_API_KEY** | **<inject key="OpenAIKey" enableCopy="true"/>**                   |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is     
+     **copilot-gpt**                                                                              | 
    | **AZURE_OPENAI_ENDPOINT**    | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
 
       ![](../media/img68.png)
