@@ -1,0 +1,27 @@
+[ 
+  {
+  "Name": "Adavance Azure OpenAI Copilot",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Advanced-OpenAI-with-HR-Copilot/guided-labs/Instructions/getting-started.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Advanced-OpenAI-with-HR-Copilot/guided-labs/Instructions/Lab-1.md",
+      "Order": 2
+    },
+
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Advanced-OpenAI-with-HR-Copilot/guided-labs/Instructions/Lab-2.md",
+      "Order": 3
+    },
+
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Advanced-OpenAI-with-HR-Copilot/guided-labs/Instructions/lab-3-1.md",
+      "Order": 4
+    }
+  ]
+  
+  }
+]
