@@ -92,9 +92,9 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
    ![](../media/select-openai.png "Azure OpenAI")
 
-3. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio**. This action will redirect you to the Azure AI Studio interface, where you can manage and interact with your OpenAI models, explore available features, and perform tasks related to model deployment and configuration.
+3. In the Azure OpenAI resource pane, click on **Go to Azure AI Studio**. This action will redirect you to the Azure AI Studio interface, where you can manage and interact with your OpenAI models, explore available features, and perform tasks related to model deployment and configuration.
 
-   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   ![](../media/tel-9u.png)
 
 4. In the **Azure OpenAI Studio**, select **Deployments (1)** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **CompletionModel**. Review that the model's capacity is set to **15K TPM**. Note the **Azure OpenAI deployment names and model names**.
    
