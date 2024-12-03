@@ -90,7 +90,7 @@ You will be able to complete the following tasks:
 
 1. In the **Azure Portal**, search and select **Storage accounts**. 
 
-    ![](../media/img74.png)
+    ![](../media/img74u.png)
 
 2. From the **Storage account** page, select **copilotstorage<inject key="Deployment ID" enableCopy="false"/>**.
 
