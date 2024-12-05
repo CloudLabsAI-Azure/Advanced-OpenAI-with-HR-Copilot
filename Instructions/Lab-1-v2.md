@@ -84,7 +84,7 @@ In this task, you will learn to create an Azure OpenAI resource in the Azure por
 
 In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4, and integrate the required API keys. After configuring the application with these details, you will run and test a ChatGPT-like app to verify its functionality, demonstrating how to use Azure OpenAI models in a practical application.
 
-1. From your browser, open a new tab and navigate to [Azure AI Studio](ai.azure.com).
+1. From your browser, open a new tab and navigate to [Azure AI Studio](https://ai.azure.com/).
 
 2. On **Azure AI Foundry** portal, click on **Sign in to get started** to sign in.
 
