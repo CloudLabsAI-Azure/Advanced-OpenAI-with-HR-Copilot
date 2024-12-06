@@ -273,7 +273,7 @@ You will be able to complete the following tasks:
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select **Open with Code**.
 
       ```
       C:\LabFiles\OpenAIWorkshop\infra
