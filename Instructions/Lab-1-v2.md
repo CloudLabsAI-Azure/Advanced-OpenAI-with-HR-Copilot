@@ -140,7 +140,7 @@ In this task, you will set up an Azure OpenAI resource, deploy models like GPT-4
 
     ![](../media/aisimg10.png)
 
-11. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+11. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
     ```
     C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
