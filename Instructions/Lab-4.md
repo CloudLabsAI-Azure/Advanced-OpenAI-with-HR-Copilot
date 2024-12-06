@@ -17,7 +17,7 @@ You will be able to complete the following tasks:
 
 ### Task 1: Build your own multi-agent Copilot application locally
 
-Before we proceed further, In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with **Visual Studio Code**.
+Before we proceed further, In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
 ```
 C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot

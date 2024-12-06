@@ -23,7 +23,7 @@ You will be able to complete the following tasks:
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
    ```
    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
@@ -44,10 +44,9 @@ You will be able to complete the following tasks:
    | **AZURE_SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
    | **AZURE_SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
-> **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in 
-    the top right corner of your browser and try reducing the zoom level for better visibility.
+      > **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
    
-   ![](../media/zoom.png)
+      ![](../media/zoom.png)
 
 3. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
@@ -227,7 +226,7 @@ You will be able to complete the following tasks:
 
     ![](../media/img63.png)
 
-34. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+34. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
     ```
     C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
@@ -274,7 +273,7 @@ You will be able to complete the following tasks:
 
 ### Task 3: Deploy the HR/Payroll Copilot application to Azure
 
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select open with  **Visual Studio Code**.
+1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `main.bicep` file, and select **Open with Code**.
 
       ```
       C:\LabFiles\OpenAIWorkshop\infra
