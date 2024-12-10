@@ -1,4 +1,4 @@
-# Build your own Intelligent HR Copilot with Azure Open AI
+# Build your own Intelligent HR Copilot with Azure OpenAI
 
 ### Overall Estimated Duration: 4 Hours
 
@@ -43,7 +43,7 @@ The architecture for this lab involves the following key components:
 
 ## Getting Started with the Lab
  
-Welcome to your Build your own Intelligent HR Copilot with Azure Open AI Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Build your own Intelligent HR Copilot with Azure OpenAI Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
@@ -78,12 +78,10 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![Inline Validation](../media/inline-validation-01.png)
+<!-- 1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
 
-1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
-
-   ![Lab Validation](../media/lab-validation-01.png)
-
-1. If you need any assistance, please contact us at labs-support@spektrasystems.com.
+   ![Lab Validation](../media/lab-validation-01.png) -->
+2. If you need any assistance, please contact us at labs-support@spektrasystems.com.
  
 ## Login to the Azure Portal
 
