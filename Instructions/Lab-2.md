@@ -12,15 +12,15 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
-   ![](../media/img1.png "Azure OpenAI")
+   ![](../media/img1lab2.png "Azure OpenAI")
 
 1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/select-openai.png "Azure OpenAI")
+   ![](../media/img3lab2.png "Azure OpenAI")
 
-1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+1. In the Azure OpenAI resource pane, select **Go to Azure AI Foundry portal**.
 
-   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   ![](../media/img2lab2.png "Azure OpenAI")
       
 1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
