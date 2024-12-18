@@ -1,6 +1,6 @@
-# Getting Started with Building a Chat Application
+# Deploy and Run the HR/Payroll Copilot Application
 
-### Overall Estimated Duration: 30 Minutes
+### Overall Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -10,7 +10,7 @@ In this hands-on-lab, you will set up the Azure OpenAI resource and install the 
 
 Understand how to deploy OpenAI models in Azure, configure them, and secure with API keys. Gain skills in programming functions and deploying multi-agent Copilot applications to Azure. By the end of this lab, you will be able to:
 
-- **Getting Started with Building a Chat Application:** Understand how to deploy OpenAI models and create responsive AI applications with web development tools by creating an OpenAI resource in Azure, configuring a model, and securing it with API keys.
+- **Deploy and Run the HR/Payroll Copilot Application:** Gain practical skills in creating AI-driven applications, enhancing search capabilities, and managing cloud deployments, resulting in a scalable and efficient solution.
 
 ## Pre-requisites
 
@@ -28,7 +28,7 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Architecture Diagram
 
-![](../media/arch-lab1.png)
+![](../media/arch3.png "Technical design")
 
 ## Explanation of Components
 
@@ -37,6 +37,8 @@ The architecture for this lab involves the following key components:
 - **Azure OpenAI:** Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
 
 - **Azure OpenAI Models:** Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
+
+- **Azure AI Search:** Azure AI Search is a cloud-based service that enhances search experiences with AI-powered capabilities like full-text and cognitive search. It integrates easily with various data sources for rich, insightful search results.
 
 ## Getting Started with the Lab
 

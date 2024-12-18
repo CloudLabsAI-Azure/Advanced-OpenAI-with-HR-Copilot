@@ -1,7 +1,5 @@
 # Lab 03: Deploy and Run the HR/Payroll Copilot Application  
 
-   ![](../media/copilot-overview.png "Technical design")
-
 **Smart Agent: At the heart of the solution is the Python object Smart_Agent. The agent has the following components:**
 
   - **Goals/Tasks:** Smart_Agent is given a persona and instructions to follow to achieve certain goals; for example, HR Copilot is about helping answer HR/Payroll questions and update employees' personal information. This is done using instructions specified in the system message.
@@ -11,7 +9,6 @@
   - **Memory:** The agent maintains a memory of the conversation history. The memory is backed by Streamlit's session state.
   - **LLM:** The agent is linked to a 0613 GPT-4 model to power its intelligence.
 
-    
 ### Task 1: Build your own HR/Payroll copilot locally
 
 In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'll configure the application by updating necessary environment variables and running it using Streamlit. This task ensures you understand how to set up and run the application in a local environment before moving to Azure.
@@ -193,97 +190,57 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
       ![](../media/vector3.png)
 
-14. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
-
-      ![](../media/vector4.png)
-
-15. On the **Vector algorithm** tab, leave it as the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **ada-002** . Click on **Save**.
-
-      ![](../media/L2-T2-S15.png)
-
-16. On the **Vector profile** tab, select the Vectorizers created in the previous step and Click on **Create** under Compressions.
-
-      ![](../media/vector6.png)
-
-17. On the **Compressions** tab, select **Scalar Quantization** under **kind** ,click on **Rerank with original vectors** and leave the default and click on **Save**. 
-
-      ![](../media/L2-T2-S17.png)
-
-18. In the **Vectore profile** tab, select Algorithm, Vectorizations, and Compressions recently created, and click on **Save**
-
-      ![](../media/vector8.png)
-
-19. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
+14. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
 
      ![](../media/vector9.png)
 
      > **Note**: If you are unable to save the **Configure Vector Field**, try deleting the **ContentVector** field. Then, recreate the field with the name **ContentVector** and select **Collection.single** for the **ContentVector** field and reperform from step 10 to step 19.
  
-20. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
+15. Enter the **Indexer name** as **payroll-hr**, and click on **Submit**.
 
       ![](../media/img84.png)
 
-21. From the **Overview (1)** page, click on **Import data (2)** again.
+16. From the **Overview (1)** page, click on **Import data (2)** again.
 
        ![](../media/img77.png)
 
-22. On the **Connect to your data** tab, select the existing data source and select the storage account then, click **Next: Add cognitive skills (optional)**.
+17. On the **Connect to your data** tab, select the existing data source and select the storage account then, click **Next: Add cognitive skills (optional)**.
 
       ![](../media/img85.png)
 
-23. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
+18. On the **Add cognitive skills (optional)** tab leave the default and click on **Skip to: Customize target index**.
 
-24. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
+19. Next, on the **Customize target index**  tab, enter the **Index name** as **payroll-hr-cache (1)**. Click on **+ Add field**, and create **id, search_query, search_query_vector, gpt_response** fields with the configurations as provided in the below image (make sure you select `Collection(Edm.Single)` as the type for the search_query_vector field).
 
       ![](../media/L2-T2-S24a.png)
     
       ![](../media/L2-T2-S24b.png)
 
-25. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
+20. In the **search_query_vector** field, click on the **Eclipse** button in the right corner and select **Configure vector field**.
 
       ![](../media/L2-T2-S25.png)
 
-26. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
+21. On the **Configure vector field** tab, set the **Dimensions** property to `1536` **(1)** and Click on **Create** **(2)** under No vector search profiles.
 
       ![](../media/vector1.png)
 
-27. On the **Vector profile** tab, Click on **Create** under No algorithm configurations.
+22. On the **Vector profile** tab, Click on **Create** under No algorithm configurations.
 
       ![](../media/vector2.png)
 
-28. On the **Vector algorithm** tab, leave the default and click on **Save**.
+23. On the **Vector algorithm** tab, leave the default and click on **Save**.
 
       ![](../media/vector3.png)
 
-29. On the **Vector profile** tab, select the algorithm created in the previous step and Click on **Create** under No vectorizers.
-
-      ![](../media/vector4.png)
-
-30. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** and model deployment as **ada-002** . Click on **Save**.
-
-      ![](../media/L2-T2-S30.png)
-
-31. On the **Vector profile** tab, select the Vectorizers created in the previous step and  Click on **Create** under No compression configurations.
-
-      ![](../media/vector6.png)
-
-32. On the **Compressions** tab, select **Scalar Quantization** under **kind** ,click on **Rerank with original vectors** and leave the default and click on **Save**.
-
-      ![](../media/L2-T2-S32.png)
-
-33. In the **Vectore profile** tab, select Algorithm, Vectorizations, and Compressions recently created, and click on **Save**.
-
-      ![](../media/vector8.png)
-
-34. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
+24. On the **Configure vector field** tab, keep the **Dimensions** property to `1536` and **Vector profile** created in previous step and Click on **Save**. Click on **Next: Create an indexer**.
 
     ![](../media/vector10.png)
 
-35. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
+25. Enter the **Indexer name** as **payroll-hr-cache**, and click on **Submit**.
 
       ![](../media/img89.png)
 
-36. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
+26. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
 
       ![](../media/img90.png)
 
