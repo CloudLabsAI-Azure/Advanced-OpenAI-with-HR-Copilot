@@ -38,9 +38,9 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/L1-T1-S6.png "Azure OpenAI")
    
-1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+1. In the Azure OpenAI resource pane, select **Go to Azure AI Foundry portal**.
 
-   ![](../media/L1-T1-S7.png "Azure OpenAI")
+   ![](../media/imgupdatefoundry.png "Azure OpenAI")
    
 1. In the Azure OpenAI Studio, click **Deployments (1)**, click **+ Deploy model (2)** and select **Deploy base model (3)**.
 
