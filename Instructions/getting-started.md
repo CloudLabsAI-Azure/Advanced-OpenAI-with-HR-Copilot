@@ -1,4 +1,4 @@
-# Build your own Intelligent HR Copilot with Azure OpenAI
+# Build your own HR Intelligent Copilot with Azure OpenAI
 
 ### Overall Estimated Duration: 4 Hours
 
@@ -15,7 +15,7 @@ Understand how to deploy OpenAI models in Azure, configure them, and secure with
 - **Deploy and Run the HR/Payroll Copilot Application**: Gain practical skills in creating AI-driven applications, enhancing search capabilities, and managing cloud deployments, resulting in a scalable and efficient solution.
 - **Understand HR Copilot Demo Application**: Learn how to build a multi-agent Copilot application locally and then deploy it to Azure, gaining hands-on experience in both development and cloud deployment.
 
-## Pre-requisites
+## Prerequisites
 
 Participants should have:
 
@@ -59,19 +59,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![](../media/env-01.png)
+![](../media/environment.png)
 
 ## Utilizing the Split Window Feature
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-![](../media/split-01.png)
+![](../media/nleg4.png)
 
 ## Managing Your Virtual Machine
 
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![](../media/resourses.png)
+![](../media/resources-vm-manage.png)
 
 ## Lab Validation
 
@@ -83,7 +83,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
       ![Lab Validation](../media/lab-validation-01.png) -->
    <!-- 2. If you need any assistance, please contact us at labs-support@spektrasystems.com. -->
 
-## Login to the Azure Portal
+## Let's Get Started with Azure Portal
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
@@ -93,15 +93,15 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
 
-     ![](../media/signin-uname.png "Enter Email")
+     ![](../media/image-006.png "Enter Email")
 
 1. Now enter the following password and click on **Sign in**.
 
    - **Password**: <inject key="AzureAdUserPassword"></inject>
 
-     ![](../media/signin-pword.png "Enter Password")
+     ![](../media/image-005.png "Enter Password")
 
-1. If you see the pop-up Action Required, click Ask Later.
+1. If you see the pop-up Action Required, click **Ask Later**.
 
    ![](../media/asklater.png)
 
@@ -109,9 +109,12 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
+   ![](../media/Sign-in-no.png)
+
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
+
 1. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](../media/select-rg.png "Resource groups")
