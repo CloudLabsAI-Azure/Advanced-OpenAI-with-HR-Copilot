@@ -148,7 +148,7 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
 5. On the **Overview (1)** page, click on **Import data (2)**.
 
-    ![](../media/img77.png)
+    ![](../media/2.5.png)
 
 6.  Select **Azure Blob storage** as the **Data source**.
 
