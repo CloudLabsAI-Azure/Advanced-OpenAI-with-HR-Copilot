@@ -17,19 +17,17 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
    ![](../media/L2-T1-S1.png "Azure OpenAI")
 
-2. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+2. From the **Microsoft Foundry | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/L2-T1-S2.png "Azure OpenAI")
+   ![](../media/im-04.png "Azure OpenAI")
 
 3. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
 
    ![](../media/L2-T1-S3.png "Azure OpenAI")
       
-4. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **mygpt-4** and **ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+4. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4.1** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **ada-002**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/eyhackday2img4.png)
-
-   ![](../media/eyhackday2img5.png)
+   ![](../media/im-12.png)
 
    >**Note:** Use bottom horizontal scroll bar to check the capacity value.
 
@@ -37,9 +35,9 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'
 
    ![](../media/L2-T1-S5.png "Azure OpenAI")
    
-6. Navigate back to **Azure OpenAI**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+6. Navigate back to **Microsoft Foundry**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/l1-t2-s6.png "Azure OpenAI")
+   ![](../media/im-11.png "Azure OpenAI")
 
 7. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
 
@@ -142,9 +140,9 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
     ![](../media/img76.png)
 
-4. Next, navigate to **Azure AI services**, select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Next, navigate to **Microsoft Foundry | AI Search**, select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/l1-t2-s6.png "Azure OpenAI")
+   ![](../media/im-11.png "Azure OpenAI")
 
 5. On the **Overview (1)** page, click on **Import data (2)**.
 
