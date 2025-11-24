@@ -18,9 +18,9 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/L1-T1-S1.png "Azure OpenAI")
    
-1. From the **Azure AI services | Azure OpenAI** pane, click on **+ Create**.
+1. From the **Microsoft Foundry | Azure OpenAI** pane, click on **+ Create**, from the drop-down, select **Azure OpenAI**.
 
-   ![](../media/L1-T1-S2.png "Azure OpenAI")
+   ![](../media/im-04.png "Azure OpenAI")
    
 1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the **default subscription (1)** and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)** resource group. Select **East US (3)** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>(4)** and select **Standard S0 (5)** for Pricing Tier. Click on **Next (6)**.
 
@@ -38,24 +38,25 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/L1-T1-S6.png "Azure OpenAI")
    
-1. In the Azure OpenAI resource pane, select **Go to Azure AI Foundry portal**.
+1. In the Azure OpenAI resource pane, select **Go to Foundry portal**.
 
-   ![](../media/imgupdatefoundry.png "Azure OpenAI")
+   ![](../media/im-05.png "Azure OpenAI")
    
 1. In the Azure OpenAI Studio, click **Deployments (1)**, click **+ Deploy model (2)** and select **Deploy base model (3)**.
 
    ![](../media/eyhackday2img6.png)
 
-1. On the **Select a Model** pane, search for `gpt-4` and select **gpt-4 (1)** model from the list and click on **Confirm (2)**.
+1. On the **Select a Model** pane, search for `gpt-4.1` **(1)** and select **gpt-4.1 (2)** model from the list and click on **Confirm (3)**.
 
-   ![](../media/eyhackday2img7.png)
+   ![](../media/im-07.png)
    
-1. On the **Deploy Model gpt-4** tab, enter the following details and click on **Deploy (3)**.
+1. On the **Deploy Model gpt-4.1** tab, enter the following details and click on **Deploy (4)**.
 
    - Deployment name: **copilot-gpt (1)**
-   - Tokens per Minute Rate Limit (thousands): **15K (2)**
+   - Deployment type: **Standard (2)**
+   - Tokens per Minute Rate Limit (thousands): **15K (3)**
 
-     ![](../media/eyhackday2img8.png)
+     ![](../media/im-08.png)
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming
 
@@ -65,17 +66,17 @@ In this task, you will configure a locally hosted application that mimics the fu
 
    ![](../media/L1-T2-S1.png "Azure OpenAI")
 
-1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+1. From the **Microsoft Foundry | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/L1-T2-S2.png "Azure OpenAI")
+   ![](../media/im-06.png "Azure OpenAI")
 
-1. In the Azure OpenAI resource pane, select **Go to Azure OpenAI Studio**.
+1. In the Azure OpenAI resource pane, select **Go to Foundry portal**.
 
-   ![](../media/L1-T2-S3.png "Azure OpenAI")
+   ![](../media/im-05.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** model are present with the deployment names as **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Microsoft Foundry** portal, select **Deployments** under Management and verify that the **gpt-4.1** model are present with the deployment names as **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/eyhackday2img2.png "Azure OpenAI")
+   ![](../media/im-09.png "Azure OpenAI")
 
    ![](../media/eyhackday2img3.png)
 
