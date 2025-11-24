@@ -42,13 +42,13 @@ The architecture for this lab involves the following key components:
 
 1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and the lab manual. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
-   ![](../media/getstartpage-01a.png)
+   ![](../media/im-01-01.png)
  
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
+1. To get the lab environment details, you can select the **Environment** details tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
 
-   ![](../media/getstartpage-02a.png "Enter Email")
+   ![](../media/im-02.png "Enter Email")
  
-   > You will see the SUFFIX value on the **Environment Details** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
+   > You will see the SUFFIX value on the **Environment** details tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
  
 ## Login to the Azure Portal
 
