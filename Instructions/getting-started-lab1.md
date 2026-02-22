@@ -4,27 +4,40 @@
 
 ## Overview
 
-In this hands-on-lab, you will set up the Azure OpenAI resource and install the application locally. Over the past few years, language models like GPT-3 and GPT-4 have proven their versatility across various applications. The latest Azure OpenAI Service now includes a feature called function calling, which allows GPT-3 and GPT-4 to generate structured JSON outputs based on predefined functions. This integration capability enables developers to connect these models with other systems and tools, enhancing their functionality. In this overview, we will explore how function calling operates, examine its use cases, and guide you through leveraging this feature within the Azure OpenAI Service. Additionally, we'll introduce the Python object, detailing its components like goals/tasks, NLP interaction and tool execution, memory management, and its integration with a multi-agent copilot model. This model utilizes specialist agents managed by an agent runner, ensuring efficient task handling and continuity across different domains.
+In this hands-on lab, you will provision an Azure OpenAI resource in Azure AI Foundry and install the application locally. Modern Azure OpenAI deployments now focus on lifecycle-supported models such as GPT-4.1, GPT-4.1-mini, and the GPT-5 family, replacing legacy GPT-3 and earlier GPT-4 variants. This ensures your solution is aligned with Microsoft’s current model roadmap and long-term upgrade strategy.
+
+A key capability you will explore is **Function Calling**, which enables GPT-4.1 and GPT-5 class models to return structured JSON outputs mapped to predefined functions. Instead of generating only natural language responses, the model can determine when to invoke external tools and provide validated arguments for execution. This structured interaction allows developers to integrate AI models with APIs, databases, and backend services to build intelligent, production-ready applications.
+
+Additionally, this lab introduces an agent-based architecture using Python. You will examine how an AI agent is structured around defined goals and tasks, natural language interaction, tool execution, and memory management. You will also explore how a multi-agent copilot model uses specialist agents coordinated by an agent runner to efficiently manage tasks and maintain continuity across domains.
+
+---
 
 ## Objective
 
-Understand how to deploy OpenAI models in Azure, configure them, and secure with API keys. Gain skills in programming functions and deploying multi-agent Copilot applications to Azure. By the end of this lab, you will be able to:
+Understand how to deploy supported Azure OpenAI models (such as GPT-4.1 or GPT-5 family models), configure them securely, and integrate them into intelligent applications using function calling and agent-based design.
 
-- **Getting Started with Building a Chat Application:** Understand how to deploy OpenAI models and create responsive AI applications with web development tools by creating an OpenAI resource in Azure, configuring a model, and securing it with API keys.
+By the end of this lab, you will be able to:
+
+- **Getting Started with Building a Chat Application:** Deploy a lifecycle-supported Azure OpenAI model, configure secure access using API keys or Microsoft Entra ID, and build a responsive AI-powered chat application integrated with function calling capabilities.
+- Implement structured function calling to connect the model with external services or APIs.
+- Design and deploy a multi-agent copilot application using Python.
+
+---
 
 ## Pre-requisites
 
 Participants should have:
 
-- **Familiarity with GPT Models:** Familiarity with GPT-3 and GPT-4, including their capabilities and use cases.
-
-- **Experience with REST APIs:** Familiarity with REST APIs, as function calling involves interacting with APIs.
-
-- **Basic Programming Skills:** Proficiency in Python programming to follow along with the Smart_Agent Python object setup and multi-agent copilot model implementation.
+- **Familiarity with Modern GPT Models:** Understanding of GPT-4 class or GPT-5 class models and their enterprise use cases within Azure OpenAI.
+- **Experience with REST APIs:** Familiarity with REST APIs, as function calling involves interacting with external services.
+- **Basic Programming Skills:** Proficiency in Python to follow along with the Smart_Agent object setup and multi-agent copilot implementation.
+- **Basic Azure Knowledge:** Familiarity with Azure Portal and resource deployment concepts.
 
 ## Architecture
 
-In this hands-on lab, the architecture flow includes several essential components. You’ll begin by setting up the Azure OpenAI resource and installing the required application locally. At the heart of the architecture is the Azure OpenAI Service, utilizing GPT-3 and GPT-4’s function calling features to generate structured JSON outputs from predefined functions. These outputs enable smooth integration with various systems and tools. The Smart_Agent Python object plays a crucial role, handling tasks such as goal setting, NLP interactions, and tool execution, while maintaining conversation memory and connecting to a GPT-4 model. Additionally, the system uses a multi-agent copilot model, where a specialized agent runner manages and coordinates tasks among different specialist agents, ensuring efficient task management and continuity across diverse domains.
+In this hands-on lab, the architecture flow includes several essential components. You’ll begin by setting up the Azure OpenAI resource in Azure AI Foundry and installing the required application locally. At the heart of the architecture is the Azure OpenAI Service, utilizing lifecycle-supported models such as GPT-4.1, GPT-4.1-mini, or GPT-5 family models with function calling capabilities to generate structured JSON outputs from predefined functions. These structured outputs enable seamless integration with various systems, APIs, and backend tools.
+
+The Smart_Agent Python object plays a crucial role, handling tasks such as goal definition, natural language processing (NLP) interactions, tool execution, and conversation memory management, while securely connecting to the deployed Azure OpenAI model. Additionally, the system leverages a multi-agent copilot model, where a specialized agent runner manages and coordinates tasks among multiple domain-specific agents, ensuring efficient task handling, contextual continuity, and scalable orchestration across different domains.
 
 ## Architecture Diagram
 
