@@ -1,13 +1,18 @@
-# Lab 2: Understand function calling in Open AI GPT
+# Lab 2: Understand Function Calling in Azure OpenAI
 
-Over the last couple of years, language models like GPT-3 and GPT-4 have demonstrated their immense power and versatility. These models have been successfully applied in various scenarios, showcasing their capabilities. While these models are already valuable on their own, Azure OpenAI Service now offers an exciting new feature called function calling. With function calling, the latest versions of GPT-3 and GPT-4 can generate structured JSON outputs based on functions specified in the request. This allows developers to integrate the models with other systems and tools, enabling even more possibilities. It's important to note that while the models can generate the function calls, the execution of these calls remains under your control, ensuring that you maintain full control over the process. In this overview, we will explore how function calling works, provide examples of its use cases, and guide you through the steps to leverage this powerful feature in Azure OpenAI Service. 
+Over the last few years, large language models have evolved significantly, with modern Azure OpenAI deployments now centered around lifecycle-supported models such as GPT-4.1, GPT-4.1-mini, and the GPT-5 family. These models provide enhanced reasoning, structured output capabilities, and enterprise-grade scalability compared to legacy GPT-3 and earlier GPT-4 versions.
 
-To know more about Azure Function calling please refer to [Function calling is now available in Azure OpenAI Service](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
+Azure OpenAI includes a powerful feature called **Function Calling**, which enables supported GPT-4.1 and GPT-5 class models to generate structured JSON outputs based on functions defined in the request. Instead of returning only conversational text, the model can determine when a function should be invoked and return properly formatted arguments for execution.
 
+This capability allows developers to seamlessly integrate AI models with external systems such as APIs, databases, and enterprise services. While the model can suggest function calls and generate structured parameters, the execution logic remains fully under your control. This ensures security, compliance, and governance within enterprise applications.
 
+In this lab, you will explore how function calling works, review practical use cases, and implement structured tool integration using Azure OpenAI. By the end, you will understand how to leverage function calling to build intelligent, production-ready AI solutions aligned with Azure’s current model lifecycle strategy.
+
+To learn more about Azure Function Calling, refer to the official documentation:  
+[Function calling in Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling)
 ### Task 1: Understand Function calling (Read-Only)
 
-1. In the LabVM, open File Explorer navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support` path, open **hr_copilot_utils.py**, and select Open with  **Visual Studio Code** click on **OK**. Take a look at the code to see how function calling works.
+1. In the LabVM, open File Explorer, navigate to the `C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support` path, open **hr_copilot_utils.py**, and select Open with  **Visual Studio Code** click on **OK**. Take a look at the code to see how function calling works.
 
     ![](../media/img25.png)
 
