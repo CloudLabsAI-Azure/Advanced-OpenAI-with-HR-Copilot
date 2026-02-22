@@ -10,8 +10,6 @@ A key capability you will explore is **Function Calling**, which enables GPT-4.1
 
 Additionally, this lab introduces an agent-based architecture using Python. You will examine how an AI agent is structured around defined goals and tasks, natural language interaction, tool execution, and memory management. You will also explore how a multi-agent copilot model uses specialist agents coordinated by an agent runner to efficiently manage tasks and maintain continuity across domains.
 
----
-
 ## Objective
 
 Understand how to deploy supported Azure OpenAI models (such as GPT-4.1 or GPT-5 family models), configure them securely, and integrate them into intelligent applications using function calling and agent-based design.
@@ -21,8 +19,6 @@ By the end of this lab, you will be able to:
 - **Getting Started with Building a Chat Application:** Deploy a lifecycle-supported Azure OpenAI model, configure secure access using API keys or Microsoft Entra ID, and build a responsive AI-powered chat application integrated with function calling capabilities.
 - Implement structured function calling to connect the model with external services or APIs.
 - Design and deploy a multi-agent copilot application using Python.
-
----
 
 ## Pre-requisites
 
