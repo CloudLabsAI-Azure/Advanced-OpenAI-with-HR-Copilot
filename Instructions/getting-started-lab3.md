@@ -4,27 +4,37 @@
 
 ## Overview
 
-In this hands-on-lab, you will set up the Azure OpenAI resource and install the application locally. Over the past few years, language models like GPT-3 and GPT-4 have proven their versatility across various applications. The latest Azure OpenAI Service now includes a feature called function calling, which allows GPT-3 and GPT-4 to generate structured JSON outputs based on predefined functions. This integration capability enables developers to connect these models with other systems and tools, enhancing their functionality. In this overview, we will explore how function calling operates, examine its use cases, and guide you through leveraging this feature within the Azure OpenAI Service. Additionally, we'll introduce the Python object, detailing its components like goals/tasks, NLP interaction and tool execution, memory management, and its integration with a multi-agent copilot model. This model utilizes specialist agents managed by an agent runner, ensuring efficient task handling and continuity across different domains.
+In this hands-on lab, you will provision an Azure OpenAI resource in Azure AI Foundry and install the HR/Payroll Copilot application locally. Modern Azure OpenAI deployments focus on lifecycle-supported models such as GPT-4.1, GPT-4.1-mini, and the GPT-5 family, replacing legacy GPT-3 and earlier GPT-4 variants. This ensures your implementation aligns with Microsoft’s current model roadmap and long-term upgrade strategy.
+
+A key capability explored in this lab is **Function Calling**, which enables GPT-4.1 and GPT-5 class models to generate structured JSON outputs mapped to predefined functions. Instead of returning only conversational text, the model can intelligently determine when to invoke backend functions and provide validated arguments for execution. This structured integration enables seamless connectivity between the copilot application and HR/Payroll systems, APIs, and enterprise tools.
+
+You will also work with a Python-based Smart_Agent object that manages goals and task execution, handles natural language interactions, executes tools, and maintains conversational memory. The solution is built using a multi-agent copilot architecture, where specialist agents are coordinated by an agent runner to efficiently manage HR and payroll-related workflows while maintaining context across interactions.
 
 ## Objective
 
-Understand how to deploy OpenAI models in Azure, configure them, and secure with API keys. Gain skills in programming functions and deploying multi-agent Copilot applications to Azure. By the end of this lab, you will be able to:
+Understand how to deploy lifecycle-supported Azure OpenAI models, configure secure access, and implement a multi-agent HR/Payroll Copilot application using function calling.
 
-- **Deploy and Run the HR/Payroll Copilot Application:** Gain practical skills in creating AI-driven applications, enhancing search capabilities, and managing cloud deployments, resulting in a scalable and efficient solution.
+By the end of this lab, you will be able to:
+
+- **Deploy and Run the HR/Payroll Copilot Application:** Gain practical skills in building AI-driven enterprise applications, integrating structured function calling for HR/Payroll workflows, enhancing search and automation capabilities, and deploying a scalable, production-ready solution in Azure.
 
 ## Pre-requisites
 
 Participants should have:
 
-- **Familiarity with GPT Models:** Familiarity with GPT-3 and GPT-4, including their capabilities and use cases.
+- **Familiarity with Modern GPT Models:** Understanding of GPT-4 class or GPT-5 class models and their enterprise capabilities within Azure OpenAI.
 
-- **Experience with REST APIs:** Familiarity with REST APIs, as function calling involves interacting with APIs.
+- **Experience with REST APIs:** Familiarity with REST APIs, as function calling involves interacting with backend services.
 
-- **Basic Programming Skills:** Proficiency in Python programming to follow along with the Smart_Agent Python object setup and multi-agent copilot model implementation.
+- **Basic Programming Skills:** Proficiency in Python programming to follow along with the Smart_Agent object setup and multi-agent copilot model implementation.
+
+- **Basic Azure Knowledge:** Familiarity with Azure Portal and resource deployment concepts.
 
 ## Architecture
 
-In this hands-on lab, the architecture flow includes several essential components. You’ll begin by setting up the Azure OpenAI resource and installing the required application locally. At the heart of the architecture is the Azure OpenAI Service, utilizing GPT-3 and GPT-4’s function calling features to generate structured JSON outputs from predefined functions. These outputs enable smooth integration with various systems and tools. The Smart_Agent Python object plays a crucial role, handling tasks such as goal setting, NLP interactions, and tool execution, while maintaining conversation memory and connecting to a GPT-4 model. Additionally, the system uses a multi-agent copilot model, where a specialized agent runner manages and coordinates tasks among different specialist agents, ensuring efficient task management and continuity across diverse domains.
+In this hands-on lab, the architecture flow includes several essential components. You’ll begin by provisioning the Azure OpenAI resource in Azure AI Foundry and deploying a lifecycle-supported model such as GPT-4.1 or a GPT-5 family model. At the core of the architecture is the Azure OpenAI Service utilizing function calling capabilities to generate structured JSON outputs from predefined HR/Payroll functions. These structured outputs enable secure and reliable integration with enterprise systems and services.
+
+The Smart_Agent Python object plays a crucial role, handling tasks such as goal definition, natural language processing (NLP) interactions, tool execution, and conversation memory management, while securely connecting to the deployed Azure OpenAI model. Additionally, the system uses a multi-agent copilot architecture, where a specialized agent runner coordinates multiple domain-specific agents (such as HR and Payroll agents), ensuring efficient workflow orchestration and contextual continuity across diverse operational scenarios.
 
 ## Architecture Diagram
 
@@ -97,3 +107,4 @@ Learner Support Contacts:
 - Live Chat Support: https://cloudlabs.ai/labs-support
  
 ### Happy learning !
+
