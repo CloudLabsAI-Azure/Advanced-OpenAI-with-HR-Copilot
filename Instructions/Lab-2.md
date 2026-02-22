@@ -2,9 +2,15 @@
 
 ## Overview
 
-This lab focuses on the function calling feature in Azure OpenAI, an advanced capability that enables GPT-3 and GPT-4 models to produce structured JSON outputs tailored to specific functions. By integrating these models with external systems, you gain enhanced control and flexibility in automation and data processing tasks. Throughout this lab, you’ll explore the setup, configuration, and practical implementation of function calling within the Azure OpenAI environment, empowering you to leverage this powerful feature in real-world scenarios.
+## Overview
 
-To know more about Azure function calling, please refer to [Function calling is now available in Azure OpenAI Service] (https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241).
+This lab focuses on the Function Calling feature in Azure OpenAI, an advanced capability that enables modern lifecycle-supported models such as GPT-4.1 and GPT-5 family models to generate structured JSON outputs mapped to predefined functions. Unlike legacy GPT-3 and earlier GPT-4 models, current Azure OpenAI deployments are built around forward-compatible model versions designed for enterprise-grade scalability and long-term support.
+
+By integrating these models with external systems, you gain enhanced control, reliability, and flexibility in automation and data processing tasks. Function calling allows the model to intelligently determine when to invoke backend services and provide validated arguments for execution, enabling seamless integration with APIs, databases, and business workflows.
+
+Throughout this lab, you will explore the setup, configuration, and practical implementation of function calling within the Azure OpenAI environment, empowering you to design structured, production-ready AI applications aligned with Microsoft’s current model lifecycle strategy.
+
+To know more about Azure function calling, please refer to [Function calling in Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling).
 
 ## Task 1: Understand Function calling
 
