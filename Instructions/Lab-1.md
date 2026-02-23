@@ -18,9 +18,9 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/L1-T1-S1.png "Azure OpenAI")
    
-1. From the **Microsoft Foundry | Azure OpenAI** pane, click on **+ Create**, from the drop-down, select **Azure OpenAI**.
+1. From the **Microsoft Foundry | Azure OpenAI** pane, click on **+ Create (1)**, from the drop-down, select **Azure OpenAI (2)**.
 
-   ![](../media/im-04.png "Azure OpenAI")
+   ![](../media/exe100.png "Azure OpenAI")
    
 1. In the **Create Azure OpenAI** pane under the **Basics** tab, select the **default subscription (1)** and select the existing **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)** resource group. Select **East US (3)** as Region, enter Name as **copilot-openai-<inject key="Deployment ID" enableCopy="false"/>(4)** and select **Standard S0 (5)** for Pricing Tier. Click on **Next (6)**.
 

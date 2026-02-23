@@ -22,7 +22,7 @@ By the end of this lab, you will be able to:
 
 Participants should have:
 
-- **Familiarity with Modern GPT Models:** Understanding of GPT-4 class or GPT-5 class models and their enterprise capabilities within Azure OpenAI.
+- **Familiarity with Modern GPT Models:** Understanding of GPT-4.1 class or GPT-5 class models and their enterprise capabilities within Azure OpenAI.
 
 - **Experience with REST APIs:** Familiarity with REST APIs, as function calling involves interacting with backend services.
 
@@ -107,4 +107,5 @@ Learner Support Contacts:
 - Live Chat Support: https://cloudlabs.ai/labs-support
  
 ### Happy learning !
+
 
