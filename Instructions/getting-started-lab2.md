@@ -70,29 +70,25 @@ The architecture for this lab involves the following key components:
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-      ![](../media/signin-uname.png "Enter Email")
+      ![](../media/sc900-image-1.png "Enter Email")
      
 3. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-      ![](../media/signin-pword.png "Enter Password")
+      ![](../media/tpwrd.png "Enter Password")
      
 4. If you see the pop-up **Stay Signed in?**, select **No**.
 
-5. If **Action Required** pop-up window appears, click on **Ask later**.
+      ![](../media/sign.png)
 
-      ![](../media/ActionRequired.png)
-
-6. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
-7. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+5. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
    
-8. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+6. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](../media/select-rg.png "Resource groups")
 
-9. Click "Next" from the bottom right corner to embark on your Lab journey!
+7. Click "Next" from the bottom right corner to embark on your Lab journey!
 
      ![](../media/next.png)
 
