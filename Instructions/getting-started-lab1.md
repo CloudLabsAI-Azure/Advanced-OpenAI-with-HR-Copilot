@@ -24,7 +24,7 @@ By the end of this lab, you will be able to:
 
 Participants should have:
 
-- **Familiarity with Modern GPT Models:** Understanding of GPT-4 class or GPT-5 class models and their enterprise use cases within Azure OpenAI.
+- **Familiarity with Modern GPT Models:** Understanding of GPT-4.1 class or GPT-5 class models and their enterprise use cases within Azure OpenAI.
 - **Experience with REST APIs:** Familiarity with REST APIs, as function calling involves interacting with external services.
 - **Basic Programming Skills:** Proficiency in Python to follow along with the Smart_Agent object setup and multi-agent copilot implementation.
 - **Basic Azure Knowledge:** Familiarity with Azure Portal and resource deployment concepts.
