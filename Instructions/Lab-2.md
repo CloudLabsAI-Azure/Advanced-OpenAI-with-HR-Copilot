@@ -20,25 +20,25 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/img1lab2.png "Azure OpenAI")
 
-1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+1. From the **Microsoft Foundry | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/img3lab2.png "Azure OpenAI")
+   ![](../media/im-06.png "Azure OpenAI")
 
-1. In the Azure OpenAI resource pane, select **Go to Azure AI Foundry portal**.
+1. In the Azure OpenAI resource pane, select **Go to Foundry portal**.
 
-   ![](../media/img2lab2.png "Azure OpenAI")
+   ![](../media/im-05.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Microsoft Foundry** portal, select **Deployments** under Management and verify that the **gpt-4.1** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
    
-   ![](../media/p12.png "Azure OpenAI")
+   ![](../media/im-10.png "Azure OpenAI")
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. Navigate back to the Microsoft Foundry resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to **Microsoft Foundry**, select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/l1-t2-s6.png "Azure OpenAI")
+   ![](../media/im-11.png "Azure OpenAI")
 
 1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
 
