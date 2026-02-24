@@ -6,13 +6,13 @@
 
 In this hands-on lab, you will provision an Azure OpenAI resource in Azure AI Foundry and install the application locally. Modern Azure OpenAI deployments now focus on lifecycle-supported models such as GPT-4.1, GPT-4.1-mini, and the GPT-5 family, replacing legacy GPT-3 and earlier GPT-4 variants. This ensures your solution aligns with Microsoft’s current model lifecycle and long-term upgrade strategy.
 
-A key capability you will explore is **Function Calling**, which enables GPT-4.1 and GPT-5 class models to generate structured JSON outputs mapped to predefined functions. Instead of returning only natural language responses, the model can intelligently determine when to invoke external tools and provide validated arguments for execution. This structured integration allows developers to connect AI models with APIs, databases, and enterprise systems, enabling scalable and production-ready AI applications.
+A key capability you will explore is Function Calling, which enables GPT-4.1 and GPT-5-class models to generate structured JSON outputs mapped to predefined functions. Instead of returning only natural language responses, the model can determine when to invoke external tools and provide validated arguments for execution. This structured integration allows developers to connect AI models with APIs, databases, and enterprise systems, enabling scalable and production-ready AI applications.
 
-Additionally, you will work with a Python-based Smart_Agent object that defines goals and tasks, handles natural language interactions, manages tool execution, and maintains conversation memory. You will also explore how this integrates into a multi-agent copilot architecture, where specialist agents are coordinated by an agent runner to ensure efficient task delegation and continuity across domains.
+Additionally, you will work with a Python-based Smart_Agent object that defines goals and tasks, handles natural language interactions, manages tool execution, and maintains conversation memory. You will also explore how this capability integrates into a multi-agent copilot architecture, where specialist agents are coordinated by an agent runner to ensure efficient task delegation and continuity across domains.
 
 ## Objective
 
-Understand how to deploy lifecycle-supported Azure OpenAI models, configure them securely, and implement function calling within a multi-agent copilot architecture.
+In this lab, you will learn how to deploy lifecycle-supported Azure OpenAI models, configure them securely, and implement function calling within a multi-agent copilot architecture.
 
 By the end of this lab, you will be able to:
 
@@ -32,7 +32,7 @@ Participants should have:
 
 ## Architecture
 
-In this hands-on lab, the architecture flow includes several essential components. You’ll begin by provisioning the Azure OpenAI resource in Azure AI Foundry and installing the required application locally. At the core of the architecture is the Azure OpenAI Service, utilizing GPT-4.1 or GPT-5 family models with function calling capabilities to generate structured JSON outputs from predefined functions. These structured outputs enable seamless integration with various systems, APIs, and backend tools.
+In this hands-on lab, the architecture flow includes several essential components. You’ll begin by provisioning the Azure OpenAI resource in Azure AI Foundry and installing the required application locally. At the core of the architecture is the Azure OpenAI Service, which utilizes GPT-4.1 or GPT-5 family models with function calling capabilities to generate structured JSON outputs from predefined functions. These structured outputs enable seamless integration with various systems, APIs, and backend tools.
 
 The Smart_Agent Python object plays a crucial role, handling tasks such as goal definition, natural language processing (NLP) interactions, tool execution, and conversation memory management, while securely connecting to the deployed Azure OpenAI model. Additionally, the system uses a multi-agent copilot architecture, where a specialized agent runner manages and coordinates tasks among multiple domain-specific agents, ensuring efficient task orchestration and contextual continuity across diverse domains.
 
@@ -44,7 +44,7 @@ The Smart_Agent Python object plays a crucial role, handling tasks such as goal 
 
 The architecture for this lab involves the following key components:
 
-- **Azure OpenAI:** Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
+- **Azure OpenAI:** Azure OpenAI Service provides REST API access to OpenAI's powerful language models, and these models integrates with your data, enabling customized and secure interactions.
 
 - **Azure OpenAI Models:** Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
 
@@ -54,7 +54,7 @@ The architecture for this lab involves the following key components:
 
    ![](../media/getstartpage-01a.png)
  
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
+1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you can start, stop, or restart virtual machines.
 
    ![](../media/getstartpage-02a.png "Enter Email")
  
@@ -62,7 +62,7 @@ The architecture for this lab involves the following key components:
  
 ## Login to the Azure Portal
 
-1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
+1. In the JumpVM, click the Azure Portal shortcut in Microsoft Edge, which is created on the desktop.
 
    ![](../media/eyhackday2img1.png)
    

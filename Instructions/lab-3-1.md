@@ -1,17 +1,17 @@
 # Lab 03: Deploy and Run the HR/Payroll Copilot Application  
 
-**Smart Agent: At the heart of the solution is the Python object Smart_Agent. The agent has the following components:**
+**Smart Agent: At the heart of the solution is a Python object named Smart_Agent, which consists of the following components:**
 
   - **Goals/Tasks:** Smart_Agent is given a persona and instructions to follow to achieve certain goals; for example, HR Copilot is about helping answer HR/Payroll questions and update employees' personal information. This is done using instructions specified in the system message.
 
   - **NLP interaction and tool execution:** For the ability to use multiple tools and functions to accomplish business tasks, the function calling capability of the 0613 version is utilized to intelligently select the right function (validate identity, search the knowledge base, update address, create ticket) based on the agent's judgment of what needs to be done. The agent is also able to engage with users by following the instructions and goals defined in the system message.
 
-  - **Memory:** The agent maintains a memory of the conversation history. The memory is backed by Streamlit's session state.
+  - **Memory:** The agent maintains a memory of the conversation history. The memory is backed by Streamlit session state.
   - **LLM:** The agent is linked to a 0613 GPT-4 model to power its intelligence.
 
 ### Task 1: Build your own HR/Payroll copilot locally
 
-In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You'll configure the application by updating necessary environment variables and running it using Streamlit. This task ensures you understand how to set up and run the application in a local environment before moving to Azure.
+In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You will configure the application by updating the required environment variables and running it using Streamlit. This task ensures you understand how to set up and run the application in a local environment before moving to Azure.
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 

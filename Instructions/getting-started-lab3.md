@@ -12,11 +12,11 @@ You will also work with a Python-based Smart_Agent object that manages goals and
 
 ## Objective
 
-Understand how to deploy lifecycle-supported Azure OpenAI models, configure secure access, and implement a multi-agent HR/Payroll Copilot application using function calling.
+In this lab, you will understand how to deploy lifecycle-supported Azure OpenAI models, configure secure access, and implement a multi-agent HR/Payroll Copilot application using function calling.
 
 By the end of this lab, you will be able to:
 
-- **Deploy and Run the HR/Payroll Copilot Application:** Gain practical skills in building AI-driven enterprise applications, integrating structured function calling for HR/Payroll workflows, enhancing search and automation capabilities, and deploying a scalable, production-ready solution in Azure.
+- **Deploy and Run the HR/Payroll Copilot Application:** Gain practical skills in building AI-driven enterprise applications by integrating structured function calling for HR/Payroll workflows, enhancing search and automation capabilities, and deploying a scalable, production-ready solution in Azure.
 
 ## Pre-requisites
 
@@ -44,7 +44,7 @@ The Smart_Agent Python object plays a crucial role, handling tasks such as goal 
 
 The architecture for this lab involves the following key components:
 
-- **Azure OpenAI:** Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
+- **Azure OpenAI:** Azure OpenAI Service provides REST API access to OpenAI's powerful language models, and these models integrate with your data, enabling customized and secure interactions.
 
 - **Azure OpenAI Models:** Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
 
@@ -52,11 +52,11 @@ The architecture for this lab involves the following key components:
 
 ## Getting Started with the Lab
 
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and the lab manual. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
+1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and the lab manual. Use this virtual machine throughout the lab to complete the exercises. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
    ![](../media/getstartpage-01a.png)
  
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
+1. To get the lab environment details, you can select the **Environment Details** tab. The credentials will also be emailed to your registered email address. Under the **Resources** tab, you can start, stop, and restart virtual machines.
 
    ![](../media/getstartpage-02a.png "Enter Email")
  
@@ -86,7 +86,7 @@ The architecture for this lab involves the following key components:
 
 7. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
    
-8. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+8. Now that you can see the Azure Portal dashboard, click on **Resource groups** from the Navigate panel.
 
    ![](../media/select-rg.png "Resource groups")
 

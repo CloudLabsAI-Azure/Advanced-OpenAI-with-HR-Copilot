@@ -6,7 +6,7 @@
 
 This lab focuses on the Function Calling feature in Azure OpenAI, an advanced capability that enables modern lifecycle-supported models such as GPT-4.1 and GPT-5 family models to generate structured JSON outputs mapped to predefined functions. Unlike legacy GPT-3 and earlier GPT-4 models, current Azure OpenAI deployments are built around forward-compatible model versions designed for enterprise-grade scalability and long-term support.
 
-By integrating these models with external systems, you gain enhanced control, reliability, and flexibility in automation and data processing tasks. Function calling allows the model to intelligently determine when to invoke backend services and provide validated arguments for execution, enabling seamless integration with APIs, databases, and business workflows.
+By integrating these models with external systems, you can gain enhanced control, reliability, and flexibility in automation and data processing tasks. Function calling allows the model to intelligently determine when to invoke backend services and provide validated arguments for execution, enabling seamless integration with APIs, databases, and business workflows.
 
 Throughout this lab, you will explore the setup, configuration, and practical implementation of function calling within the Azure OpenAI environment, empowering you to design structured, production-ready AI applications aligned with Microsoft’s current model lifecycle strategy.
 
@@ -14,7 +14,7 @@ To know more about Azure function calling, please refer to [Function calling in 
 
 ## Task 1: Understand Function calling
 
-In this task, you will explore how to set up and configure the Azure OpenAI environment to leverage function calling. You will gather necessary information such as deployment names, API keys, and service endpoints and configure them in a sample project. Finally, you will run a Jupyter Notebook to observe how function calling works in action.
+In this task, you will explore how to set up and configure the Azure OpenAI environment to leverage function calling. You will gather necessary information such as deployment names, API keys, and service endpoints, and configure them in a sample project. Finally, you will run a Jupyter Notebook to observe how function calling works in action.
 
 1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
 
@@ -24,11 +24,11 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/img3lab2.png "Azure OpenAI")
 
-1. In the Azure OpenAI resource pane, select **Go to Azure AI Foundry portal**.
+1. In the Azure OpenAI resource pane, select **Go to Azure Foundry portal**.
 
-   ![](../media/img2lab2.png "Azure OpenAI")
+   ![](../media/aifd.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into a text file for later use.
    
    ![](../media/p12.png "Azure OpenAI")
 
@@ -36,7 +36,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
-1. Navigate back to **Azure OpenAI**, select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu., and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
@@ -48,11 +48,11 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/img66.png "Azure OpenAI")
 
-1. Open **Visual Studio Code** from the desktop; next, click on **File** and select **Open Folder**.
+1. Open **Visual Studio Code** from the desktop. Then select **File** and click **Open Folder**.
 
     ![](../media/img55.png) 
 
-2. Navigate to the below-mentioned path and click on **Select folder**. 
+1. Navigate to the below-mentioned path and click on **Select folder**. 
 
     ```
     C:\LabFiles\openai\Basic_Samples\Functions
@@ -60,11 +60,11 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/l2-t1-s2.png) 
 
-4. On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
+1. On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
 
     ![](../media/img57.png) 
 
-5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
+1. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
 
     - **DEPLOYMENT_NAME**: `Replace the value with the gpt-model name`
     - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
@@ -74,31 +74,31 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
         ![](../media/img58.png) 
 
-6. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
+1. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
     ![](../media/img59.png) 
 
-7. In the new terminal, run the following command to install the required modules:
+1. In the new terminal, run the following command to install the required modules:
 
     ```
     pip install -r requirements.txt
     ```
     
-8. Once the requirements are installed, close the terminal.
+1. Once the requirements are installed, close the terminal.
 
-9. Open the `working_with_functions.ipynb` file from the left menu.
+1. Open the `working_with_functions.ipynb` file from the left menu.
 
     ![](../media/img60.png) 
 
-10. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python + Jupyter` appears, click on it to install the Python and Jupyter extensions. 
+1. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python + Jupyter` appears, click on it to install the Python and Jupyter extensions. 
 
     ![](../media/img61.png) 
 
-11. Next, on the **Choose a Kernel source** pop-up, select **Python Environments**. This will initiate the installation of the extension.
+1. Next, on the **Choose a Kernel source** pop-up, select **Python Environments**. This will initiate the installation of the extension.
 
        ![](../media/img62.png) 
 
-12. Next, on the **Select a Python Environment** pop-up, select **Python 3.10.0**. This will set the Python Environment. 
+1. Next, on the **Select a Python Environment** pop-up, select **Python 3.10.0**. This will set the Python Environment. 
 
        ![](../media/p24.png) 
 
@@ -106,7 +106,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
       ![](../media/install.png)
 
-13. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
+1. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
        ![](../media/openai1.1.png)
 

@@ -34,7 +34,7 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/L1-T1-S5.png "Azure OpenAI")
    
-1. Deployment will take 5 minutes to complete. Once the deployment is successful, click on **Go to Resource**.
+1. The deployment takes approximately 5 minutes to complete. Once the deployment is successful, click on **Go to Resource**.
 
    ![](../media/L1-T1-S6.png "Azure OpenAI")
    
