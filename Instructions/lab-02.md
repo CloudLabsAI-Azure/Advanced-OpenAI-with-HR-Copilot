@@ -36,7 +36,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
 1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
-   ![](../media/oikey.png "Azure OpenAI")
+   ![](../media/coke.png "Azure OpenAI")
    
 1. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu., and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
