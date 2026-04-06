@@ -2,7 +2,11 @@
 
 ### Estimated Duration: 30 minutes
 
-Over the last couple of years, language models like GPT-3 and GPT-4 have demonstrated their immense power and versatility. These models have been successfully applied in various scenarios, showcasing their capabilities. While these models are already valuable on their own, the Azure OpenAI Service now offers an exciting new feature called function calling. With function calling, the latest versions of GPT-3 and GPT-4 can generate structured JSON outputs based on functions specified in the request. This allows developers to integrate the models with other systems and tools, enabling even more possibilities. However, it's important to note that while the models can generate the function calls, the execution of these calls remains under your control, ensuring that you maintain full control over the process. In this overview, we will explore how function calling works, provide examples of its use cases, and guide you through the steps to leverage this powerful feature in Azure OpenAI Service. 
+This lab focuses on the Function Calling feature in Azure OpenAI, an advanced capability that enables modern lifecycle-supported models such as GPT-4.1 and GPT-5 family models to generate structured JSON outputs mapped to predefined functions. Unlike legacy GPT-3 and earlier GPT-4 models, current Azure OpenAI deployments are built around forward-compatible model versions designed for enterprise-grade scalability and long-term support.
+
+By integrating these models with external systems, you can gain enhanced control, reliability, and flexibility in automation and data processing tasks. Function calling allows the model to intelligently determine when to invoke backend services and provide validated arguments for execution, enabling seamless integration with APIs, databases, and business workflows.
+
+Throughout this lab, you will explore the setup, configuration, and practical implementation of function calling within the Azure OpenAI environment, empowering you to design structured, production-ready AI applications aligned with Microsoft’s current model lifecycle strategy. 
 
 ## Lab objectives
 
@@ -16,13 +20,13 @@ In this task, you will configure and test a project in Visual Studio Code by upd
 
 **Function calling**: Function calling allows you to connect models like gpt-4o to external tools and systems. This is useful for many things such as empowering AI assistants with capabilities, or building deep integrations between your applications and the models.
 
- Refer to the link for more information.
+#### Refer to the links for more information.
  
  - [Function Calling](https://platform.openai.com/docs/guides/function-calling)
  - [Function Calling with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
  - [Function calling is now available in Azure OpenAI Service](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/function-calling-is-now-available-in-azure-openai-service/ba-p/3879241)
 
-1. Open **Visual Studio Code** from the desktop; next, click on **File** and select **Open Folder**.
+1. Open **Visual Studio Code** from the desktop and then click on **File** and select **Open Folder**.
 
     ![](../media/img55.png) 
 
@@ -38,7 +42,9 @@ In this task, you will configure and test a project in Visual Studio Code by upd
 
     ![](../media/img57.png) 
 
-5. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
+5. In the **Functions** folder, open `config.json` and replace the following values with the ones mentioned below. Next, press **CTRL + S** to save the file.
+
+    >**Note:** You can also get the **Azure OpenAI Key** and **Endpoint** from **Azure OpenAI resource → Keys & Endpoint**, and the **Search Service URL** and **Primary admin key** from your **AI Search resource → Overview and Settings → Keys** in the Azure portal.
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
@@ -52,7 +58,7 @@ In this task, you will configure and test a project in Visual Studio Code by upd
 
 7. Next, click on the **Eclipse Button (1)** at the top of the screen, then select **Terminal (2)** from the dropdown menu, and click on **New Terminal (3)** to open a new terminal window.
 
-    ![](../media/img59.png) 
+    ![](../media/img59up.png)
 
 8. In the new terminal, run the following command to install the required modules:
 
@@ -74,19 +80,19 @@ In this task, you will configure and test a project in Visual Studio Code by upd
 
        ![](../media/img62.png) 
 
-13. Next, on the **Select a Python Environment** pop-up, select **Python 3.12.4**. This will set the Python Environment. 
+13. Next, on the **Select a Python Environment** pop-up, select **Python 3.12.10**. This will set the Python Environment. 
 
-       ![](../media/select-python.png) 
+    ![](../media/usepy.png) 
 
     > **Note**: If prompt **Runnning cells with 'c:\pytjon312\python.exe' requires the ipykernel package.** then click on **Install**.
 
-      ![](../media/install.png)
+    ![](../media/install.png)
 
 14. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
-       ![](../media/openai1.1.png)
+    ![](../media/openai1.1.png)
 
-       > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
+    > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
 
 ## Summary
 
