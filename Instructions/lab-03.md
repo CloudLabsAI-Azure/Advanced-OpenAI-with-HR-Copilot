@@ -238,7 +238,7 @@ You will be able to complete the following tasks:
 
 32. Navigate to the **Indexes (2)** tab under the **Search management (1)** section to view the **newly created indexes (3)**, copy the index names, and save them in a text editor for later use.
 
-      ![](../media/img90.png)
+      ![](../media/indxxs.png)
 
 33. From the left menu under **Settings (1)** Click on **Keys (2)** from the left menu, copy the **Primary admin key (3)**, and store them in a text file for later use.
 
@@ -359,13 +359,11 @@ You will be able to complete the following tasks:
 
    ![](../media/img29.png)
 
-10. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
-
-    ![](../media/img30.png)
+    >**Note:** If prompted to select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
 
 11. Next, select **copilot-openai-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
-    ![](../media/img43.png)
+    ![](../media/rgter.png)
 
 12. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take **10-15 minutes**. It is producing a web package file, then creating the resource and publishing the package to the app service.
 

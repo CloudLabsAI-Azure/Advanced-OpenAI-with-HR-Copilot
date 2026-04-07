@@ -113,13 +113,11 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the bel
 
    ![](../media/img29.png)
 
-9. Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
-
-   ![](../media/img30.png)
+   >**Note:** Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
 
 10. Next, select the **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 
-    ![](../media/img50.png)
+    ![](../media/rgmul.png)
 
 11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take **10-15 minutes**. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
