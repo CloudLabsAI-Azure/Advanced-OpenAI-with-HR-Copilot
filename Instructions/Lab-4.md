@@ -19,15 +19,15 @@ You will be able to complete the following tasks:
 
 Before we proceed further, In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
 
-```
-C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
-```
+   ```
+   C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
+   ```
 
- ![](../media/img38.png)
+   ![](../media/img38.png)
 
-- Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
+   - Replace **USE_AZCS**="**False**" in the Visual Studio code, then press **CTRL + S** to save the file.
 
-   ![](../media/L4-T1-S0.png)
+      ![](../media/L4-T1-S0.png)
 
 1. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
@@ -121,20 +121,21 @@ C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
 
     ![](../media/img50.png)
 
-11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take 5-10 minutes. It is producing a web package file, then creating the resource and publishing the package to the app service.
+11. Once the deployment succeeds, you will see the following message **SUCCESS: Your application was provisioned and deployed to Azure**. The deployment might take **10-15 minutes**. It is producing a web package file, then creating the resource and publishing the package to the app service.
 
+      ![](../media/terdon.png)
 
 12. Navigate back to the Azure portal and select **App service** from the **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group.
 
-    ![](../media/img52.png)
+    ![](../media/apsml.png)
 
 13. Next, click on **Browse** to open your Web application.
 
-    ![](../media/img53.png)
+    ![](../media/broml.png)
 
     ![](../media/img46.png)
 
-    > **Note**: If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
+    > **Note:** If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
