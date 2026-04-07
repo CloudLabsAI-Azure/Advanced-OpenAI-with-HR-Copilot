@@ -140,6 +140,8 @@ In this task, you will configure a locally hosted application that mimics the fu
 
 1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
 
+   >**Note:** The output may vary from what is shown in the screenshot.
+
    ![](../media/img73.png "Azure OpenAI")
 
 1. Congratulations! You have successfully built your own ChatGPT-like application using Streamlit.
