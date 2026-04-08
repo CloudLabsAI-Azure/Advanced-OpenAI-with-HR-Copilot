@@ -31,7 +31,7 @@ You will be able to complete the following tasks:
 
     ![](../media/img38.png)
 
-    > **Note** : If prompted with **Do you want to allow untrusted files in this workspace?**, select **Open**.
+    > **Note:** If prompted with **Do you want to allow untrusted files in this workspace?**, select **Open**.
 
 2. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**,and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
@@ -44,7 +44,7 @@ You will be able to complete the following tasks:
    | **AZURE_SEARCH_SERVICE_ENDPOINT**  | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
    | **AZURE_SEARCH_ADMIN_KEY**         | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
-      > **Note :** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
+      > **Note:** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
    
       ![](../media/zoom.png)
 
@@ -52,14 +52,15 @@ You will be able to complete the following tasks:
 
     ![](../media/img39.png)
 
-4. To run the application from the command line, navigate to Command Prompt and run the below command:
+4. To run the application from the command line, navigate to Command Prompt and run the below commands:
 
-   > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
+      ```
+      cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
+      ```
 
-   ```
-   cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
-   streamlit run hr_copilot.py
-   ```
+      ```
+      streamlit run hr_copilot.py
+      ```
 
 5. Once the execution of `streamlit run hr_copilot.py` is completed, a locally hosted HR Copliot application will be opened in the web browser. 
 
@@ -83,29 +84,31 @@ You will be able to complete the following tasks:
 
     ![](../media/L3-T1-S8.png)
 
+      > **Note:** The copilot output may vary from what is shown in the screenshot.
+
 9. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
-1. In the **Azure Portal**, search and select **Storage accounts**. 
+1. In the **Azure Portal**, search for **Storage accounts (1)** and select **Storage accounts (2)** from the services. 
 
-    ![](../media/img74u.png)
+    ![](../media/stsr.png)
 
 2. From the **Storage account** page, select **copilotstorage<inject key="Deployment ID" enableCopy="false"/>**.
 
     ![](../media/img75.png)
 
-3. From the left menu, select **Access keys** under **Security + networking** section. click on **Show** and  Copy the **Connection string** and store it in a text file for later use.
+3. From the left menu, select **Access keys (2)** under **Security + networking (1)** section. Click on **Show** and  Copy the **Connection string (3)** and store it in a text file for later use.
 
-    ![](../media/img76.png)
+    ![](../media/stakeys.png)
 
-4. Next, navigate to **Azure openAI services**, select **AI search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+4. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu., and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/l1-t2-s6.png "Azure OpenAI")
+   ![](../media/asr.png "Azure OpenAI")
 
 5. On the **Overview (1)** page, click on **Import data (2)**.
 
-    ![](../media/img77.png)
+    ![](../media/ipdta.png)
 
 6.  Select **Azure Blob storage** as the **Data source**.
 
