@@ -94,13 +94,15 @@ In this task, you will configure a locally hosted application that mimics the fu
 
     ![](../media/img67.png)
 
-1. In the `secrets.env` file, replace the following values with the ones you copied earlier. Press **CTRL+S** to save the file.
+1. In the `secrets.env` file, replace the following values. Press **CTRL+S** to save the file.
 
-    - **AZURE_OPENAI_API_KEY**: Replace with your Azure OpenAI Key
-    - **AZURE_OPENAI_CHAT_DEPLOYMENT**: Replace with `copilot-gpt`
-    - **AZURE_OPENAI_ENDPOINT**: Replace with your Azure OpenAI **Endpoint**
+| **Variables**                    | **Values**                                                                  |
+| -------------------------------- | --------------------------------------------------------------------------- |
+| **AZURE_OPENAI_API_KEY**         | **<inject key="OpenAIKey" enableCopy="true"/>**                             |
+| **AZURE_OPENAI_CHAT_DEPLOYMENT** | Replace the value with your **YOUR_GPT_MODEL** name that is **copilot-gpt** |
+| **AZURE_OPENAI_ENDPOINT**        | **<inject key="OpenAIEndpoint" enableCopy="true"/>**                        |
 
-      ![](../media/img68.png)
+   ![](../media/img68.png)
 
 1. Navigate back to File Explorer and open `chatgpt.py` with **Visual Studio Code** to view the code to build a ChatGPT-like app.
 
@@ -147,10 +149,6 @@ In this task, you will configure a locally hosted application that mimics the fu
 1. Congratulations! You have successfully built your own ChatGPT-like application using Streamlit.
 
 1. Navigate back to VS Code and stop the terminal by typing **Ctrl + C**.
-
-#### Validation
-
-<validation step="21770280-2848-4d6f-ad32-f3bda8d83cc9" />
 
 ## Summary
 
