@@ -61,6 +61,8 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the bel
 
 6. Enter an example question such as `How do I reset my password?`. The questions are answered by the Copilot by searching a knowledge base.
 
+   > **Note:** The copilot output may vary from what is shown in the screenshot.
+
    ![](../media/img48.png)
 
 7. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
@@ -131,7 +133,7 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the bel
 
     ![](../media/broml.png)
 
-    ![](../media/img46.png)
+    ![](../media/jny.png)
 
     > **Note:** If an issue occurs when you try to launch the app service, please restart the app service and wait five minutes before trying to launch the app again.
 

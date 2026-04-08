@@ -186,6 +186,8 @@ You will be able to complete the following tasks:
 
 1. Once the **Create gets succeeded** you can click on **Go to Search explorer** to view the configurations and close it by clicking on **X** on the top right corner and then click **close**.
 
+    >**Note:** It may take a few minutes before data is available in the Search explorer.
+
     ![](../media/csuc.png)
 
     ![](../media/xcor.png)
@@ -288,11 +290,11 @@ You will be able to complete the following tasks:
 
     >**Note:** Because of indexing delays, the output may differ from what is shown in the screenshot. Please try running the prompt again.
 
+    > **Note:** If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 37.
+
     ![](../media/img92.png)
 
-    ![](../media/img93.png)
-
-    > **Note:** If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 37. 
+    ![](../media/img93.png) 
 
 40. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
@@ -312,12 +314,14 @@ You will be able to complete the following tasks:
    | --------------------------------- |---------------------------------------------------------------|
    | **AZURE_OPENAI_API_KEY**          | **<inject key="OpenAIKey" enableCopy="true"/>**               |
    | **AZURE_OPENAI_ENDPOINT**         | **<inject key="OpenAIEndpoint" enableCopy="true"/>**          |
-   | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** name    |
-   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** name          |
+   | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** named as ``CompletionModel``    |
+   | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** named as ``copilot-gpt``          |
    | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
+   | **AZURE_SEARCH_INDEX_NAME**        | **payroll-hr**                                               |
    | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
-   ![](../media/img42.png)
+
+   ![](../media/bcp.png)
 
    > **Note:** If you're unable to see the full **Values** section in the table, click on the three dots (ellipsis) in the top right corner of your browser and try reducing the zoom level for better visibility.
    
