@@ -1,16 +1,21 @@
-# Lab 01: Getting Started with Building a Chat Application
+# Lab 1: Getting Started with Building a Chat Application
+
+### Estimated Duration: 30 Minutes
 
 ## Overview
 
 In this lab, you will learn how to build a chat application using Azure OpenAI. The lab involves setting up the necessary OpenAI resources and deploying a ChatGPT-like application using Streamlit. By the end of this lab, you will have a fully functional application that can interact with users through a simple web interface.
 
-## Exercise 1: Open AI Setup and Installation of Applications
+## Lab objectives
 
-In this exercise, you will set up the OpenAI resource and install the necessary applications locally. This exercise is divided into two tasks: setting up the OpenAI resource (read-only) and building a ChatGPT-like application.
+You will be able to complete the following tasks:
+
+- **Task 1:** Create an OpenAI resource and model **(Read-Only)**
+- **Task 2:** Building a ChatGPT-like application on Streamlit with streaming
 
 ### Task 1: Create an OpenAI resource and model **(Read-Only)**
 
- > **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
+> **Note:** This task is **READ-ONLY**. The OpenAI setup is already configured for your environment.
 
 In this task, you will review the setup of the OpenAI resource, which has already been configured for your environment. This task is read-only, meaning no changes will be made.
 

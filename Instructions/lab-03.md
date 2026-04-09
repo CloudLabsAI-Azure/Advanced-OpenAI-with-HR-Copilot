@@ -1,6 +1,6 @@
 # Lab 3: Deploy and Run the HR/Payroll Copilot Application
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
    ![](../media/copilot-overview.png "Technical design")
 
@@ -17,9 +17,9 @@
 
 You will be able to complete the following tasks:
 
-- Task 1: Build your own HR/Payroll copilot locally
-- Task 2: Integrate Azure Cognitive Search with your Application
-- Task 3: Deploy the HR/Payroll Copilot application to Azure
+- **Task 1:** Build your own HR/Payroll copilot locally
+- **Task 2:** Integrate Azure Cognitive Search with your Application
+- **Task 3:** Deploy the HR/Payroll Copilot application to Azure
     
 ### Task 1: Build your own HR/Payroll copilot locally
 
@@ -294,8 +294,6 @@ You will be able to complete the following tasks:
     > **Note:** If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 35.
 
     ![](../media/img92.png)
-
-    ![](../media/img93.png) 
 
 40. Navigate back to **CMD** and stop the terminal by typing **ctrl + C**.
 
