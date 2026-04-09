@@ -39,8 +39,6 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the bel
 
 3. To run the application from the command line, navigate back to Command Prompt and run the below command:
 
-   >**Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and then click on **Enter**.
-
    ```
    streamlit run multi_agent_copilot.py
    ```
@@ -83,6 +81,8 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the bel
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 
+   ![](../media/cmdpr.png)
+
 4. Run the below command to change the directory.
 
    ```bash
@@ -115,7 +115,7 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the bel
 
    ![](../media/img29.png)
 
-   >**Note:** Please select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
+   >**Note:** If prompted to select an Azure location to use, select the location as **<inject key="Region" enableCopy="false"/>** location, and click on the **Enter** button. You can change the location using the up and down arrows.
 
 10. Next, select the **multiagent-<inject key="Deployment ID" enableCopy="False"/>** resource group and hit **ENTER**.
 

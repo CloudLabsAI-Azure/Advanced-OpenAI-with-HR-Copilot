@@ -54,6 +54,8 @@ You will be able to complete the following tasks:
 
 4. To run the application from the command line, navigate to Command Prompt and run the below commands:
 
+    ![](../media/cmdpr.png)
+
       ```
       cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
       ```
@@ -90,7 +92,7 @@ You will be able to complete the following tasks:
 
 ### Task 2: Integrate Azure Cognitive Search with your Application
 
-1. In the **Azure Portal**, search for **Storage accounts (1)** and select **Storage accounts (2)** from the services. 
+<!--1. In the **Azure Portal**, search for **Storage accounts (1)** and select **Storage accounts (2)** from the services. 
 
     ![](../media/stsr.png)
 
@@ -101,16 +103,17 @@ You will be able to complete the following tasks:
 3. From the left menu, select **Access keys (2)** under **Security + networking (1)** section. Click on **Show** and  Copy the **Connection string (3)** and store it in a text file for later use.
 
     ![](../media/stakeys.png)
+-->
 
-4. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu., and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/asr.png "Azure OpenAI")
 
-5. On the **Overview (1)** page, click on **Import data (2)**.
+1. On the **Overview (1)** page, click on **Import data (2)**.
 
     ![](../media/ipdta.png)
 
-6.  Select **Azure Blob storage** as the **Data source**.
+1.  Select **Azure Blob storage** as the **Data source**.
 
     ![](../media/abs.png)
 
@@ -118,7 +121,7 @@ You will be able to complete the following tasks:
 
     ![](../media/ks.png)
 
-7. On the **Connect to your data** tab, provide the following details and click on **Next (6)**.
+1. On the **Connect to your data** tab, provide the following details and click on **Next (6)**.
 
    | Settings| value|
    |---|---|
@@ -130,47 +133,47 @@ You will be able to complete the following tasks:
 
     ![](../media/casb.png)
 
-8. On the **Enrich your data (Optional)** tab, leave the default and click on **Next**.
+1. On the **Enrich your data (Optional)** tab, leave the default and click on **Next**.
 
     ![](../media/aien.png)
 
-9. Next, on the **Preview mappings** tab, for the **id** field click on **3 dots (1)** and **delete (2)** it. 
+1. Next, on the **Preview mappings** tab, for the **id** field click on **3 dots (1)** and **delete (2)** it. 
 
    ![](../media/idel.png)
 
-10. Next, on the **contentVector** field, click on the **Eclipse (1)** button in the right corner and select **Configure field (2)**.
+1. Next, on the **contentVector** field, click on the **Eclipse (1)** button in the right corner and select **Configure field (2)**.
 
     ![](../media/cvcf.png)
 
-11. On the **Configure vector field** tab, set the **Type** as ``Collection(Edm.Single)`` **(1)** and **Dimensions** property to `1536` **(2)** and Click on **Create** **(3)** under **No vector search profiles**.
+1. On the **Configure vector field** tab, set the **Type** as ``Collection(Edm.Single)`` **(1)** and **Dimensions** property to `1536` **(2)** and Click on **Create** **(3)** under **No vector search profiles**.
 
     ![](../media/din.png)
 
-12. On the **Vector profile** tab, Click on **Create** under **No algorithm configurations**.
+1. On the **Vector profile** tab, Click on **Create** under **No algorithm configurations**.
 
     ![](../media/nac.png)
 
-13. On the **Vector algorithm** tab, leave the defaults and click on **Save**.
+1. On the **Vector algorithm** tab, leave the defaults and click on **Save**.
 
     ![](../media/vas.png)
 
-14. On the **Vector profile** tab, select the **algorithm (1)** created in the previous step and Click on **Create (2)** under **No vectorizers**.
+1. On the **Vector profile** tab, select the **algorithm (1)** created in the previous step and Click on **Create (2)** under **No vectorizers**.
 
     ![](../media/nvcr.png)
 
-15. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** **(1)** and model deployment as **CompletionModel (2)**. Click on **Save (3)**.
+1. On the **Vector algorithm** tab, leave the default and select the Azure OpenAI service as **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>** **(1)** and model deployment as **CompletionModel (2)**. Click on **Save (3)**.
 
     ![](../media/svmod.png)
 
-16. On the **Vector profile** tab, select the **Vectorizers (1)** created in the previous step and Click on **Save (2)**.
+1. On the **Vector profile** tab, select the **Vectorizers (1)** created in the previous step and Click on **Save (2)**.
 
     ![](../media/vcsv.png)
 
-17. On the **Configure vector field** tab, **check the boxes (1)** keep the **Dimensions** property to `1536` **(2)** and **Vector profile (3)** created in previous step and Click on **Save (4)**. 
+1. On the **Configure vector field** tab, **check the boxes (1)** keep the **Dimensions** property to `1536` **(2)** and **Vector profile (3)** created in previous step and Click on **Save (4)**. 
 
     ![](../media/cfsv.png)
     
-    > **Note**: If you are unable to save the **Configure Vector Field**, try deleting the **ContentVector** field. Then, recreate the field with the name **ContentVector** and select **Collection.single** for the **ContentVector** field and reperform from step 10 to step 17.
+    > **Note**: If you are unable to save the **Configure Vector Field**, try deleting the **ContentVector** field. Then, recreate the field with the name **ContentVector** and select **Collection.single** for the **ContentVector** field and reperform from step 8 to step 15.
 
 1. Click on **Next** after saving the above settings.
 
@@ -180,7 +183,7 @@ You will be able to complete the following tasks:
 
     ![](../media/advrn.png)
 
-18. Enter the **Objects name prefix** as **payroll-hr (1)**, and click on **Create (2)**.
+18. Enter the **Objects name prefix** as ``payroll-hr`` **(1)**, and click on **Create (2)**.
 
     ![](../media/phrcr.png)
 
@@ -196,7 +199,7 @@ You will be able to complete the following tasks:
 
     ![](../media/adin.png)
 
-20. Now for the default **id field (1)** check the boxes mentioned in screenshot.Click on **+ Add field (2)**, and create **search_query, gpt_response, search_query_vector** fields with the configurations as provided in the below image.
+20. Now for the default **id field (1)** check the boxes mentioned in screenshot.Click on **+ Add field (2)**, and create ``search_query``, ``gpt_response``, ``search_query_vector`` fields with the configurations as provided in the below image.
 
     ![](../media/sq.png) 
 
@@ -267,8 +270,6 @@ You will be able to complete the following tasks:
 
 37. Run the below command to change the directory and run the HR Copilot application using the search service.
 
-      > **Note**: Here, you can enter your email address below to get notifications. Otherwise, leave this field blank and click on **Enter**.
-
     ```bash
     cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
     ```
@@ -290,7 +291,7 @@ You will be able to complete the following tasks:
 
     >**Note:** Because of indexing delays, the output may differ from what is shown in the screenshot. Please try running the prompt again.
 
-    > **Note:** If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 37.
+    > **Note:** If you faced any issues while providing the above input, please try to run the command **pip install azure-search-documents==11.4.0b9** in the vs code at the file location and again try to perform from the step 35.
 
     ![](../media/img92.png)
 
@@ -317,7 +318,7 @@ You will be able to complete the following tasks:
    | **AZURE_OPENAI_EMB_DEPLOYMENT**   |  Replace the value with your **YOUR_EMBEDDING_MODEL** named as ``CompletionModel``    |
    | **AZURE_OPENAI_CHAT_DEPLOYMENT**  |  Replace the value with your **YOUR_GPT_MODEL** named as ``copilot-gpt``          |
    | **AZURE_SEARCH_SERVICE_ENDPOINT** | **<inject key="SearchServiceuri" enableCopy="true"/>**        |
-   | **AZURE_SEARCH_INDEX_NAME**        | **payroll-hr**                                               |
+   | **AZURE_SEARCH_INDEX_NAME**        | ``payroll-hr``                                               |
    | **AZURE_SEARCH_ADMIN_KEY**        | **<inject key="SearchAPIkey" enableCopy="true"/>**            |
 
 
@@ -337,7 +338,7 @@ You will be able to complete the following tasks:
    cd C:\LabFiles\OpenAIWorkshop
    ```
 
-6. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account.
+6. Run the below command to **Authenticate with Azure**. It will redirect you to the Azure-authorized website. Next, select your account and navigate back to Command Prompt.
 
    ```bash
    azd auth login

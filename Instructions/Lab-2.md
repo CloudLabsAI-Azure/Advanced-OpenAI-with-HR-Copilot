@@ -72,7 +72,7 @@ In this task, you will configure and test a project in Visual Studio Code by upd
 
     ![](../media/img60.png) 
 
-11. Click on the **Run (1)** button in the first cell. Once the pop-up `Install/Enable suggested extensions Python + Jupyter` appears, click on it to install the Python and Jupyter extensions. 
+11. Click on the **Run (1)** button in the first cell. Once the pop-up **Install/Enable suggested extensions Python + Jupyter** appears, click on it to install the Python and Jupyter extensions. 
 
     ![](../media/img61.png) 
 

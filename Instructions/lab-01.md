@@ -46,17 +46,17 @@ In this task, you will review the setup of the OpenAI resource, which has alread
 
    ![](../media/dbm.png)
 
-1. On the **Select a Model** pane, search for `gpt-4.1` **(1)** and select **gpt-4.1 (2)** model from the list and click on **Confirm (3)**.
+1. On the **Select a Model** pane, search for `gpt-4o` **(1)** and select **gpt-4o (2)** model from the list and click on **Confirm (3)**.
 
-   ![](../media/gpt41.png)
+   ![](../media/4ocon.png)
    
-1. On the **Deploy Model gpt-4.1** tab, enter the following details and click on **Deploy (4)**.
+1. On the **Deploy Model gpt-4o** tab, enter the following details and click on **Deploy (4)**.
 
    - Deployment name: **copilot-gpt (1)**
    - Deployment type: **Standard (2)**
    - Tokens per Minute Rate Limit (thousands): **15K (3)**
 
-     ![](../media/cogptdp2.png)
+     ![](../media/dep30.png)
    
 ### Task 2: Building a ChatGPT-like application on Streamlit with streaming
 
@@ -140,7 +140,7 @@ In this task, you will configure a locally hosted application that mimics the fu
    
    ![](../media/img72.png "Azure OpenAI")
 
-1. Explore the app by running a few queries. Congratulations! You've built your own ChatGPT-like app in 50 lines of code.
+1. Explore the app by running a few queries. For example: ``Write a code to build chatGPT like application.`` 
 
    >**Note:** The output may vary from what is shown in the screenshot.
 
