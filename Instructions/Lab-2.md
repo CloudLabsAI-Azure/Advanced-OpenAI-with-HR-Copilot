@@ -1,6 +1,6 @@
 # Lab 2: Understand function calling in Open AI GPT
 
-### Estimated Duration: 30 minutes
+### Estimated Duration: 30 Minutes
 
 This lab focuses on the Function Calling feature in Azure OpenAI, an advanced capability that enables modern lifecycle-supported models such as GPT-4.1 and GPT-5 family models to generate structured JSON outputs mapped to predefined functions. Unlike legacy GPT-3 and earlier GPT-4 models, current Azure OpenAI deployments are built around forward-compatible model versions designed for enterprise-grade scalability and long-term support.
 
@@ -12,7 +12,7 @@ Throughout this lab, you will explore the setup, configuration, and practical im
 
 You will be able to complete the following tasks:
 
-- Task 1: Understand Function calling
+- **Task 1:** Understand Function calling
   
 ### Task 1: Understand Function calling
 
