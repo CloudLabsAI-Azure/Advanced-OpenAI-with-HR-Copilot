@@ -396,8 +396,8 @@ You will be able to complete the following tasks:
 
    <validation step="e563f609-c163-48c7-816f-e11985cba271" />
 
-## Summary
+### Summary
 
-In this exercise, you have built your own HR/Payroll copilot locally ,integrated Azure Cognitive Search with your Application and deployed the HR/Payroll Copilot application to Azure.
+In this lab, you have built your own HR/Payroll copilot locally ,integrated Azure Cognitive Search with your Application and deployed the HR/Payroll Copilot application to Azure.
 
-### You have successfully completed the lab
+

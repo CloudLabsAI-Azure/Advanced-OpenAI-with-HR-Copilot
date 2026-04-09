@@ -150,7 +150,7 @@ In this task, you will configure a locally hosted application that mimics the fu
 
 1. Navigate back to VS Code and stop the terminal by typing **Ctrl + C**.
 
-## Summary
+### Summary
 
 In this lab, you have accomplished the following:
 

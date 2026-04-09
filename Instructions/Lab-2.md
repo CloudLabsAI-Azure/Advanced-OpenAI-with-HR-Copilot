@@ -94,8 +94,7 @@ In this task, you will configure and test a project in Visual Studio Code by upd
 
     > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
 
-## Summary
+### Summary
 
 In this lab, you have understood Function calling and learned how to set up a Visual Studio Code environment, configure the necessary files for your project, install required modules, and execute a Jupyter notebook. You’ve also gained experience with handling Python environments, using terminal commands, and verifying code execution in Jupyter notebooks.
 
-### You have successfully completed the lab

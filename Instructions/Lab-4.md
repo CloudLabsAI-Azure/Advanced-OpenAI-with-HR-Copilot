@@ -145,8 +145,12 @@ Before we proceed further, In the LabVM, open File Explorer, navigate to the bel
 
    <validation step="4171f03d-fe94-4da9-a945-da0ee2eb4d8c" />
 
-## Summary
+### Summary
 
-In this exercise, you have built your own multi-agent Copilot application locally and deployed a multi-agent Copilot application to Azure.
+In this lab, you have built your own multi-agent Copilot application locally and deployed a multi-agent Copilot application to Azure.
 
-### You have successfully completed the lab
+## Conclusion
+
+Across these labs, you progressively built a complete Azure OpenAI-powered solution—starting with a basic ChatGPT-like application, advancing to structured function calling, then developing a domain-specific HR/Payroll copilot integrated with Azure Cognitive Search, and finally implementing a scalable multi-agent architecture. Together, these labs demonstrate how to design, integrate, and deploy intelligent, production-ready AI applications that leverage LLMs, external tools, and modular agent-based systems within a unified cloud environment.
+
+## You have successfully completed the lab
