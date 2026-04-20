@@ -1,6 +1,4 @@
-# Lab 02: Understand function calling in Open AI GPT
-
-## Overview
+# Lab 02: Understand Function Calling in OpenAI GPT
 
 ## Overview
 
@@ -10,7 +8,7 @@ By integrating these models with external systems, you can gain enhanced control
 
 Throughout this lab, you will explore the setup, configuration, and practical implementation of function calling within the Azure OpenAI environment, empowering you to design structured, production-ready AI applications aligned with Microsoft’s current model lifecycle strategy.
 
-To know more about Azure function calling, please refer to [Function calling in Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling).
+To learn more about Azure function calling, please refer to [Function calling in Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling).
 
 ## Task 1: Understand Function calling
 
@@ -32,11 +30,15 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
    
    ![](../media/p12.png "Azure OpenAI")
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. Make sure to copy the deployment name, API key, API version, and endpoint.
+
+   ![](../media/p12.1.png)
+
+1. You can also find the values by navigating back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
-1. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu., and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+1. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](../media/l1-t2-s6.png "Azure OpenAI")
 
@@ -72,7 +74,9 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
     - **SEARCH_SERVICE_ENDPOINT**: `Replace the value with the Search Service Endpoint`
     - **SEARCH_ADMIN_KEY**: `Replace the value with the Search Service key`
 
-        ![](../media/img58.png) 
+   ![](../media/img58.png)
+
+
 
 1. Next, click on the **Eclipse Button (1)** on the top, then select **Terminal (2)** and click on **New Terminal (3)**.
 
@@ -96,21 +100,21 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
 1. Next, on the **Choose a Kernel source** pop-up, select **Python Environments**. This will initiate the installation of the extension.
 
-       ![](../media/img62.png) 
+      ![](../media/img62.png) 
 
 1. Next, on the **Select a Python Environment** pop-up, select **Python 3.10.0**. This will set the Python Environment. 
 
-       ![](../media/p24.png) 
+      ![](../media/p24.png) 
 
-    > **Note**: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
+   > **Note**: If prompt **Runnning cells with 'c:\pytjon311\python.exe' requires the ipykernel package.** then click on **Install**.
 
       ![](../media/install.png)
 
 1. Execute the notebook cell by cell (using either `Ctrl + Enter` to stay on the same cell or `Shift + Enter` to advance to the next cell) and observe the results of each cell execution.
 
-       ![](../media/openai1.1.png)
+      ![](../media/openai1.1.png)
 
-       > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
+   > **Note:** Please ensure to run the notebook end to end and observe the output for each cell. 
 
 #### Validation
 
