@@ -60,8 +60,6 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
     C:\LabFiles\openai\Basic_Samples\Functions
     ```
 
-   ![](../media/l2-t1-s2.png) 
-
 1. On the **Do you trust the authors of the files in this folder?** pop-up check the box next to **Trust the authors of all files in the parent folder 'Basic_Samples'**, and select **Yes, I trust the authors**.
 
     ![](../media/img57.png) 
