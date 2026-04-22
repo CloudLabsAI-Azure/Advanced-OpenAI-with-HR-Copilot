@@ -49,28 +49,41 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You 
 
    ![](../media/img66.png "Azure OpenAI")
 
-9. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select open with  **Visual Studio Code**.
+9. In the LabVM, open File Explorer, navigate to the below-mentioned path.
 
    ```
    C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot
    ```
+    ![](../media/img38.0.png)
+
+    **Right-click** on the `secrets.env` file, and select open with  **Visual Studio Code**.
 
     ![](../media/img38.png)
 
 10. The Visual Studio code is opened on the desktop. Edit the below code and update the **Azure OpenAI Key**, **Embedding Model name and GPT Deployment name**, **Azure OpenAI Endpoint**, **Cognitive Search Endpoint**, and **AZURE_SEARCH_ADMIN_KEY** values that you have copied and stored in the text file earlier.
 
-    ```
+    ```python
       AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key you copied in Task 1,Step 5.
+    ```
+    ```python
       AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint you copied in Task 1,Step 5.
-      AZURE_OPENAI_EMB_DEPLOYMENT = "ada-002" 
-      AZURE_OPENAI_CHAT_DEPLOYMENT= "mygpt-4" 
-      AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
+    ```
+    ```python
+      AZURE_OPENAI_EMB_DEPLOYMENT = "ada-002" //#Replace with the embedding model deployment name you copied in Task 1,Step 4.
+    ```
+    ```python
+      AZURE_OPENAI_CHAT_DEPLOYMENT= "copilot-gpt"  //#Replace with the gpt deployment name you copied in Task 1,Step 4.
+    ```
+    ```python
+      AZURE_SEARCH_SERVICE_ENDPOINT="YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
+    ```
+    ```python  
       AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
     ```
 
 11. After updating values, the `secrets.env` file should be as shown in the below screenshot. Press **CTRL + S** to save the file.
 
-    ![](../media/L2-T1-S11.png)
+    ![](../media/L3-T1-S11.png)
 
 12. Next, click on the **Eclipse Button** on the top, then select **Terminal** and click on **New Terminal**.
 
@@ -78,13 +91,13 @@ In this task, you will set up the HR/Payroll Copilot locally on your LabVM. You 
 
 13. Run the below command in the terminal to change the directory.
 
-    ```
+    ```powershell
     cd C:\Labfiles\OpenAIWorkshop\scenarios\incubations\copilot\employee_support
     ```
    
 14. To execute the application, run the following command.
 
-    ```
+    ```python
     streamlit run hr_copilot.py
     ```
 
@@ -262,16 +275,28 @@ In this task, you'll deploy the HR/Payroll Copilot application to Azure. You'll 
 
 2. In the **appsettings** section of the `main.bicep` file, replace the values below with the ones you copied previously in the text editor. Next, press **CTRL + S** to save the file.
 
-    ```
+    ```python
       AZURE_OPENAI_API_KEY = "YOUR_OPENAI_KEY" //#Replace it with the OpenAI key you copied in Task 1,Step 5.
+    ```
+    ```python
       AZURE_OPENAI_ENDPOINT= "YOUR_OPENAI_ENDPOINT" //#Replace with the OpenAI Endpoint you copied in Task 1,Step 5.
-      AZURE_OPENAI_EMB_DEPLOYMENT = "ada-002"
-      AZURE_OPENAI_CHAT_DEPLOYMENT= "mygpt-4"
-      AZURE_SEARCH_SERVICE_ENDPOINT= "YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
+    ```
+    ```python
+      AZURE_OPENAI_EMB_DEPLOYMENT = "ada-002" //#Replace with the embedding model deployment name you copied in Task 1,Step 4.
+    ```
+    ```python
+      AZURE_OPENAI_CHAT_DEPLOYMENT= "copilot-gpt"  //#Replace with the gpt deployment name you copied in Task 1,Step 4.
+    ```
+    ```python
+      AZURE_SEARCH_SERVICE_ENDPOINT="YOUR_SEARCH_SERVICE_ENDPOINT" //#Replace with Search Service Endpoint you copied in Task 1,Step 7.
+    ```
+    ```python  
       AZURE_SEARCH_ADMIN_KEY= "YOUR_SEARCH_SERVICE_ADMIN_KEY" //#Replace the value with the Primary admin key you copied in Task 1,Step 8.
     ```
 
-     ![](../media/L2-T3-S2.png)
+    The `appsettings` section should look like the below screenshot after you update the values.
+
+     ![](../media/L3-T3-S2.png)
 
 3. In the LabVM, navigate to Desktop and search for `cmd` in the search box, then click on **Command Prompt**.
 

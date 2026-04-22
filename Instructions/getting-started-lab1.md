@@ -8,7 +8,7 @@ In this hands-on lab, you will provision an Azure OpenAI resource in Azure AI Fo
 
 A key capability you will explore is **Function Calling**, which enables GPT-4.1 and GPT-5 class models to return structured JSON outputs mapped to predefined functions. Instead of generating only natural-language responses, the model can determine when to invoke external tools and provide validated arguments for execution. This structured interaction allows developers to integrate AI models with APIs, databases, and backend services to build intelligent, production-ready applications.
 
-Additionally, this lab introduces an agent-based architecture using Python. You will examine how an AI agent is structured around defined goals and tasks, natural-language interaction, tool execution, and memory management. You will also explore how a multi-agent copilot model uses specialist agents coordinated by an agent runner to efficiently manage tasks and maintain continuity across domains.
+Additionally, this lab introduces an agent-based architecture using Python. You will examine how an AI agent is structured around defined goals and tasks, natural-language interaction, tool execution, and memory management. You will also explore how a multi-agent copilot model uses specialist agents coordinated by an agent runner to manage tasks efficiently and maintain continuity across domains.
 
 ## Objective
 
@@ -45,7 +45,7 @@ The architecture for this lab involves the following key components:
 
 - **Azure OpenAI:** Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrate with your data, enabling customized and secure interactions.
 
-- **Azure OpenAI Models:** Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
+- **Azure OpenAI Models:** Offers pre-trained and customizable large language models for various AI applications. These models enable powerful, AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
 
 ## Getting Started with the Lab
 
@@ -53,7 +53,7 @@ The architecture for this lab involves the following key components:
 
    ![](../media/im-01.png)
  
-1. To get the lab environment details, you can select the **Environment** details tab. Additionally, the credentials will also be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
+1. To get the lab environment details, you can select the **Environment** details tab. Additionally, the credentials will be emailed to your registered email address. Additionally, under the **Resources** tab, you may start, stop, and restart virtual machines.
 
    ![](../media/im-02.png "Enter Email")
  
@@ -89,7 +89,7 @@ The architecture for this lab involves the following key components:
 
 7. Click "Next" from the bottom right corner to embark on your Lab journey!
 
-     ![](../media/next.png)
+     ![](../media/next01.png)
 
 ### Support Contact
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.

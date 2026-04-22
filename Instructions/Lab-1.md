@@ -14,7 +14,7 @@ In this exercise, you will set up the OpenAI resource and install the necessary 
 
 In this task, you will review the setup of the OpenAI resource, which has already been configured for your environment. This task is read-only, meaning no changes will be made.
 
-1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under services.
+1. In the Azure portal, search for **Azure OpenAI** **(1)** in the top search box, then select **Azure OpenAI** **(2)** under Services.
 
    ![](../media/L1-T1-S1.png "Azure OpenAI")
    
@@ -74,7 +74,7 @@ In this task, you will configure a locally hosted application that mimics the fu
 
    ![](../media/im-05.png "Azure OpenAI")
       
-1. In the **Microsoft Foundry** portal, select **Deployments** under Management and verify that the **gpt-4.1** model are present with the deployment names as **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into the text file for later use.
+1. In the **Microsoft Foundry** portal, select **Deployments** under Management and verify that the **gpt-4.1** model is present with the deployment name **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment name and model name into the text file for later use.
    
    ![](../media/im-09.png "Azure OpenAI")
 
@@ -86,11 +86,15 @@ In this task, you will configure a locally hosted application that mimics the fu
 
    ![](../media/L1-T2-S5.png "Azure OpenAI")
    
-1. In the LabVM, open File Explorer, navigate to the below-mentioned path, right-click on the `secrets.env` file, and select **Open with Code**.
+1. On the LabVM you are working on, open File Explorer. In the folder/location field (URL/path), you can paste the full file path directly, then navigate to
 
    ```
    C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
    ```
+
+   ![](../media/img67FE.png)
+
+1. Right-click on the `secrets.env` file, and select **Open with Code**.
 
     ![](../media/img67.png)
 
@@ -112,7 +116,7 @@ In this task, you will configure a locally hosted application that mimics the fu
 
     ![](../media/img69.png) 
 
-1. Run the below command in the terminal to change the directory.
+1. Verify or run the following command in the terminal to change the directory if you are not already in the correct location.
 
    ```
    cd C:\LabFiles\OpenAIWorkshop\scenarios\incubations\copilot\ChatGPT
