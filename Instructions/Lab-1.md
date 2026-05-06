@@ -78,7 +78,7 @@ In this task, you will configure a locally hosted application that mimics the fu
    
    ![](../media/im-09.png "Azure OpenAI")
 
-   ![](../media/eyhackday2img3.png)
+   ![](../media/tpm_change.png)
 
    >**Note:** If you are not able to see the **capacity** value, please use the horizontal scroll bar from bottom of the page.
 
