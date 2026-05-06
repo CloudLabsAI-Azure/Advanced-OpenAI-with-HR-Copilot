@@ -18,35 +18,35 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
    ![](../media/img1lab2.png "Azure OpenAI")
 
-1. From the **Azure AI services | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+1. From the **Microsoft Foundry | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/img3lab2.png "Azure OpenAI")
+   ![](../media/UI_change_1.png)
 
-1. In the Azure OpenAI resource pane, select **Go to Azure Foundry portal**.
+1. In the Azure OpenAI resource pane, select **Go to Foundry portal**.
 
    ![](../media/aifd.png "Azure OpenAI")
       
-1. In the **Azure OpenAI Studio**, select **Deployments** under Management and verify that the **gpt-4** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment names and model names into a text file for later use.
+1. In the **Azure OpenAI Studio**, select **Deployments** under Shared Resources and verify that the **gpt-4.1** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15**. Copy the Azure OpenAI deployment names and model names into a text file for later use.
    
-   ![](../media/p12.png "Azure OpenAI")
+   ![](../media/UI_change_2.png)
 
 1. Make sure to copy the deployment name, API key, API version, and endpoint.
 
    ![](../media/p12.1.png)
 
-1. You can also find the values by navigating back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. You can also find the values by navigating back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** under resource management from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
    ![](../media/l1-t2-s5.png "Azure OpenAI")
    
 1. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/l1-t2-s6.png "Azure OpenAI")
+   ![](../media/UI_change_3.png)
 
 1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
 
    ![](../media/img36.png "Azure OpenAI")
 
-1. From the left menu, select **Keys (1)**, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
+1. From the left menu, select **Keys (1)** under settings, copy the **Primary admin key (2)**, and paste it into a text editor for later use.
 
    ![](../media/img66.png "Azure OpenAI")
 
