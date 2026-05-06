@@ -33,7 +33,7 @@ Participants should have:
 
 In this hands-on lab, the architecture flow includes several essential components. You’ll begin by setting up the Azure OpenAI resource in Azure AI Foundry and installing the required application locally. At the heart of the architecture is the Azure OpenAI Service, utilizing lifecycle-supported models such as GPT-4.1, GPT-4.1-mini, or GPT-5 family models. These models use function calling capabilities to generate structured JSON outputs.
 
-The Smart_Agent Python object plays a crucial role, handling tasks such as goal definition, natural language processing (NLP) interactions, tool execution, and conversation memory management, while securely connecting to the deployed Azure OpenAI model. Additionally, the system leverages a multi-agent copilot model, where a specialized agent runner manages and coordinates tasks among multiple domain-specific agents, ensuring efficient task handling, contextual continuity, and scalable orchestration across different domains.
+The Smart Agent Python object plays a crucial role, handling tasks such as goal definition, natural language processing (NLP) interactions, tool execution, and conversation memory management, while securely connecting to the deployed Azure OpenAI model. Additionally, the system leverages a multi-agent copilot model, where a specialized agent runner manages and coordinates tasks among multiple domain-specific agents, ensuring efficient task handling, contextual continuity, and scalable orchestration across different domains.
 
 ## Architecture Diagram
 

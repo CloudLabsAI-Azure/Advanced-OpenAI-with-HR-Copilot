@@ -74,15 +74,15 @@ In this task, you will configure a locally hosted application that mimics the fu
 
    ![](../media/im-05.png "Azure OpenAI")
       
-1. In the **Microsoft Foundry** portal, select **Deployments** under Management and verify that the **gpt-4.1** model is present with the deployment name **copilot-gpt**. Review that the model's capacity is set to **15K TPM**. Copy the Azure OpenAI deployment name and model name into the text file for later use.
+1. In the **Microsoft Foundry** portal, select **Deployments** under Management and verify that the **gpt-4.1** model is present with the deployment name **copilot-gpt**. Review that the model's capacity is set to **15**. Copy the Azure OpenAI deployment name and model name into the text file for later use.
    
    ![](../media/im-09.png "Azure OpenAI")
 
-   ![](../media/eyhackday2img3.png)
+   ![](../media/tpm_change.png)
 
    >**Note:** If you are not able to see the **capacity** value, please use the horizontal scroll bar from bottom of the page.
 
-1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
+1. Navigate back to the Azure OpenAI resource on the **Azure portal**, select **Keys & Endpoint (1)** under Resource Management from the left menu, and click on **Show Keys (2)**. Copy the **KEY 1 (3)** and **Endpoint (4)**, and store them in a text file for later use.
 
    ![](../media/L1-T2-S5.png "Azure OpenAI")
    
