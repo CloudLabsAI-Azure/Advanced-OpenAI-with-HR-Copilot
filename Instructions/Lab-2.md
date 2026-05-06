@@ -20,7 +20,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
 1. From the **Microsoft Foundry | Azure OpenAI** pane, select **Copilot-OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](../media/UI_change_1)
+   ![](../media/UI_change_1.png)
 
 1. In the Azure OpenAI resource pane, select **Go to Foundry portal**.
 
@@ -28,7 +28,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
       
 1. In the **Azure OpenAI Studio**, select **Deployments** under Shared Resources and verify that the **gpt-4.1** and **text-embedding-ada-002** models are present with the deployment names as **copilot-gpt** and **text-embedding-ada-002**. Review that the model's capacity is set to **15**. Copy the Azure OpenAI deployment names and model names into a text file for later use.
    
-   ![](../media/UI_change_2")
+   ![](../media/UI_change_2.png)
 
 1. Make sure to copy the deployment name, API key, API version, and endpoint.
 
@@ -40,7 +40,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
    
 1. Navigate back to the **Azure portal**, then locate and select **AI Search (1)** from the left menu, and click on **copilot-openai-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![](../media/UI_change_3")
+   ![](../media/UI_change_3.png)
 
 1. From the Overview tab of Cognitive Search, copy the **URL** and paste it into a text editor for later use.
 
