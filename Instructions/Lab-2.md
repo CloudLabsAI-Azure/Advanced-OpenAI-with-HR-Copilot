@@ -66,7 +66,7 @@ In this task, you will explore how to set up and configure the Azure OpenAI envi
 
 1. In the **Functions** folder, open `config.json` and replace the following values with the ones you copied earlier. Next, press **CTRL + S** to save the file.
 
-    - **DEPLOYMENT_NAME**: `Replace the value with the gpt-model name`
+    - **DEPLOYMENT_NAME**: `Replace the value with the gpt-model name as ` **copilot-gpt** 
     - **OPENAI_API_BASE**: `Replace the value with Azure OpenAI Endpoint`
     - **OPENAI_API_KEY**: `Replace the value with Azure OpenAI Key`
     - **SEARCH_SERVICE_ENDPOINT**: `Replace the value with the Search Service Endpoint`
