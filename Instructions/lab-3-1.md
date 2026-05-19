@@ -198,9 +198,10 @@ This task involves integrating Azure Cognitive Search with your HR/Payroll Copil
 
     ![Picture 1](../media/BI06.png)
 
-1. Navigate to the **Indexes** tab under the **Search management** section to view the newly created indexes, copy the index names, and save them in a text editor for later use.
+1. From the left navigation menu, expand **Search management (1)** and select **Indexes (2)**. Verify that both **payroll-hr** and **payroll-hr-cache** indexes are listed under the **Name (3)** section.
 
-      ![](../media/img90.png)
+    ![Picture 1](../media/BI07.png)
+
 
 #### Validation
 
